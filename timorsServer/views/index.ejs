@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1><%= title %></h1>
+    <p>Welcome to <%= title %></p>
+    <script src="http://apps.bdimg.com/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script>
+        console.log("222")
+        $.ajax({
+            type: "POST",
+            url: "http://localhost:3000/login?userName=1",
+            data:"val=1",
+            success:function(data){
+                console.log(data)
+            }
+
+        })
+    </script>
+  </body>
+</html>
