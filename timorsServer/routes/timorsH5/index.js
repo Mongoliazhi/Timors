@@ -30,6 +30,19 @@ module.exports = function (app) {
         })
     })
 
+    //首页获取商品列表
+    app.post('/mainGetgoodslist', function (req, res) {
+        console.log(req.body)
+        db.query('select * from tb_goods', function (err, rows) {
+            if (err) {
+                console.log(err);
+            } else {
+                console.log(rows)
+                res.send(rows)
+            }
+        })
+    })
+
     //商品上传
 /*    app.get('/goods/goods_upload', function (req, res) {
         db.query('select * from tb_category', function (err, rows) {

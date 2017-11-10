@@ -13,7 +13,7 @@
         <li class="nav_active">
           <router-link to="/main">
             <i class="iconfont gj-shouye"></i>
-            <p style="color:red">首页</p>
+            <p>首页</p>
           </router-link>
         </li>
 
@@ -26,7 +26,10 @@
 
         <li>
           <a @touchstart="showPlayPage" @click="showPlayPage">
-            <img class="footer_logoimg" style="border: 2px solid #E38FA6;" src="../../../static/images/erji.png" alt="">
+            <!--<img class="" style="border: 2px solid #E38FA6;" src="../../../static/images/erji.png" alt="">-->
+            <svg style="font-size:4rem" class="footer_logoimg icon" aria-hidden="true">
+              <use xlink:href="#icon-DJ"></use>
+            </svg>
           </a>
         </li>
 
@@ -180,10 +183,10 @@
           position: absolute
           left: 50%
           margin-left: -2.5rem
-          margin-top: -1.6rem
+          margin-top: -2.6rem
           width: 5rem
           height: 5rem
-          border-radius: 50%
+          /*border-radius: 50%*/
       li:nth-child(3)
         flex: 1.2
     .nav_active

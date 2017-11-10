@@ -21,3 +21,12 @@ img { border: none; vertical-align: top; }
 button, submit, input, select { outline: none; }
 
 table { border-collapse: collapse; border-spacing: 0; }
+
+
+.icon {
+  width: 1em;
+  height: 1em;
+  vertical-align: -0.15em;
+  fill: currentColor;
+  overflow: hidden;
+}

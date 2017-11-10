@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+
+
+<!-- Mirrored from www.zi-han.net/theme/hplus/table_basic.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 20 Jan 2016 14:20:01 GMT -->
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <title>H+ 后台主题UI框架 - 基础表格</title>
+    <meta name="keywords" content="H+后台主题,后台bootstrap框架,会员中心主题,后台HTML,响应式后台">
+    <meta name="description" content="H+是一个完全响应式，基于Bootstrap3最新版本开发的扁平化主题，她采用了主流的左右两栏式布局，使用了Html5+CSS3等现代技术">
+
+    <link rel="shortcut icon" href="favicon.ico">
+    <link href="../HPlus/css/bootstrap.min14ed.css?v=3.3.6" rel="stylesheet">
+    <link href="../HPlus/css/font-awesome.min93e3.css?v=4.4.0" rel="stylesheet">
+    <link href="../HPlus/css/plugins/iCheck/custom.css" rel="stylesheet">
+    <link href="../HPlus/css/animate.min.css" rel="stylesheet">
+    <link href="../HPlus/css/style.min862f.css?v=4.1.0" rel="stylesheet">
+
+</head>
+
+<body class="gray-bg">
+<div class="wrapper wrapper-content animated fadeInRight">
+    <div class="row">
+        <div class="col-sm-12">
+            <div class="ibox float-e-margins">
+                <div class="ibox-title">
+                    <h5>自定义响应式表格</h5>
+                    <div class="ibox-tools">
+                        <a class="collapse-link">
+                            <i class="fa fa-chevron-up"></i>
+                        </a>
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="table_basic.html#">
+                            <i class="fa fa-wrench"></i>
+                        </a>
+                        <ul class="dropdown-menu dropdown-user">
+                            <li><a href="table_basic.html#">选项1</a>
+                            </li>
+                            <li><a href="table_basic.html#">选项2</a>
+                            </li>
+                        </ul>
+                        <a class="close-link">
+                            <i class="fa fa-times"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="ibox-content">
+                    <div class="row">
+                        <div class="col-sm-offset-9  col-sm-3">
+                            <div class="input-group">
+                                <input type="text" placeholder="请输入关键词" class="input-sm form-control"> <span
+                                        class="input-group-btn">
+                                        <button type="button" class="btn btn-sm btn-primary"> 搜索</button> </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="table-responsive">
+                        <table class="table table-striped">
+                            <thead>
+                            <tr>
+                                <th></th>
+                                <th>商品ID</th>
+                                <th>商品分类</th>
+                                <th>商品图片</th>
+                                <th>商品名称</th>
+                                <th>商品原价</th>
+                                <th>商品售价</th>
+                                <th>商品数量</th>
+                                <th>创建时间</th>
+                                <th>操作</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+
+                                <% for(var i = 0;i < goods_list.length;i++){ %>
+                                <tr>
+                                    <td>
+                                        <input type="checkbox" checked class="i-checks" name="input[]">
+                                    </td>
+                                    <td><%= goods_list[i].goods_id %></td>
+                                    <td><%= goods_list[i].category %></td>
+                                    <td><img class="img img-circle" src="<%= goods_list[i].goods_picArr %>" alt=""></td>
+                                    <td><%= goods_list[i].goods_name %></td>
+                                    <td><%= goods_list[i].goods_Yprice %></td>
+                                    <td><%= goods_list[i].goods_Sprice %></td>
+                                    <td><%= goods_list[i].goods_num %></td>
+                                    <td><%= goods_list[i].goods_addTime %></td>
+                                    <td>
+                                        <button class="btn btn-info " type="button"><i class="fa fa-paste"></i> 编辑</button>
+                                        <button class="btn btn-danger " type="button"><i class="fa fa-exclamation-triangle"></i> 删除</button>
+                                    </td>
+                                </tr>
+                                <% } %>
+
+
+                            </tbody>
+                        </table>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+<script src="../HPlus/js/jquery.min.js?v=2.1.4"></script>
+<script src="../HPlus/js/bootstrap.min.js?v=3.3.6"></script>
+<script src="../HPlus/js/plugins/peity/jquery.peity.min.js"></script>
+<script src="../HPlus/js/content.min.js?v=1.0.0"></script>
+<script src="../HPlus/js/plugins/iCheck/icheck.min.js"></script>
+<script src="../HPlus/js/demo/peity-demo.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $(".i-checks").iCheck({checkboxClass: "icheckbox_square-green", radioClass: "iradio_square-green",})
+    });
+</script>
+<script type="text/javascript" src="http://tajs.qq.com/stats?sId=9051096" charset="UTF-8"></script>
+</body>
+
+
+<!-- Mirrored from www.zi-han.net/theme/hplus/table_basic.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 20 Jan 2016 14:20:01 GMT -->
+</html>
