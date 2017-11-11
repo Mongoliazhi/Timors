@@ -15,18 +15,22 @@ axios.interceptors.request.use((config) => {
   return config;
 },(error) =>{
   // _.toast("错误的传参", 'fail');
-  return Promise.reject(error);
+  console.log("错误的传参")
+  // return Promise.reject(error);
 });
 //返回状态判断(添加响应拦截器)
 axios.interceptors.response.use((res) =>{
   //对响应数据做些事
-  if(!res.data.success){
+  console.log(res)
+  // if(!res.data.success){
+  if(!res.data){
     // _.toast(res.data.msg);
     return Promise.reject(res);
   }
   return res;
 }, (error) => {
   // _.toast("网络异常", 'fail');
+  console.log("错误的传参")
   return Promise.reject(error);
 });
 //返回一个Promise(发送post请求)
@@ -34,8 +38,10 @@ export function fetch(url, params) {
   return new Promise((resolve, reject) => {
     axios.post(url, params)
       .then(response => {
-        resolve(response.data);
+        console.log("77788")
+        resolve(response);
       }, err => {
+        console.log("77799")
         reject(err);
       })
       .catch((error) => {

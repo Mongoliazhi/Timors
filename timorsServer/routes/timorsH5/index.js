@@ -37,7 +37,7 @@ module.exports = function (app) {
             if (err) {
                 console.log(err);
             } else {
-                console.log(rows)
+                console.log("")
                 res.send(rows)
             }
         })

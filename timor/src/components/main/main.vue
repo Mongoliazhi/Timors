@@ -70,6 +70,7 @@
     </div>
 
     <div class="mui-content">
+
       <div id="Gallery" class="mui-slider">
         <div class="mui-slider-group">
           <div class="mui-slider-item">
@@ -139,10 +140,28 @@
         </div>
       </div>
 
+      <template v-for="item in goodsList">
+        <div class="mui-card">
+          <div class="mui-card-header mui-card-media goodsList_img" >
+            <img :src="item.goods_picArr | img_arr">
+          </div>
+          <div class="mui-card-content">
+            <div class="mui-card-content-inner">
+              <p>{{item.goods_addTime | time}}</p>
+              <p style="color: #333;">{{item.goods_name}}</p>
+            </div>
+          </div>
+          <div class="mui-card-footer">
+            <a class="mui-card-link">Like</a>
+            <a class="mui-card-link">Read more</a>
+          </div>
+        </div>
+      </template>
 
-      <div class="mui-card">
+
+<!--      <div class="mui-card">
         <div class="mui-card-header mui-card-media"
-             style="height:40vw;background-image:url(../../../static/images/shuijiao.jpg)"></div>
+             style="height:10rem;background-image:url(../../../static/images/shuijiao.jpg)"></div>
         <div class="mui-card-content">
           <div class="mui-card-content-inner">
             <p>Posted on January 18, 2016</p>
@@ -153,8 +172,8 @@
           <a class="mui-card-link">Like</a>
           <a class="mui-card-link">Read more</a>
         </div>
-      </div>
-
+      </div>-->
+<!--
       <div class="mui-card">
         <div class="mui-card-header mui-card-media"
              style="height:40vw;background-image:url(../../../static/images/shuijiao.jpg)"></div>
@@ -167,7 +186,7 @@
         <div class="">
           <div class="mui-slider">
             <div class="mui-slider-group mui-slider-loop">
-              <!-- 额外增加的一个节点(循环轮播：第一个节点是最后一个图文表格) -->
+              &lt;!&ndash; 额外增加的一个节点(循环轮播：第一个节点是最后一个图文表格) &ndash;&gt;
               <div class="mui-slider-item mui-slider-item-duplicate">
                 <ul class="mui-table-view mui-grid-view">
                   <li class="mui-table-view-cell mui-media mui-col-xs-3"><a href="#"><img class="mui-media-object"
@@ -211,7 +230,7 @@
             </div>
           </div>
         </div>
-      </div>
+      </div>-->
 
       <div class="mui-slider">
         <div class="mui-slider-group mui-slider-loop">
@@ -350,7 +369,7 @@
           pageSize: 6
         }).then(($res) => {
           console.log("PPPPP")
-          self.goodslist = $res.data
+          self.goodsList = $res.data
         }).catch((error) => {
           console.log(error)
         })
@@ -359,7 +378,15 @@
     watch: {
       goodsList: function () {
         this.$nextTick(function () {
-          $(".mui-card-media").height($(".mui-card-media").width())
+          $(".mui-card-media").height("6rem")
+          $(".goodsList_img").height($(".mui-card-media").width())
+          $(".goodsList_img").css({
+            'padding':'0'
+          })
+          $(".goodsList_img img").css({
+            'width':"100%",
+            'height':'100%'
+          })
         })
       },
       userDate: function (val) {
@@ -369,6 +396,15 @@
         } else {
           console.log("用户未登录")
         }
+      }
+    },
+    filters:{
+      time:function(data){
+          return data.substring(0,10)+"      "+data.substring(11,19);
+      },
+      img_arr:function(data){
+          var t = data.split(",");
+          return "http://localhost:3000"+t[0];
       }
     },
     mounted() {
@@ -394,6 +430,9 @@
         setInterval(function () {
           $(".index_son_bg").css("background-color", Mock.mock('@color'))
         }, 3000)
+
+
+
 
         mui.init({
           swipeBack: false //启用右滑关闭功能
@@ -449,7 +488,7 @@
   .index_header .index_con {
     width: 100%;
     overflow: auto;
-    padding: 0.2rem 0.5rem;
+    padding: 0.5rem 0.5rem;
   }
 
   .index_header .index_son_bg {
