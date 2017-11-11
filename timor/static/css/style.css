@@ -1,0 +1,32 @@
+@import url(../iconfont/iconfont.css);
+@import url(../css/animate.css);
+* { -webkit-tap-highlight-color: transparent; -webkit-appearance: none; box-sizing: border-box; margin: 0 auto; }
+
+body, ul, ol, li, p, h1, h2, h3, h4, h5, h6, form, fieldset, table, td, img, div { margin: 0; padding: 0; border: none; }
+
+html { font-size: 14px; }
+
+body { font-family: "Helvetica"; z-index: 1; max-width: 640px; margin: 0 auto; }
+
+ol, li, ul, dl, dt, dd { list-style: none; }
+
+a { text-decoration: none; color: inherit; outline: none; }
+
+a:hover { text-decoration: none; color: inherit; }
+
+b, em, i { display: inline-block; font-style: normal; font-weight: normal; }
+
+img { border: none; vertical-align: top; }
+
+button, submit, input, select { outline: none; }
+
+table { border-collapse: collapse; border-spacing: 0; }
+
+
+.icon {
+  width: 1em;
+  height: 1em;
+  vertical-align: -0.15em;
+  fill: currentColor;
+  overflow: hidden;
+}
