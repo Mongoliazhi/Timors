@@ -12,14 +12,18 @@
       <ul class="footer_ul nav_noactive">
         <li class="nav_active">
           <router-link to="/main">
-            <i class="iconfont gj-shouye"></i>
+            <svg class="icon" aria-hidden="true">
+              <use xlink:href="#icon-bangong"></use>
+            </svg>
             <p>首页</p>
           </router-link>
         </li>
 
         <li>
           <router-link to="/music">
-            <i class="iconfont icon-erji"></i>
+            <svg class="icon" aria-hidden="true">
+              <use xlink:href="#icon-yinlehe"></use>
+            </svg>
             <p>Music</p>
           </router-link>
         </li>
@@ -35,13 +39,17 @@
 
         <li>
           <router-link to="/cart">
-            <i class="iconfont gj-xinpintuijian"></i>
+            <svg class="icon" aria-hidden="true">
+              <use xlink:href="#icon-gouwu-2"></use>
+            </svg>
             <p>方向</p>
           </router-link>
         </li>
         <li>
           <router-link to="/my">
-            <i class="iconfont gj-wode1"></i>
+            <svg class="icon" aria-hidden="true">
+              <use xlink:href="#icon-zhu"></use>
+            </svg>
             <p>我的</p>
           </router-link>
         </li>
@@ -161,12 +169,15 @@
         flex: 1
         width: 20%
         text-align: center
-        padding: 0.4rem 0
+        padding: 0.2rem 0
         a
           position: relative
           overflow: auto
           i
             font-size: 1.6rem
+            margin-bottom: 0.2rem
+          svg
+            font-size: 2rem
             margin-bottom: 0.2rem
           b
             position: absolute

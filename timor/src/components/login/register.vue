@@ -1,6 +1,8 @@
 <template>
   <div class="register">
-    <i @click="returnI" class="returnI iconfont gj-back"></i>
+    <svg @click="returnI" class="returnI icon" aria-hidden="true">
+      <use xlink:href="#icon-chuizi"></use>
+    </svg>
     <div class="login_con">
       <div class="div_gorund1">
         <img class="login_img" src="../../../static/images/women.jpeg" alt="">

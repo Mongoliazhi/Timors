@@ -141,19 +141,22 @@
       </div>
 
       <template v-for="item in goodsList">
-        <div class="mui-card">
+        <div @click="goodsDetail(item.goods_id)" class="mui-card">
           <div class="mui-card-header mui-card-media goodsList_img" >
             <img :src="item.goods_picArr | img_arr">
           </div>
           <div class="mui-card-content">
             <div class="mui-card-content-inner">
-              <p>{{item.goods_addTime | time}}</p>
-              <p style="color: #333;">{{item.goods_name}}</p>
+              <p>
+                <span>{{item.goods_addTime | time}}</span>
+                <span class="mui-pull-right">
+                       <svg class="icon" aria-hidden="true">
+                          <use xlink:href="#icon-zhu"></use>
+                        </svg>
+                  100</span>
+              </p>
+              <p>{{item.goods_name}}</p>
             </div>
-          </div>
-          <div class="mui-card-footer">
-            <a class="mui-card-link">Like</a>
-            <a class="mui-card-link">Read more</a>
           </div>
         </div>
       </template>
@@ -345,6 +348,7 @@
           $(".index_conDiv input").attr({
             "placeholder": "请输入关键字"
           })
+          $(".index_con").css("padding","0.5rem")
         } else {
           $(".index_header").css("position", "relative")
           $(".index_conImg").show()
@@ -353,6 +357,7 @@
           $(".index_conDiv input").attr({
             "placeholder": ""
           })
+          $(".index_con").css("padding","0.2rem 0.5rem")
         }
       },
       ...mapMutations([
@@ -368,11 +373,13 @@
           pageIndex: 1,
           pageSize: 6
         }).then(($res) => {
-          console.log("PPPPP")
           self.goodsList = $res.data
         }).catch((error) => {
           console.log(error)
         })
+      },
+      goodsDetail(goodsId){
+        this.$router.push({name: 'GoodsDetail', params: {goodsId: goodsId}})
       }
     },
     watch: {
@@ -414,17 +421,6 @@
         window.addEventListener('scroll', self.menu);
 
         self.mainGetgoodslist();
-
-
-      /*  _.fetch("/timorsLogin", {
-          username: "zhang",
-          password: "zhang"
-        }).then((res) => {
-          console.log("7777")
-          console.log(res)
-        }).catch((error) => {
-          console.log(error)
-        })*/
 
 //      切换导航栏背景颜色
         setInterval(function () {
@@ -488,7 +484,7 @@
   .index_header .index_con {
     width: 100%;
     overflow: auto;
-    padding: 0.5rem 0.5rem;
+    padding: 0.2rem 0.5rem;
   }
 
   .index_header .index_son_bg {
@@ -573,7 +569,12 @@
   }
 
   .mui_dps {
-    font-size: 3.5rem;
+    font-size: 2.5rem;
+  }
+
+
+  .mui-grid-view.mui-grid-9 .mui-table-view-cell{
+    padding: 0 10px;
   }
 </style>
 

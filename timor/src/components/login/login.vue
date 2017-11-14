@@ -2,7 +2,10 @@
   <div class="login">
 
     <div class="login_bg">
-      <i @click="returnI" class="returnI iconfont gj-back"></i>
+      <!--<i @click="returnI" class="returnI iconfont gj-back"></i>-->
+      <svg @click="returnI" class="returnI icon" aria-hidden="true">
+        <use xlink:href="#icon-chuizi"></use>
+      </svg>
       <div class="login_con">
         <div class="div_gorund1">
           <img class="login_img" src="../../../static/images/women.jpeg" alt="">
@@ -129,20 +132,20 @@
 
 <style scoped>
 
-  input:-ms-input-placeholder {
-    color: #549EA1;
-    background-color: #fff;
-  }
+  /*input:-ms-input-placeholder {*/
+    /*color: #549EA1;*/
+    /*background-color: #fff;*/
+  /*}*/
 
-  input::-webkit-input-placeholder {
-    color: #549EA1;
-    background-color: #fff;
-  }
+  /*input::-webkit-input-placeholder {*/
+    /*color: #549EA1;*/
+    /*background-color: #fff;*/
+  /*}*/
 
-  input::-moz-placeholder {
-    color: #549EA1;
-    background-color: #fff;
-  }
+  /*input::-moz-placeholder {*/
+    /*color: #549EA1;*/
+    /*background-color: #fff;*/
+  /*}*/
 
   .login_bg {
     position: fixed;

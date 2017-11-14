@@ -9,9 +9,11 @@ import Login from '@/components/login/login'
   import Register from '@/components/login/register' //注册
 
 import Classfig from '@/components/classfig'
-import Music from '@/components/music/music.vue'
+import Music from '@/components/music/music'
   import TopList from  '@/components/music/topList' //排行榜
 
+import  Goods from  '@/components/goods/goods'
+  import  GoodsDetail from  '@/components/goods/goodsDetail' //商品详情
 import Cart from '@/components/cart'
 import My from '@/components/my'
 
@@ -67,6 +69,16 @@ const router = new Router({
       path: '/cart',
       name: 'Cart',
       component: Cart
+    },
+    {
+      path: '/goods',
+      name: 'Goods',
+      component: Goods,
+    },
+    {
+      path: '/goods/goodsDetail:goodsId',
+      name: 'GoodsDetail',
+      component: GoodsDetail
     },
     {
       path: '/my',

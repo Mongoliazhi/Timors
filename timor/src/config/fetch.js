@@ -25,6 +25,7 @@ axios.interceptors.response.use((res) =>{
   // if(!res.data.success){
   if(!res.data){
     // _.toast(res.data.msg);
+
     return Promise.reject(res);
   }
   return res;
@@ -38,7 +39,7 @@ export function fetch(url, params) {
   return new Promise((resolve, reject) => {
     axios.post(url, params)
       .then(response => {
-        console.log("77788")
+        console.log("fetch success!")
         resolve(response);
       }, err => {
         console.log("77799")

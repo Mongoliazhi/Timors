@@ -1,6 +1,6 @@
 var express = require('express');
 var db = require("../mysql");
-
+var returnData = require("../config")
 
 
 module.exports = function (app) {
@@ -37,8 +37,20 @@ module.exports = function (app) {
             if (err) {
                 console.log(err);
             } else {
-                console.log("")
                 res.send(rows)
+            }
+        })
+    })
+    //首页获取商品列表
+    app.post('/getGoodsDetail', function (req, res) {
+        console.log(req.body.goodsId)
+        db.query('select * from tb_goods where goods_id="'+req.body.goodsId+'"', function (err, rows) {
+            if (err) {
+                console.log(err);
+            } else {
+                var data = returnData(rows,400,'success','')
+                console.log()
+                res.send(data)
             }
         })
     })

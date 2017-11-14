@@ -84,7 +84,8 @@
     mounted(){
       var self = this;
       this.$nextTick(function () {
-
+        console.log("999")
+        console.log(this.$route)
 //        排行榜详情
         var topList_url = "https://c.y.qq.com/v8/fcg-bin/fcg_v8_toplist_cp.fcg?" +
           "g_tk=670137471&uin=1458268002&format=json&inCharset=utf-8&outCharset=" +
