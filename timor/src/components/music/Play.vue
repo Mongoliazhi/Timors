@@ -3,8 +3,10 @@
 
     <div class="music-album">
       <div class="play-page-hide-btn">
-        <img    @touchend.prevent.stop="hidePlayPage"
-                @click="hidePlayPage" src="../../../static/images/women.jpeg"  alt="">
+        <svg @touchend.prevent.stop="hidePlayPage"
+             @click="hidePlayPage" class="returnI icon" aria-hidden="true">
+          <use xlink:href="#icon-chuizi"></use>
+        </svg>
       </div>
       <!--<img src="../../../static/images/music_bg.png" style="width: 100%;height: 100%;">-->
       <img :src="coverImgUrl" style="width: 100%;height: 100%;">
@@ -71,11 +73,17 @@
     methods: {
 
       hidePlayPage: function () {
-//        console.log(this.$parent)
-//        console.log(this.$parent.$parent)
-        console.log(this.$parent.$parent.$parent)
-        console.log(this.$promise)
+        console.log(this.$parent)
+        console.log(this.$parent.$parent)
+//        console.log(this.$parent.$parent.$parent)
+//        console.log(this.$promise)
 //        this.$parent.playPageShow = false
+
+//        if(this.$parent.playPageShow){
+//          this.$parent.playPageShow = false
+//        }else{
+//          this.$parent.playPageShow = true
+//        }
       },
       ...mapMutations([
          'play','pause', 'playFront', 'playNext'
@@ -347,18 +355,22 @@
   }
 
   .music-play-page .music-album .play-page-hide-btn {
-    width: 25px;
-    height: 25px;
-    top: 27px;
-    left: 11px;
     position: absolute;
-    border-radius: 50%;
-    background: rgba(255, 255, 255, 0.8);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    z-index: 1;
+    left: 2rem;
+    top: 2rem;
+    font-size: 2rem;
+    /*width: 25px;*/
+    /*height: 25px;*/
+    /*top: 27px;*/
+    /*left: 11px;*/
+    /*position: absolute;*/
+    /*border-radius: 50%;*/
+    /*background: rgba(255, 255, 255, 0.8);*/
+    /*display: flex;*/
+    /*align-items: center;*/
+    /*justify-content: center;*/
+    /*cursor: pointer;*/
+    /*z-index: 1;*/
   }
 
   .music-play-page .music-album .play-page-hide-btn img {

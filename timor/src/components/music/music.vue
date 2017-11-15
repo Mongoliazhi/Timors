@@ -25,10 +25,10 @@
                 </a>
               </li>
               <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
-                <a href="#">
+                <router-link to="/music/musicLove">
                   <span class="iconfont gj-shoucang"><i class="mui-badge">5</i></span>
                   <div class="mui-media-body">我喜欢</div>
-                </a>
+                </router-link>
               </li>
               <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
                 <a href="#">

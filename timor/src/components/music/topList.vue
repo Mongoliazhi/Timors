@@ -41,6 +41,7 @@
 
 <script>
   import {mapState, mapGetters, mapActions} from 'vuex'
+  import bus from '../../bus/bus'
 
   export default {
     name: 'toList',
@@ -59,7 +60,12 @@
 
       play:function (index) {
         console.log(index)
-        let list = []
+        console.log(this)
+        console.log(this)
+        console.log(this.$parent)
+        console.log(this.$parent.$parent)
+        bus.$emit('fff',true)
+ /*       let list = []
         this.topListData.songlist.forEach(item => {
           list.push({
             id: item.data.songid,
@@ -75,6 +81,8 @@
           list: list
         })
         this.$store.commit('play')
+
+        this.$parent.playPageShow = true*/
 
 //        var songId = this.topListData.songlist[index].data.songid
 //        console.log("http://ws.stream.qqmusic.qq.com/" + songId + '.m4a?fromtag=46')

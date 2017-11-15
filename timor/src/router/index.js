@@ -11,6 +11,7 @@ import Login from '@/components/login/login'
 import Classfig from '@/components/classfig'
 import Music from '@/components/music/music'
   import TopList from  '@/components/music/topList' //排行榜
+  import MusicLove from  '@/components/music/musicLove' //排行榜
 
 import  Goods from  '@/components/goods/goods'
   import  GoodsDetail from  '@/components/goods/goodsDetail' //商品详情
@@ -57,6 +58,11 @@ const router = new Router({
           path: 'topList:id',
           name: 'TopList',
           component: TopList
+        },
+        {
+          path: 'musicLove',
+          name: 'MusicLove',
+          component: MusicLove
         },
       ]
     },

@@ -22,9 +22,9 @@
         <li>
           <router-link to="/music">
             <svg class="icon" aria-hidden="true">
-              <use xlink:href="#icon-yinlehe"></use>
+              <use xlink:href="#icon-DJ"></use>
             </svg>
-            <p>Music</p>
+            <p>音乐</p>
           </router-link>
         </li>
 
@@ -32,7 +32,7 @@
           <a @touchstart="showPlayPage" @click="showPlayPage">
             <!--<img class="" style="border: 2px solid #E38FA6;" src="../../../static/images/erji.png" alt="">-->
             <svg style="font-size:4rem" class="footer_logoimg icon" aria-hidden="true">
-              <use xlink:href="#icon-DJ"></use>
+              <use xlink:href="#icon-erji1"></use>
             </svg>
           </a>
         </li>
@@ -60,6 +60,7 @@
 
 <script>
   import Play from '../music/Play'
+  import bus from '../../bus/bus'
   export default {
     name: 'footer',
     data () {
@@ -114,6 +115,11 @@
     mounted(){
       var self = this;
       this.$nextTick(function () {
+
+        bus.$on('fff',(data) => {
+          this.playPageShow = data
+        })
+
 
         switch (this.$route.name) {
           case 'Main1':
@@ -194,7 +200,7 @@
           position: absolute
           left: 50%
           margin-left: -2.5rem
-          margin-top: -2.6rem
+          margin-top: -1.5rem
           width: 5rem
           height: 5rem
           /*border-radius: 50%*/
