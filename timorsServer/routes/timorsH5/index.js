@@ -41,7 +41,7 @@ module.exports = function (app) {
             }
         })
     })
-    //首页获取商品列表
+    //首页获取商品详情
     app.post('/getGoodsDetail', function (req, res) {
         console.log(req.body.goodsId)
         db.query('select * from tb_goods where goods_id="'+req.body.goodsId+'"', function (err, rows) {
@@ -49,10 +49,70 @@ module.exports = function (app) {
                 console.log(err);
             } else {
                 var data = returnData(rows,400,'success','')
-                console.log()
                 res.send(data)
             }
         })
+    })
+
+
+    //music
+
+    //music 收藏
+    app.post('/musicCollection', function (req, res) {
+        console.log(req.body)
+
+        if(req.body.isCollection == 1){ //添加收藏
+            db.query('select * from tb_userMusic where user_id="'+req.body.user_id+'" and id ="'+ req.body.id +'"', function (err, rows) {
+                if (err) {
+                    console.log(err);
+                } else {
+                    console.log(rows)
+
+                    // var data = [];
+                    // for(var i=0;i<rows.length;i++){
+                    //     console.log(data[i])
+                    //     data.push(rows[i])
+                    // }
+                    // console.log(data)
+                    console.log("123213")
+                    if(rows.length > 0){
+                        console.log("3124124")
+                        if(req.body.user_id == rows[0].user_id && req.body.id == rows[0].id){
+                            console.log("1133")
+                            var data = returnData({},400,'fail','请勿反复提交')
+                            res.send(data)
+                        }else{
+                            console.log("1144")
+                            db.query("insert into tb_userMusic (user_id,albummid,id,mid,name,singer_id,singer_mid,singer_name,isCollection)" +
+                                "values ('" + req.body.user_id + "','" + req.body.albummid + "','" + req.body.id + "','" + req.body.mid + "','" + req.body.name + "','" + req.body.singer_id + "','" +req.body.singer_mid + "','" + req.body.singer_name +"','" + req.body.isCollection + "')", function (err, rows) {
+                                if (err) {
+                                    console.log(err);
+                                } else {
+                                    var data = returnData({},400,'success','')
+                                    res.send(data)
+                                }
+                            })
+                        }
+                    }else{
+                        console.log("1155")
+                        db.query("insert into tb_userMusic (user_id,albummid,id,mid,name,singer_id,singer_mid,singer_name,isCollection)" +
+                            "values ('" + req.body.user_id + "','" + req.body.albummid + "','" + req.body.id + "','" + req.body.mid + "','" + req.body.name + "','" + req.body.singer_id + "','" +req.body.singer_mid + "','" + req.body.singer_name +"','" + req.body.isCollection + "')", function (err, rows) {
+                            if (err) {
+                                console.log(err);
+                            } else {
+                                var data = returnData({},400,'success','')
+                                res.send(data)
+                            }
+                        })
+                    }
+
+                }
+            })
+
+        }else{ //删除收藏
+
+        }
+
     })
 
     //商品上传

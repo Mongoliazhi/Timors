@@ -102,12 +102,15 @@ export default {
     }
   },
   actions:{
-    add (context) {
-      context.commit('add')
+    playIndexState1 (context) {
+      console.log(context)
+      if(context.state.PlayIndex.albummid){
+        return true;
+      }else{
+        alert("暂无播放音乐");
+      }
     },
-    abb (context) {
-      context.commit('abb')
-    }
+
   }
 }
 

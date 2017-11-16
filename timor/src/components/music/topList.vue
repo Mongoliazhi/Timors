@@ -60,12 +60,10 @@
 
       play:function (index) {
         console.log(index)
-        console.log(this)
-        console.log(this)
-        console.log(this.$parent)
-        console.log(this.$parent.$parent)
-        bus.$emit('fff',true)
- /*       let list = []
+
+        bus.$emit('playPageShow',true) //打开 播放弹出窗
+
+        let list = []
         this.topListData.songlist.forEach(item => {
           list.push({
             id: item.data.songid,
@@ -82,10 +80,6 @@
         })
         this.$store.commit('play')
 
-        this.$parent.playPageShow = true*/
-
-//        var songId = this.topListData.songlist[index].data.songid
-//        console.log("http://ws.stream.qqmusic.qq.com/" + songId + '.m4a?fromtag=46')
       }
     },
 

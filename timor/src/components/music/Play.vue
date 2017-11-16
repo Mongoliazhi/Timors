@@ -30,7 +30,7 @@
 
       <div class="music-ctrl">
         <ul>
-          <li><img src="../../../static/images/love_1.png"></li>
+          <li><img @click="musicLove" src="../../../static/images/love_1.png"></li>
           <li @touchend.prevent="playFront" @click="playFront">
             <img src="../../../static/images/icon-shangyiqu.png"></li>
 
@@ -57,8 +57,9 @@
 </template>
 
 <script type="text/ecmascript-6">
+  import * as _ from '../../config/fetch'
 
-  import {mapMutations, mapState, mapGetters} from 'vuex'
+  import {mapMutations, mapState, mapGetters , mapActions} from 'vuex'
   import axios from  'axios'
 
   export default {
@@ -67,36 +68,84 @@
     data () {
       return {
         clientY: 0,
-
       }
     },
     methods: {
 
       hidePlayPage: function () {
         console.log(this.$parent)
-        console.log(this.$parent.$parent)
-//        console.log(this.$parent.$parent.$parent)
-//        console.log(this.$promise)
-//        this.$parent.playPageShow = false
+        if(this.$parent.playPageShow){
+          this.$parent.playPageShow = false
+        }else{
+          this.$parent.playPageShow = true
+        }
+      },
+      musicLove:function () {
+        var self = this;
+        self.userState1().then(function (result) {
+          var userState = result
+          if (userState) {
+            self.playIndexState1().then(function (result) {
+              var PlayIndexState = result;
+              if (userState && PlayIndexState) {
+                console.log("收藏")
 
-//        if(this.$parent.playPageShow){
-//          this.$parent.playPageShow = false
-//        }else{
-//          this.$parent.playPageShow = true
-//        }
+                console.log(self.user)
+                console.log(self.song)
+
+                //判断是否收藏
+                if(false){
+                  var isCollection = -1; //取消收藏
+                }else{
+                  var isCollection =  1; //添加收藏
+                }
+
+                _.fetch("/musicCollection", {
+                  user_id: self.user.user_id,
+                  albummid: self.song.albummid,
+                  id: self.song.id,
+                  mid: self.song.mid,
+                  name: self.song.name,
+                  singer_id: self.song.singer[0].id,
+                  singer_mid: self.song.singer[0].mid,
+                  singer_name: self.song.singer[0].name,
+                  isCollection: isCollection,
+                }).then(($res) => {
+                  if($res.data.result == "success"){
+                    alert("添加成功")
+                  }else{
+                    alert($res.data.errorMsg)
+                  }
+                }).catch((error) => {
+                  console.log(error)
+                })
+
+
+              }
+            });
+          }
+        });
+
       },
       ...mapMutations([
-         'play','pause', 'playFront', 'playNext'
-      ])
+        'play','pause', 'playFront', 'playNext','isPlayIndex',
+      ]),
+      ...mapActions([
+        'userState1','playIndexState1'
+      ]),
 
     },
     computed: {
+
       ...mapGetters([
-        'currentTime', 'duration','coverImgUrl'
+        'currentTime', 'duration','coverImgUrl',
       ]),
       ...mapState({
         playing: state => state.musicPayServer.playing,
-        song: state => state.musicPayServer.PlayIndex
+        song: state => state.musicPayServer.PlayIndex,
+        user: state => state.User.user,
+
+
       })
 
     },

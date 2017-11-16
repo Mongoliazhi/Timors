@@ -32,16 +32,27 @@ export default {
 
       //判断是否登陆
       isLogin:function (state) {
-        console.log(state)
+        console.log(state.user)
         if(state.user.user_name){
-          console.log("已登录")
+          return 111;
         }else{
-          router.push({path:'/login'})
+          router.push({path:'/login'});
         }
       }
 
 
 
+  },
+  actions: {
+    //判断是否登陆
+    userState1(content) {
+      console.log(content)
+      if(content.state.user.user_name){
+        return true;
+      }else{
+        router.push({path:'/login'})
+      }
+    }
   },
   getters: {
 

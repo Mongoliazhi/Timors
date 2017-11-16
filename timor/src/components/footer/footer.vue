@@ -85,6 +85,8 @@
         })
         li[a].setAttribute("class", "nav_active");
         li[a].querySelectorAll("p")[0].style.color = "red"
+
+        bus.$emit('playPageShow',false) //打开 播放弹出窗
       },
       showPlayPage(event) {
         event.preventDefault()
@@ -116,7 +118,7 @@
       var self = this;
       this.$nextTick(function () {
 
-        bus.$on('fff',(data) => {
+        bus.$on('playPageShow',(data) => {
           this.playPageShow = data
         })
 

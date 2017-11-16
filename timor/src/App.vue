@@ -17,6 +17,7 @@
 <script>
   //  import Play from './components/music/Play.vue'
   import {mapState, mapGetters, mapMutations} from 'vuex'
+
   export default {
     components: {
 //        Play
@@ -34,7 +35,7 @@
       ...mapMutations([
         'play', 'pause', 'playContinue'
       ]),
-      getUser(){
+      getUser() {
         this.$store.commit('getUser')
       }
     },
@@ -42,7 +43,7 @@
       ...mapGetters([]),
 
       ...mapState({
-        dataUrl (state) {
+        dataUrl(state) {
           return 'http://ws.stream.qqmusic.qq.com/' + state.musicPayServer.PlayIndex.id + '.m4a?fromtag=46'
         },
         playing: state => state.musicPayServer.playing,
@@ -60,7 +61,7 @@
 
       },
     },
-    mounted(){
+    mounted() {
       var self = this;
       this.$nextTick(function () {
         self.getUser();
@@ -82,9 +83,11 @@
   .yourName-enter-active {
     transition: all 0s ease;
   }
+
   .yourName-leave-active {
     transition: all 0.5s ease-out;
   }
+
   .yourName-enter, .yourName-slide-leave-active {
     transform: translateX(100vh);
   }
