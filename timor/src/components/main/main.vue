@@ -76,14 +76,14 @@
           <div class="mui-slider-item">
             <ul class="mui-table-view mui-grid-view mui-grid-9">
               <li class="mui-table-view-cell mui-media  mui-col-xs-4">
-                <a href="#">
+                <router-link to="/address">
                   <span class="mui_dps">
                         <svg class="icon" aria-hidden="true">
                           <use xlink:href="#icon-bangong"></use>
                         </svg>
                   </span>
                   <div class="mui-media-body">3C数码</div>
-                </a>
+                </router-link>
               </li>
               <li class="mui-table-view-cell mui-media  mui-col-xs-4">
                 <a href="#">
@@ -312,9 +312,7 @@
 
 <script>
   import * as _ from '../../config/fetch'
-
   import Mock from 'mockjs'
-
   import footer from '../footer/footer.vue'
   import {mapState, mapGetters, mapActions, mapMutations} from 'vuex'
 

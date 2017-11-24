@@ -63,7 +63,7 @@
 
         bus.$emit('playPageShow',true) //打开 播放弹出窗
 
-        let list = []
+        let list = [];
         this.topListData.songlist.forEach(item => {
           list.push({
             id: item.data.songid,

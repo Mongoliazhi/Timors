@@ -25,10 +25,11 @@
                 </a>
               </li>
               <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
-                <router-link to="/music/musicLove">
+                <!--<router-link to="/music/musicLove"></router-link>-->
+                <a @click="musicLove">
                   <span class="iconfont gj-shoucang"><i class="mui-badge">5</i></span>
                   <div class="mui-media-body">我喜欢</div>
-                </router-link>
+                </a>
               </li>
               <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
                 <a href="#">
@@ -78,8 +79,6 @@
 
 <script>
 
-  import axios from 'axios'
-  //  import Vue from 'vue'
   import footer from '../footer/footer.vue'
   import topList from  './topList.vue'
 
@@ -102,9 +101,21 @@
 
     watch: {},
     methods: {
+      musicLove(){
+        var self = this;
+        self.userState1().then(function (result) {
+          var userState = result
+          if (userState) {
+            self.$router.push({name: 'MusicLove'})
+          }
+        })
+      },
       showRank: function (id) {
         this.$router.push({name: 'TopList', params: {id: id}})
-      }
+      },
+      ...mapActions([
+        'userState1','playIndexState1'
+      ]),
     },
     mounted(){
       var self = this;

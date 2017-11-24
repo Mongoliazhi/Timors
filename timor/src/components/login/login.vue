@@ -64,7 +64,7 @@
     },
     methods: {
       returnI() {
-        this.$router.go(-1)
+        this.$router.go(-1);
       },
       returnMain() {
         this.$router.push({path:'/'})

@@ -144,8 +144,6 @@
         playing: state => state.musicPayServer.playing,
         song: state => state.musicPayServer.PlayIndex,
         user: state => state.User.user,
-
-
       })
 
     },
