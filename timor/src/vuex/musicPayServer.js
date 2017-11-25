@@ -4,6 +4,7 @@
 
 import Vue from 'vue';
 import Vuex from 'vuex';
+import index from "./index";
 
 Vue.use(Vuex);
 
@@ -15,6 +16,9 @@ export default {
     PlayIndex:{       //当前音乐信息
 
     },
+    musicLoveList:[], //我喜欢音乐集合
+
+
     currentTime: 0,   //音乐播放开始时间
     duration: 0,      //音乐结束时间
     playMode: 0,      //音乐播放顺序
@@ -47,6 +51,21 @@ export default {
       state.playList = playList.list
       state.index = playList.index
       state.PlayIndex = state.playList[state.index]
+    },
+    // 获取我喜欢音乐集合
+    setMusicLoveList (state, playList) {
+      state.musicLoveList = playList.list
+      state.playList = playList.list
+      state.index = playList.index
+      state.PlayIndex = state.playList[playList.index]
+
+
+      console.log("99999")
+      console.log("99999")
+      console.log("99999")
+      console.log("99999")
+      console.log("99999")
+      console.log(state.musicLoveList)
     },
 
     // 获取并设置当前音乐的时间

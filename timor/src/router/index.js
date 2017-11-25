@@ -13,6 +13,7 @@ import Music from '@/components/music/music'
   import TopList from  '@/components/music/topList' //排行榜
   import MusicLove from  '@/components/music/musicLove' //排行榜
 
+import  Address from  '@/components/goods/address'
 import  Goods from  '@/components/goods/goods'
   import  GoodsDetail from  '@/components/goods/goodsDetail' //商品详情
 import Cart from '@/components/cart'
@@ -80,6 +81,11 @@ const router = new Router({
       path: '/goods',
       name: 'Goods',
       component: Goods,
+    },
+    {
+      path: '/address',
+      name: 'Address',
+      component: Address,
     },
     {
       path: '/goods/goodsDetail:goodsId',
