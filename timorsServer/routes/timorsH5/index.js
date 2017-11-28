@@ -11,7 +11,7 @@ module.exports = function (app) {
         let username = req.body.username;
         let password = req.body.password;
         console.log(username+"...."+password)
-        db.query('select * from tb_account where user_name="'+username+'"', function (err, rows) {
+        db.fetch('select * from tb_account where user_name="'+username+'"', function (err, rows) {
             if (err) {
                 console.log(err);
             } else {
@@ -33,7 +33,7 @@ module.exports = function (app) {
     //首页获取商品列表
     app.post('/mainGetgoodslist', function (req, res) {
         console.log(req.body)
-        db.query('select * from tb_goods', function (err, rows) {
+        db.fetch('select * from tb_goods', function (err, rows) {
             if (err) {
                 console.log(err);
             } else {
@@ -44,7 +44,7 @@ module.exports = function (app) {
     //首页获取商品详情
     app.post('/getGoodsDetail', function (req, res) {
         console.log(req.body.goodsId)
-        db.query('select * from tb_goods where goods_id="'+req.body.goodsId+'"', function (err, rows) {
+        db.fetch('select * from tb_goods where goods_id="'+req.body.goodsId+'"', function (err, rows) {
             if (err) {
                 console.log(err);
             } else {
@@ -62,7 +62,7 @@ module.exports = function (app) {
         console.log(req.body)
 
         if(req.body.isCollection == 1){ //添加收藏
-            db.query('select * from tb_userMusic where user_id="'+req.body.user_id+'" and id ="'+ req.body.id +'"', function (err, rows) {
+            db.fetch('select * from tb_userMusic where user_id="'+req.body.user_id+'" and id ="'+ req.body.id +'"', function (err, rows) {
                 if (err) {
                     console.log(err);
                 } else {
@@ -83,7 +83,7 @@ module.exports = function (app) {
                             res.send(data)
                         }else{
                             console.log("1144")
-                            db.query("insert into tb_userMusic (user_id,albummid,id,mid,name,singer_id,singer_mid,singer_name,isCollection)" +
+                            db.fetch("insert into tb_userMusic (user_id,albummid,id,mid,name,singer_id,singer_mid,singer_name,isCollection)" +
                                 "values ('" + req.body.user_id + "','" + req.body.albummid + "','" + req.body.id + "','" + req.body.mid + "','" + req.body.name + "','" + req.body.singer_id + "','" +req.body.singer_mid + "','" + req.body.singer_name +"','" + req.body.isCollection + "')", function (err, rows) {
                                 if (err) {
                                     console.log(err);
@@ -95,7 +95,7 @@ module.exports = function (app) {
                         }
                     }else{
                         console.log("1155")
-                        db.query("insert into tb_userMusic (user_id,albummid,id,mid,name,singer_id,singer_mid,singer_name,isCollection)" +
+                        db.fetch("insert into tb_userMusic (user_id,albummid,id,mid,name,singer_id,singer_mid,singer_name,isCollection)" +
                             "values ('" + req.body.user_id + "','" + req.body.albummid + "','" + req.body.id + "','" + req.body.mid + "','" + req.body.name + "','" + req.body.singer_id + "','" +req.body.singer_mid + "','" + req.body.singer_name +"','" + req.body.isCollection + "')", function (err, rows) {
                             if (err) {
                                 console.log(err);
@@ -117,7 +117,7 @@ module.exports = function (app) {
 
     //商品上传
 /*    app.get('/goods/goods_upload', function (req, res) {
-        db.query('select * from tb_category', function (err, rows) {
+        db.fetch('select * from tb_category', function (err, rows) {
             if (err) {
                 console.log(err);
 

@@ -17,9 +17,10 @@ exports.upload = function (req,res) {
     let string=(Random.string("lower",5 ));
     var goods_id = cat_id+string+natural;
 
+    console.log("9999999999999999999999999999999999999")
     console.log(goods_id,cat_id,goods_name,goods_Yprice,goods_Sprice,goods_num,goods_picArr,goods_content)
 
-    db.query("insert into tb_goods(goods_id,cat_id,goods_name,goods_Yprice,goods_Sprice,goods_num,goods_picArr,goods_content) values('" + goods_id + "','" + cat_id + "','" + goods_name + "','" + goods_Yprice + "','" + goods_Sprice + "','" + goods_num + "','" + goods_picArr + "','" + goods_content + "')",function (err,rows) {
+    db.fetch("insert into tb_goods(goods_id,cat_id,goods_name,goods_Yprice,goods_Sprice,goods_num,goods_picArr,goods_content) values('" + goods_id + "','" + cat_id + "','" + goods_name + "','" + goods_Yprice + "','" + goods_Sprice + "','" + goods_num + "','" + goods_picArr + "','" + goods_content + "')",function (err,rows) {
         if(err){
             console.log(err)
         }else{

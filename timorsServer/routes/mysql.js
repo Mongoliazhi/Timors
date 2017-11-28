@@ -2,13 +2,13 @@ var mysql = require('mysql');
 
 var pool = mysql.createPool({
     host     : '139.224.233.15',
-    user     : 'dashuaibi',
-    password : 'qwer123',
+    user     : 'root',
+    password : 'shuling520.',
     port: '3306',
     database: 'timors',
 });
 
-function query(sql, callback) {
+function fetch(sql, callback) {
     pool.getConnection(function (err, connection) {
         // Use the connection
         connection.query(sql, function (err, rows) {
@@ -18,4 +18,4 @@ function query(sql, callback) {
     });
 }
 
-exports.query = query;
+module.exports.fetch = fetch;

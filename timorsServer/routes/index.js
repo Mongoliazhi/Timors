@@ -2,8 +2,6 @@ var express = require('express');
 var db = require("./mysql");
 
 
-
-
 //图片上传
 var img_upload = require("../controller/public/img_upload")
 
@@ -30,7 +28,7 @@ module.exports = function (app) {
 
     //商品列表
     app.get('/goods/goods_list', function (req, res) {
-        db.query('select tb_goods.goods_id,tb_goods.goods_name,tb_goods.goods_Yprice,tb_goods.goods_Sprice,tb_goods.goods_num,tb_goods.goods_picArr,tb_goods.goods_addTime,tb_category.category from tb_goods LEFT JOIN tb_category on tb_goods.cat_id = tb_category.cat_id', function (err, rows) {
+        db.fetch('select tb_goods.goods_id,tb_goods.goods_name,tb_goods.goods_Yprice,tb_goods.goods_Sprice,tb_goods.goods_num,tb_goods.goods_picArr,tb_goods.goods_addTime,tb_category.category from tb_goods LEFT JOIN tb_category on tb_goods.cat_id = tb_category.cat_id', function (err, rows) {
             if (err) {
                 console.log(err);
 
@@ -56,7 +54,7 @@ module.exports = function (app) {
 
     //商品上传
     app.get('/goods/goods_upload', function (req, res) {
-        db.query('select * from tb_category', function (err, rows) {
+        db.fetch('select * from tb_category', function (err, rows) {
             if (err) {
                 console.log(err);
 
