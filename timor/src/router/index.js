@@ -16,7 +16,7 @@ import Music from '@/components/music/music'
 import  Address from  '@/components/goods/address'
 import  Goods from  '@/components/goods/goods'
   import  GoodsDetail from  '@/components/goods/goodsDetail' //商品详情
-import Cart from '@/components/cart'
+import Cart from '@/components/goods/cart'
 import My from '@/components/my'
 
 Vue.use(Router)

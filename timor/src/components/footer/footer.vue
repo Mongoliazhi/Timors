@@ -42,7 +42,7 @@
             <svg class="icon" aria-hidden="true">
               <use xlink:href="#icon-gouwu-2"></use>
             </svg>
-            <p>方向</p>
+            <p>购物车</p>
           </router-link>
         </li>
         <li>

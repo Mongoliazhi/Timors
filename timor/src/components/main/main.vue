@@ -7,7 +7,8 @@
       <div class="index_con">
         <div class="index_son_bg"></div>
         <div class="index_son">
-          <div class="index_conImg" @click="userLogin">
+          <!--@click="userLogin"-->
+          <div class="index_conImg" >
             <img src="../../../static/images/women.jpeg" alt="">
           </div>
           <p class="index_conP">
@@ -364,6 +365,7 @@
         'isLogin',
       ]),
       userLogin: function () {
+        alert("111")
         this.isLogin()
       },
       //首页获取商品列表
