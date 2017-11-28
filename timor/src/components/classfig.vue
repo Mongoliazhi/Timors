@@ -49,7 +49,7 @@
 
   import axios from 'axios'
   import footer from './footer/footer.vue'
-  import filer from './filter/index'
+
 
   import {mapState, mapGetters, mapActions} from 'vuex'
   export default {

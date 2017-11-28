@@ -1,12 +1,14 @@
 
 import axios from 'axios'
+import * as  _public from './public'
 // import qs from 'qs'
 // import * as _ from '../util/tool'
 
+
 axios.defaults.timeout = 10000;                        //响应时间
 axios.defaults.headers.post['Content-Type'] = 'application/x-www-form-urlencoded;charset=UTF-8';           //配置请求头
-axios.defaults.baseURL = 'http://localhost:3000';   //本地配置接口地址
-// axios.defaults.baseURL = 'http://139.224.233.15:3000';   //线上配置接口地址
+axios.defaults.baseURL = _public.getHttp;   //本地配置接口地址
+
 //POST传参序列化(添加请求拦截器)
 axios.interceptors.request.use((config) => {
   //在发送请求之前做某件事

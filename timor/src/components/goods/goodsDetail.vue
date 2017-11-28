@@ -1,17 +1,20 @@
 <template>
   <div class="goodsDetail">
+    <div class="fly_start"></div>
+
     <div id="slider" class="mui-slider">
       <div class="mui-slider-group mui-slider-loop">
         <!-- 额外增加的一个节点(循环轮播：第一个节点是最后一张轮播) -->
         <!--<div class="mui-slider-item mui-slider-item-duplicate">-->
           <!--<a href="#">-->
-            <!--<img :src="goodsDetail.imageUrlArr | img_arr">-->
+            <!--<img :src="goodsDetail.imageUrlArr | getImgOne">-->
           <!--</a>-->
         <!--</div>-->
+
         <template v-for="(item,index) in goodsDetail.imageUrlArr">
           <template v-if="index == 3">
             <div class="mui-slider-item mui-slider-item-duplicate">
-                <img :src="item | img_arr">
+                <img :src="item | getImgOne">
                 <span>{{index}}</span>
             </div>
           </template>
@@ -19,7 +22,7 @@
 
         <template v-for="(item,index) in goodsDetail.imageUrlArr">
           <div class="mui-slider-item">
-              <img :src="item | img_arr">
+              <img :src="item | getImgOne">
               <span>{{index}}</span>
           </div>
         </template>
@@ -27,7 +30,7 @@
         <template v-for="(item,index) in goodsDetail.imageUrlArr">
             <template v-if="index == 0">
             <div class="mui-slider-item mui-slider-item-duplicate">
-                <img :src="item | img_arr">
+                <img :src="item | getImgOne">
                 <span>{{index}}</span>
             </div>
           </template>
@@ -36,7 +39,7 @@
         <!-- 额外增加的一个节点(循环轮播：最后一个节点是第一张轮播) -->
         <!--<div class="mui-slider-item mui-slider-item-duplicate">-->
           <!--<a href="#">-->
-            <!--<img :src="goodsDetail.imageUrlArr[0] | img_arr">-->
+            <!--<img :src="goodsDetail.imageUrlArr[0] | getImgOne">-->
           <!--</a>-->
         <!--</div>-->
       </div>
@@ -55,8 +58,6 @@
         </template>
       </div>
     </div>
-
-
 
     <div class="mui-content">
       <div style="padding: 10px 10px;">
@@ -103,7 +104,7 @@
             <li class="mui-table-view-cell">
               第三个选项卡子项-2
             </li>
-            <li class="mui-table-view-cell">
+            <li @click="joinCar" class="mui-table-view-cell">
               第三个选项卡子项-3
             </li>
           </ul>
@@ -117,9 +118,12 @@
 
 <script>
 
-  import {mapState, mapGetters, mapActions} from 'vuex'
+
   import goodsFooter from '../footer/goodsFooter.vue'
   import * as _ from '../../config/fetch'
+  import filter from '../../config/filter'
+
+  import {mapState, mapGetters, mapActions} from 'vuex'
 
   export default {
     name: 'goodsDetail',
@@ -145,14 +149,6 @@
             interval: 3000
           });
         })
-      }
-    },
-    filters:{
-      time:function(data){
-        return data.substring(0,10)+"      "+data.substring(11,19);
-      },
-      img_arr:function(data){
-        return "http://localhost:3000"+data;
       }
     },
     methods: {
@@ -210,6 +206,39 @@
           console.log(error)
         })
       },
+
+      joinCar(){
+        var self = this;
+
+        var fly_start = $('.fly_start').offset()
+
+        var fly_end = $('.fly_end').offset();
+        var winW = $(window).width()
+        var winH = $(window).height()
+        console.log(fly_start)
+
+        var flyer = $('<img ' +
+          'class="flyer_img" style="width:5rem;height: 5rem;border-radius:50%;position:relative;z-index: 20000" ' +
+          'src="http://localhost:3000/timors/upload_29708189915384ce9516f08eb874d24d.jpg"/>')
+
+        flyer.fly({
+          start: {
+            left: winW,//抛物体起点横坐标
+            top: winH/3 //抛物体起点纵坐标
+          },
+          end: {
+//            left: $(".fly_end").width() * 2,//抛物体终点横坐标
+            left: 0,//抛物体终点横坐标
+            top: winH, //抛物体终点纵坐标
+            width: 15,
+            height: 15,
+          },
+          onEnd: function () {
+            this.destroy(); //销毁抛物体
+          }
+        });
+      }
+
     },
     mounted() {
       var self = this;
@@ -234,6 +263,19 @@
 </script>
 
 <style scoped>
+  .fly_start{
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 3rem;
+    height: 3rem;
+    z-index: 1000;
+  }
+  .fly_start img{
+    width: 3rem;
+    height: 3rem;
+  }
+
   .goodsDetail{
 
     margin-bottom: 4rem;

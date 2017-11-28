@@ -143,7 +143,7 @@
       <template v-for="item in goodsList">
         <div @click="goodsDetail(item.goods_id)" class="mui-card">
           <div class="mui-card-header mui-card-media goodsList_img" >
-            <img :src="item.goods_picArr | img_arr">
+            <img :src="item.goods_picArr | getImgOne">
           </div>
           <div class="mui-card-content">
             <div class="mui-card-content-inner">
@@ -311,7 +311,9 @@
 </template>
 
 <script>
-  import * as _ from '../../config/fetch'
+  import * as _fetch from '../../config/fetch'
+  import filter from '../../config/filter'
+
   import Mock from 'mockjs'
   import footer from '../footer/footer.vue'
   import {mapState, mapGetters, mapActions, mapMutations} from 'vuex'
@@ -367,7 +369,7 @@
       //首页获取商品列表
       mainGetgoodslist(){
         var self = this;
-        _.fetch("/mainGetgoodslist", {
+        _fetch.fetch("/mainGetgoodslist", {
           pageIndex: 1,
           pageSize: 6
         }).then(($res) => {
@@ -401,15 +403,6 @@
         } else {
           console.log("用户未登录")
         }
-      }
-    },
-    filters:{
-      time:function(data){
-          return data.substring(0,10)+"      "+data.substring(11,19);
-      },
-      img_arr:function(data){
-          var t = data.split(",");
-          return "http://localhost:3000"+t[0];
       }
     },
     mounted() {
