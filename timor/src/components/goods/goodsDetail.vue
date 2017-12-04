@@ -72,22 +72,32 @@
         <div id="item1" class="mui-control-content mui-active">
           <div id="scroll" class="mui-scroll-wrapper" style="overflow: initial;">
             <div class="mui-scroll">
-
               <div class="mui-content">
                 <div class="mui-card-content">
                   <div class="mui-card-content-inner">
                     <p>	{{goodsDetail.goods_name}}</p>
-                    <div>
+                    <div style="overflow: auto">
                       <p class="mui-pull-left">
                         <span class="goods_price">¥{{goodsDetail.goods_Sprice}}</span>
                         <del>¥{{goodsDetail.goods_Yprice}}</del>
                       </p>
                       <span class="mui-pull-right">销量:{{goodsDetail.goods_num}}</span>
                     </div>
-                  </div>
-                </div>
-              </div>
 
+                    <h5 class="mui-content-padded">产品规格:</h5>
+                    <div class="mui-numbox">
+                      <button class="mui-btn mui-btn-numbox-minus" type="button">-</button>
+                      <input id="box" class="mui-input-numbox" type="number" />
+                      <button class="mui-btn mui-btn-numbox-plus" type="button">+</button>
+                    </div>
+                  </div>
+
+
+                </div>
+
+
+
+              </div>
             </div>
           </div>
         </div>

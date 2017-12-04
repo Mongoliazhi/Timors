@@ -220,7 +220,7 @@
   .play-slide-enter, .play-slide-leave-active
     transform: translateY(100vh)
 
-  .bar-slide-enter-active
-    transition: all .3s ease
+  /*.bar-slide-enter-active*/
+    /*transition: all .3s ease*/
 
 </style>

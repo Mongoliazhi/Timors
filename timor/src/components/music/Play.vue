@@ -180,7 +180,7 @@
 
   .music-play-page {
     width: 100%;
-    max-width: 68vh;
+    /*max-width: 68vh;*/
     height: 100%;
     position: fixed;
     top: 0;
@@ -190,7 +190,7 @@
   .music-play-page .music-album {
     width: 100%;
     height: 100vw;
-    max-height: 68vh;
+    /*max-height: 68vh;*/
   }
 
   .music-play-page .music-album img {

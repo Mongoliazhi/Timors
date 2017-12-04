@@ -1,28 +1,42 @@
 <template>
   <div id="app">
-    <!--<img src="./assets/logo.png">-->
+
     <audio id="music"
            :src="dataUrl"
            @timeupdate="updateTime"
            @ended="playContinue"
            autoplay></audio>
 
-    <transition name="yourName">
-
+    <transition name="play-slide"
+                @after-leave="routerViewAnimation='page-slide'">
+        <div v-show="userShow" class="userShow">
+          <h1>你的名字</h1>
+          <p>一定很爱你</p>
+        </div>
     </transition>
-    <router-view></router-view>
+
+    <router-view class="router_c"></router-view>
   </div>
 </template>
 
 <script>
-  //  import Play from './components/music/Play.vue'
+  import play from './components/music/Play'
+  import bus from './bus/bus'
+
   import {mapState, mapGetters, mapMutations} from 'vuex'
 
   export default {
-    components: {
-//        Play
-    },
     name: 'app',
+    data() {
+      return {
+        userShow: false,
+        routerViewAnimation: 'page-slide',
+      }
+    },
+    components: {
+        play
+    },
+
     methods: {
       tapButton(event) {
         event.preventDefault()
@@ -37,7 +51,29 @@
       ]),
       getUser() {
         this.$store.commit('getUser')
-      }
+      },
+
+      showPlayPage(event) {
+        event.preventDefault()
+
+        if(this.playPageShow){
+          this.playPageShow = false
+        }else{
+          this.playPageShow = true
+        }
+      },
+      hidePlayPage(event) {
+        event.preventDefault()
+        this.playPageShow = false
+      },
+
+      showBlurBg() {
+        this.routerViewAnimation = 'fade'
+        this.blurBgShow = true
+      },
+      hideBlurBg() {
+        this.blurBgShow = false
+      },
     },
     computed: {
       ...mapGetters([]),
@@ -65,6 +101,10 @@
       var self = this;
       this.$nextTick(function () {
         self.getUser();
+
+        bus.$on('userShow',(data) => {
+          this.userShow = data
+        })
       })
     },
 
@@ -79,7 +119,17 @@
     color: #2c3e50;
     margin-bottom: 100px;
   }
+  .userShow{
+    position: fixed;
+    left: 0;
+    /*top: 0;*/
+    width: 50%;
+    height: 100%;
+    background-color: #000;
+    color: #ffffff;
 
+  }
+/*
   .yourName-enter-active {
     transition: all 0s ease;
   }
@@ -90,6 +140,22 @@
 
   .yourName-enter, .yourName-slide-leave-active {
     transform: translateX(100vh);
+  }*/
+
+  .play-slide-enter-active {
+    transition: all .3s ease
+  }
+
+  .play-slide-leave-active {
+    transition: all .3s ease-out
+  }
+
+  .play-slide-enter, .play-slide-leave-active {
+    transform: translateY(100vh)
+  }
+
+  .bar-slide-enter-active {
+    transition: all .3s ease
   }
 
 

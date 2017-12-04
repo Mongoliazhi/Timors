@@ -1,14 +1,22 @@
 <template>
   <div class="main">
+<!--    <transition name="play-slide"
+                @after-leave="routerViewAnimation='page-slide'">
+      <div class="userC">
+        <h1>7878787878</h1>
+      </div>
+    </transition>-->
+
+
     <div class="index_header">
       <div class="index_line_fa">
         <p class="index_line"></p>
       </div>
       <div class="index_con">
         <div class="index_son_bg"></div>
-        <div class="index_son">
+        <div class="index_son" >
           <!--@click="userLogin"-->
-          <div class="index_conImg" >
+          <div class="index_conImg" @click="userLogin">
             <img src="../../../static/images/women.jpeg" alt="">
           </div>
           <p class="index_conP">
@@ -16,14 +24,14 @@
             <i>Timors，整装待发</i>
           </p>
           <div class="index_conDiv">
-            <a ><input type="text" disabled="disabled" placeholder=""></a>
+            <a><input type="text" disabled="disabled" placeholder=""></a>
             <i class="iconfont gj-search"></i>
           </div>
         </div>
       </div>
     </div>
 
-    <div id="slider" class="mui-slider" style="height: 12rem;">
+    <div id="slider" class="mui-slider" style="">
       <div class="mui-slider-group mui-slider-loop">
         <!-- 额外增加的一个节点(循环轮播：第一个节点是最后一张轮播) -->
         <div class="mui-slider-item mui-slider-item-duplicate">
@@ -78,61 +86,61 @@
             <ul class="mui-table-view mui-grid-view mui-grid-9">
               <li class="mui-table-view-cell mui-media  mui-col-xs-4">
                 <router-link to="/address">
-                  <span class="mui_dps">
-                        <svg class="icon" aria-hidden="true">
-                          <use xlink:href="#icon-bangong"></use>
-                        </svg>
-                  </span>
+                      <span class="mui_dps">
+                            <svg class="icon" aria-hidden="true">
+                              <use xlink:href="#icon-bangong"></use>
+                            </svg>
+                      </span>
                   <div class="mui-media-body">3C数码</div>
                 </router-link>
               </li>
               <li class="mui-table-view-cell mui-media  mui-col-xs-4">
                 <a href="#">
-                      <span class="mui_dps">
-                        <svg class="icon" aria-hidden="true">
-                          <use xlink:href="#icon-jianshen"></use>
-                        </svg>
-                  </span>
+                          <span class="mui_dps">
+                            <svg class="icon" aria-hidden="true">
+                              <use xlink:href="#icon-jianshen"></use>
+                            </svg>
+                      </span>
                   <div class="mui-media-body">运动</div>
                 </a>
               </li>
               <li class="mui-table-view-cell mui-media  mui-col-xs-4">
                 <a href="#">
-                  <span class="mui_dps">
-                        <svg class="icon" aria-hidden="true">
-                          <use xlink:href="#icon-DJ"></use>
-                        </svg>
-                  </span>
+                      <span class="mui_dps">
+                            <svg class="icon" aria-hidden="true">
+                              <use xlink:href="#icon-DJ"></use>
+                            </svg>
+                      </span>
                   <div class="mui-media-body">音乐</div>
                 </a>
               </li>
               <li class="mui-table-view-cell mui-media  mui-col-xs-4">
                 <a href="#">
-                      <span class="mui_dps">
-                        <svg class="icon" aria-hidden="true">
-                          <use xlink:href="#icon-jiweijiu"></use>
-                        </svg>
-                  </span>
+                          <span class="mui_dps">
+                            <svg class="icon" aria-hidden="true">
+                              <use xlink:href="#icon-jiweijiu"></use>
+                            </svg>
+                      </span>
                   <div class="mui-media-body">酒水饮料</div>
                 </a>
               </li>
               <li class="mui-table-view-cell mui-media  mui-col-xs-4">
                 <a href="#">
-                      <span class="mui_dps">
-                        <svg class="icon" aria-hidden="true">
-                          <use xlink:href="#icon-dianying"></use>
-                        </svg>
-                  </span>
+                          <span class="mui_dps">
+                            <svg class="icon" aria-hidden="true">
+                              <use xlink:href="#icon-dianying"></use>
+                            </svg>
+                      </span>
                   <div class="mui-media-body">电影</div>
                 </a>
               </li>
               <li class="mui-table-view-cell mui-media  mui-col-xs-4">
                 <a href="#">
-                     <span class="mui_dps">
-                        <svg class="icon" aria-hidden="true">
-                          <use xlink:href="#icon-shoubing"></use>
-                        </svg>
-                  </span>
+                         <span class="mui_dps">
+                            <svg class="icon" aria-hidden="true">
+                              <use xlink:href="#icon-shoubing"></use>
+                            </svg>
+                      </span>
                   <div class="mui-media-body">游戏</div>
                 </a>
               </li>
@@ -143,7 +151,7 @@
 
       <template v-for="item in goodsList">
         <div @click="goodsDetail(item.goods_id)" class="mui-card">
-          <div class="mui-card-header mui-card-media goodsList_img" >
+          <div class="mui-card-header mui-card-media goodsList_img">
             <img :src="item.goods_picArr | getImgOne">
           </div>
           <div class="mui-card-content">
@@ -151,10 +159,10 @@
               <p>
                 <span>{{item.goods_addTime | time}}</span>
                 <span class="mui-pull-right">
-                       <svg class="icon" aria-hidden="true">
-                          <use xlink:href="#icon-zhu"></use>
-                        </svg>
-                  100</span>
+                           <svg class="icon" aria-hidden="true">
+                              <use xlink:href="#icon-zhu"></use>
+                            </svg>
+                      100</span>
               </p>
               <p>{{item.goods_name}}</p>
             </div>
@@ -162,158 +170,17 @@
         </div>
       </template>
 
-
-<!--      <div class="mui-card">
-        <div class="mui-card-header mui-card-media"
-             style="height:10rem;background-image:url(../../../static/images/shuijiao.jpg)"></div>
-        <div class="mui-card-content">
-          <div class="mui-card-content-inner">
-            <p>Posted on January 18, 2016</p>
-            <p style="color: #333;">这里显示文章摘要，让读者对文章内容有个粗略的概念...</p>
-          </div>
-        </div>
-        <div class="mui-card-footer">
-          <a class="mui-card-link">Like</a>
-          <a class="mui-card-link">Read more</a>
-        </div>
-      </div>-->
-<!--
-      <div class="mui-card">
-        <div class="mui-card-header mui-card-media"
-             style="height:40vw;background-image:url(../../../static/images/shuijiao.jpg)"></div>
-        <div class="mui-card-content">
-          <div class="mui-card-content-inner">
-            <p>Posted on January 18, 2016</p>
-            <p style="color: #333;">这里显示文章摘要，让读者对文章内容有个粗略的概念...</p>
-          </div>
-        </div>
-        <div class="">
-          <div class="mui-slider">
-            <div class="mui-slider-group mui-slider-loop">
-              &lt;!&ndash; 额外增加的一个节点(循环轮播：第一个节点是最后一个图文表格) &ndash;&gt;
-              <div class="mui-slider-item mui-slider-item-duplicate">
-                <ul class="mui-table-view mui-grid-view">
-                  <li class="mui-table-view-cell mui-media mui-col-xs-3"><a href="#"><img class="mui-media-object"
-                                                                                          src="../../../static/images/shuijiao.jpg">
-                    <div class="mui-media-body">Color of SIP CBD</div>
-                  </a></li>
-                  <li class="mui-table-view-cell mui-media mui-col-xs-3"><a href="#"><img class="mui-media-object"
-                                                                                          src="../../../static/images/shuijiao.jpg">
-                    <div class="mui-media-body">静静看这世界</div>
-                  </a></li>
-                  <li class="mui-table-view-cell mui-media mui-col-xs-3"><a href="#"><img class="mui-media-object"
-                                                                                          src="../../../static/images/shuijiao.jpg">
-                    <div class="mui-media-body">Color of SIP CBD</div>
-                  </a></li>
-                  <li class="mui-table-view-cell mui-media mui-col-xs-3"><a href="#"><img class="mui-media-object"
-                                                                                          src="../../../static/images/shuijiao.jpg">
-                    <div class="mui-media-body">静静看这世界</div>
-                  </a></li>
-                </ul>
-              </div>
-              <div class="mui-slider-item">
-                <ul class="mui-table-view mui-grid-view">
-                  <li class="mui-table-view-cell mui-media mui-col-xs-3"><a href="#"><img class="mui-media-object"
-                                                                                          src="../../../static/images/shuijiao.jpg">
-                    <div class="mui-media-body">Color of SIP CBD</div>
-                  </a></li>
-                  <li class="mui-table-view-cell mui-media mui-col-xs-3"><a href="#"><img class="mui-media-object"
-                                                                                          src="../../../static/images/shuijiao.jpg">
-                    <div class="mui-media-body">静静看这世界</div>
-                  </a></li>
-                  <li class="mui-table-view-cell mui-media mui-col-xs-3"><a href="#"><img class="mui-media-object"
-                                                                                          src="../../../static/images/shuijiao.jpg">
-                    <div class="mui-media-body">Color of SIP CBD</div>
-                  </a></li>
-                  <li class="mui-table-view-cell mui-media mui-col-xs-3"><a href="#"><img class="mui-media-object"
-                                                                                          src="../../../static/images/shuijiao.jpg">
-                    <div class="mui-media-body">静静看这世界</div>
-                  </a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>-->
-
-      <div class="mui-slider">
-        <div class="mui-slider-group mui-slider-loop">
-          <!-- 额外增加的一个节点(循环轮播：第一个节点是最后一个图文表格) -->
-          <div class="mui-slider-item mui-slider-item-duplicate">
-            <ul class="mui-table-view mui-grid-view">
-              <li class="mui-table-view-cell mui-media mui-col-xs-6"><a href="#"><img class="mui-media-object"
-                                                                                      src="../../../static/images/shuijiao.jpg">
-                <div class="mui-media-body">幸福就是可以一起睡觉</div>
-              </a></li>
-              <li class="mui-table-view-cell mui-media mui-col-xs-6"><a href="#"><img class="mui-media-object"
-                                                                                      src="../../../static/images/shuijiao.jpg">
-                <div class="mui-media-body">想要一间这样的木屋，静静的喝咖啡</div>
-              </a></li>
-            </ul>
-          </div>
-          <div class="mui-slider-item ">
-            <ul class="mui-table-view mui-grid-view ">
-              <li class="mui-table-view-cell mui-media mui-col-xs-3"><a href="#"><img class="mui-media-object"
-                                                                                      src="../../../static/images/shuijiao.jpg">
-                <div class="mui-media-body">Color of SIP CBD</div>
-              </a></li>
-              <li class="mui-table-view-cell mui-media mui-col-xs-3"><a href="#"><img class="mui-media-object"
-                                                                                      src="../../../static/images/shuijiao.jpg">
-                <div class="mui-media-body">静静看这世界</div>
-              </a></li>
-              <li class="mui-table-view-cell mui-media mui-col-xs-3"><a href="#"><img class="mui-media-object"
-                                                                                      src="../../../static/images/shuijiao.jpg">
-                <div class="mui-media-body">Color of SIP CBD</div>
-              </a></li>
-              <li class="mui-table-view-cell mui-media mui-col-xs-3"><a href="#"><img class="mui-media-object"
-                                                                                      src="../../../static/images/shuijiao.jpg">
-                <div class="mui-media-body">静静看这世界</div>
-              </a></li>
-            </ul>
-          </div>
-          <div class="mui-slider-item ">
-            <ul class="mui-table-view mui-grid-view">
-              <li class="mui-table-view-cell mui-media mui-col-xs-6"><a href="#"><img class="mui-media-object"
-                                                                                      src="../../../static/images/shuijiao.jpg">
-                <div class="mui-media-body">幸福就是可以一起睡觉</div>
-              </a></li>
-              <li class="mui-table-view-cell mui-media mui-col-xs-6"><a href="#"><img class="mui-media-object"
-                                                                                      src="../../../static/images/shuijiao.jpg">
-                <div class="mui-media-body">想要一间这样的木屋，静静的喝咖啡</div>
-              </a></li>
-            </ul>
-          </div>
-          <div class="mui-slider-item mui-slider-item-duplicate">
-            <ul class="mui-table-view mui-grid-view ">
-              <li class="mui-table-view-cell mui-media mui-col-xs-3"><a href="#"><img class="mui-media-object"
-                                                                                      src="../../../static/images/shuijiao.jpg">
-                <div class="mui-media-body">Color of SIP CBD</div>
-              </a></li>
-              <li class="mui-table-view-cell mui-media mui-col-xs-3"><a href="#"><img class="mui-media-object"
-                                                                                      src="../../../static/images/shuijiao.jpg">
-                <div class="mui-media-body">静静看这世界</div>
-              </a></li>
-              <li class="mui-table-view-cell mui-media mui-col-xs-3"><a href="#"><img class="mui-media-object"
-                                                                                      src="../../../static/images/shuijiao.jpg">
-                <div class="mui-media-body">Color of SIP CBD</div>
-              </a></li>
-              <li class="mui-table-view-cell mui-media mui-col-xs-3"><a href="#"><img class="mui-media-object"
-                                                                                      src="../../../static/images/shuijiao.jpg">
-                <div class="mui-media-body">静静看这世界</div>
-              </a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-
     </div>
     <v-footer message="main"></v-footer>
+
+
   </div>
 </template>
 
 <script>
   import * as _fetch from '../../config/fetch'
   import filter from '../../config/filter'
+  import bus from '../../bus/bus'
 
   import Mock from 'mockjs'
   import footer from '../footer/footer.vue'
@@ -349,7 +216,7 @@
           $(".index_conDiv input").attr({
             "placeholder": "请输入关键字"
           })
-          $(".index_con").css("padding","0.5rem")
+          $(".index_con").css("padding", "0.5rem")
         } else {
           $(".index_header").css("position", "relative")
           $(".index_conImg").show()
@@ -358,18 +225,17 @@
           $(".index_conDiv input").attr({
             "placeholder": ""
           })
-          $(".index_con").css("padding","0.2rem 0.5rem")
+          $(".index_con").css("padding", "0.2rem 0.5rem")
         }
       },
       ...mapMutations([
         'isLogin',
       ]),
       userLogin: function () {
-        alert("111")
         this.isLogin()
       },
       //首页获取商品列表
-      mainGetgoodslist(){
+      mainGetgoodslist() {
         var self = this;
         _fetch.fetch("/mainGetgoodslist", {
           pageIndex: 1,
@@ -380,7 +246,7 @@
           console.log(error)
         })
       },
-      goodsDetail(goodsId){
+      goodsDetail(goodsId) {
         this.$router.push({name: 'GoodsDetail', params: {goodsId: goodsId}})
       }
     },
@@ -390,11 +256,11 @@
           $(".mui-card-media").height("6rem")
           $(".goodsList_img").height($(".mui-card-media").width())
           $(".goodsList_img").css({
-            'padding':'0'
+            'padding': '0'
           })
           $(".goodsList_img img").css({
-            'width':"100%",
-            'height':'100%'
+            'width': "100%",
+            'height': '100%'
           })
         })
       },
@@ -421,8 +287,6 @@
         }, 3000)
 
 
-
-
         mui.init({
           swipeBack: false //启用右滑关闭功能
         });
@@ -439,6 +303,10 @@
 </script>
 
 <style scoped>
+
+  .main{
+    /*height: 640px;*/
+  }
   .index_line_fa {
     position: relative;
     width: 100%;
@@ -565,8 +433,7 @@
     font-size: 2.5rem;
   }
 
-
-  .mui-grid-view.mui-grid-9 .mui-table-view-cell{
+  .mui-grid-view.mui-grid-9 .mui-table-view-cell {
     padding: 0 10px;
   }
 </style>

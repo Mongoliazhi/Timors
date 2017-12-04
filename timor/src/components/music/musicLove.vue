@@ -1,4 +1,3 @@
-<script src="../../../../../public.js"></script>
 <template>
   <div class="musicLove">
     <div class="header-bar" >
@@ -31,7 +30,7 @@
               </div>
               <div class="action-button">
                 <svg class="icon" aria-hidden="true">
-                  <use xlink:href="#icon-chuizi"></use>
+                  <use xlink:href="#icon-maikefeng"></use>
                 </svg>
               </div>
             </div>
@@ -39,7 +38,7 @@
           </div>
         </li>
       </template>
-      <li class="mui-table-view-cell">
+<!--      <li class="mui-table-view-cell">
         <div class="mui-slider-right mui-disabled">
           <a class="mui-btn mui-btn-red">删除</a>
         </div>
@@ -62,19 +61,9 @@
           </div>
 
         </div>
-      </li>
+      </li>-->
 
-      <!--<li class="mui-table-view-cell">-->
-        <!--<div class="mui-slider-right mui-disabled">-->
-          <!--<a class="mui-btn mui-btn-red">删除</a>-->
-        <!--</div>-->
-        <!--<div class="mui-slider-handle mui-table">-->
-          <!--<div class="mui-table-cell">-->
-            <!--左滑自动触发删除-->
-          <!--</div>-->
 
-        <!--</div>-->
-      <!--</li>-->
     </ul>
 
   </div>

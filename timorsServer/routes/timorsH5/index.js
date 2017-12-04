@@ -115,6 +115,21 @@ module.exports = function (app) {
 
     })
 
+
+
+    //music 用户收藏 列表
+    app.post('/getMusicLoveList', function (req, res) {
+        console.log(req.body)
+        db.fetch('select * from tb_userMusic where user_id="'+req.body.user_id+'"', function (err, rows) {
+            if (err) {
+                console.log(err);
+            } else {
+                console.log(rows)
+                var data = returnData(rows,400,'success','')
+                res.send(data)
+            }
+        })
+    })
     //商品上传
 /*    app.get('/goods/goods_upload', function (req, res) {
         db.fetch('select * from tb_category', function (err, rows) {
