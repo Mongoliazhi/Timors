@@ -1,7 +1,7 @@
 <template>
   <div class="register">
     <svg @click="returnI" class="returnI icon" aria-hidden="true">
-      <use xlink:href="#icon-chuizi"></use>
+      <use xlink:href="#icon-fanhui"></use>
     </svg>
     <div class="login_con">
       <div class="div_gorund1">

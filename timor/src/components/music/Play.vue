@@ -5,7 +5,7 @@
       <div class="play-page-hide-btn">
         <svg @touchend.prevent.stop="hidePlayPage"
              @click="hidePlayPage" class="returnI icon" aria-hidden="true">
-          <use xlink:href="#icon-chuizi"></use>
+          <use xlink:href="#icon-fanhui"></use>
         </svg>
       </div>
       <!--<img src="../../../static/images/music_bg.png" style="width: 100%;height: 100%;">-->
@@ -403,8 +403,8 @@
 
   .music-play-page .music-album .play-page-hide-btn {
     position: absolute;
-    left: 2rem;
-    top: 2rem;
+    left: 1rem;
+    top: 0.6rem;
     font-size: 2rem;
     /*width: 25px;*/
     /*height: 25px;*/

@@ -4,7 +4,7 @@
     <div class="login_bg">
       <!--<i @click="returnI" class="returnI iconfont gj-back"></i>-->
       <svg @click="returnI" class="returnI icon" aria-hidden="true">
-        <use xlink:href="#icon-chuizi"></use>
+        <use xlink:href="#icon-fanhui"></use>
       </svg>
       <div class="login_con">
         <div class="div_gorund1">
@@ -30,7 +30,28 @@
         <div class="div_gorund">
           <button @click="loginBtn" type="button">登 陆</button>
         </div>
+
+        <div class="login_quick">
+          <div class="quick_div">
+            <svg class="icon" aria-hidden="true">
+              <use xlink:href="#icon-qq"></use>
+            </svg>
+            <span id="qqLoginBtn"></span>
+          </div>
+          <div class="quick_div">
+            <svg class="icon" aria-hidden="true">
+              <use xlink:href="#icon-qzone"></use>
+            </svg>
+          </div>
+          <div class="quick_div">
+            <svg class="icon" aria-hidden="true">
+              <use xlink:href="#icon-wechat"></use>
+            </svg>
+          </div>
+        </div>
       </div>
+
+
     </div>
 
   </div>
@@ -48,7 +69,7 @@
         userNameDis: {
           display: "none"
         },
-        userNameText:"请输入您的用户名",
+        userNameText: "请输入您的用户名",
 
         passWord: "",
         passWordDis: {
@@ -67,7 +88,7 @@
         this.$router.go(-1);
       },
       returnMain() {
-        this.$router.push({path:'/'})
+        this.$router.push({path: '/'})
       },
       loginBtn() {
         var self = this
@@ -93,7 +114,7 @@
               switch (data) {
                 case "1":
                   self.userNameDis.display = "block";
-                  self.userNameText="请输入正确的用户名"
+                  self.userNameText = "请输入正确的用户名"
                   break;
                 case "2":
                   console.log("登陆失败")
@@ -101,7 +122,7 @@
                 default :
                   console.log(data)
                   console.log(JSON.stringify(data))
-                  sessionStorage.setItem('user',JSON.stringify(data));
+                  sessionStorage.setItem('user', JSON.stringify(data));
                   self.returnMain();
                   break;
               }
@@ -113,19 +134,52 @@
       },
     },
     watch: {
-      userName(val){
-        if(val)
+      userName(val) {
+        if (val)
           this.userNameDis.display = "none";
         else
           this.userNameDis.display = "block";
       },
-      passWord(val){
-        if(val)
+      passWord(val) {
+        if (val)
           this.passWordDis.display = "none";
         else
           this.passWordDis.display = "block";
       },
-  },
+    },
+    mounted(){
+      this.$nextTick(()=>{
+
+        //调用QC.Login方法，指定btnId参数将按钮绑定在容器节点中
+        QC.Login({
+            //btnId：插入按钮的节点id，必选
+            btnId:"qqLoginBtn",
+            //用户需要确认的scope授权项，可选，默认all
+            scope:"all",
+            //按钮尺寸，可用值[A_XL| A_L| A_M| A_S|  B_M| B_S| C_S]，可选，默认B_S
+            size: "A_XL"
+          }, function(reqData, opts){//登录成功
+            //根据返回数据，更换按钮显示状态方法
+            var dom = document.getElementById(opts['btnId']),
+              _logoutTemplate=[
+                //头像
+                '<span><img src="{figureurl}" class="{size_key}"/></span>',
+                //昵称
+                '<span>{nickname}</span>',
+                //退出
+                '<span><a href="javascript:QC.Login.signOut();">退出</a></span>'
+              ].join("");
+            dom && (dom.innerHTML = QC.String.format(_logoutTemplate, {
+              nickname : QC.String.escHTML(reqData.nickname), //做xss过滤
+              figureurl : reqData.figureurl
+            }));
+          }, function(opts){//注销成功
+            alert('QQ登录 注销成功');
+          }
+        );
+
+      })
+    }
 
   }
 </script>
@@ -133,18 +187,18 @@
 <style scoped>
 
   /*input:-ms-input-placeholder {*/
-    /*color: #549EA1;*/
-    /*background-color: #fff;*/
+  /*color: #549EA1;*/
+  /*background-color: #fff;*/
   /*}*/
 
   /*input::-webkit-input-placeholder {*/
-    /*color: #549EA1;*/
-    /*background-color: #fff;*/
+  /*color: #549EA1;*/
+  /*background-color: #fff;*/
   /*}*/
 
   /*input::-moz-placeholder {*/
-    /*color: #549EA1;*/
-    /*background-color: #fff;*/
+  /*color: #549EA1;*/
+  /*background-color: #fff;*/
   /*}*/
 
   .login_bg {
@@ -232,6 +286,21 @@
     color: #fff;
     border-radius: 4rem;
     padding: 0.7rem 0;
+  }
+
+  .login_quick {
+    width: 100%;
+    margin-top: 3rem;
+  }
+
+  .login_quick .quick_div {
+    float: left;
+    width: 33.33%;
+    text-align: center;
+  }
+
+  .quick_div svg {
+    font-size: 3rem;
   }
 </style>
 
