@@ -158,6 +158,7 @@
             //按钮尺寸，可用值[A_XL| A_L| A_M| A_S|  B_M| B_S| C_S]，可选，默认B_S
             size: "C_S"
           }, function(reqData, opts){//登录成功
+            console.log(opts)
             //根据返回数据，更换按钮显示状态方法
             location.reload();
             top.window.close();
@@ -176,34 +177,35 @@
             }));
           }, function(opts){//注销成功
             alert('QQ登录 注销成功');
+            console.log(opts)
           }
         );
-        QC.api("get_user_info", {})
-        //指定接口访问成功的接收函数，s为成功返回Response对象
-          .success(function (s) {
-            console.log(s);
-//成功回调，通过s.data获取OpenAPI的返回数据
-            alert("获取用户信息成功！当前用户昵称为：" + s.data.nickname);
-          })
-          //指定接口访问失败的接收函数，f为失败返回Response对象
-          .error(function (f) {
-//失败回调
-            alert("获取用户信息失败！");
-          })
-          //指定接口完成请求后的接收函数，c为完成请求返回Response对象
-          .complete(function (c) {
-//完成请求回调
-            alert("获取用户信息完成！");
-          });
-
-//检查是否登录
-        if (QC.Login.check()) {//如果已登录
-          QC.Login.getMe(function (openId, accessToken) {
-            alert(["当前登录用户的", "openId为：" + openId, "accessToken为：" + accessToken].join("\n"));
-          });
-//这里可以调用自己的保存接口
-
-        }
+//        QC.api("get_user_info", {})
+//        //指定接口访问成功的接收函数，s为成功返回Response对象
+//          .success(function (s) {
+//            console.log(s);
+////成功回调，通过s.data获取OpenAPI的返回数据
+//            alert("获取用户信息成功！当前用户昵称为：" + s.data.nickname);
+//          })
+//          //指定接口访问失败的接收函数，f为失败返回Response对象
+//          .error(function (f) {
+////失败回调
+//            alert("获取用户信息失败！");
+//          })
+//          //指定接口完成请求后的接收函数，c为完成请求返回Response对象
+//          .complete(function (c) {
+////完成请求回调
+//            alert("获取用户信息完成！");
+//          });
+//
+////检查是否登录
+//        if (QC.Login.check()) {//如果已登录
+//          QC.Login.getMe(function (openId, accessToken) {
+//            alert(["当前登录用户的", "openId为：" + openId, "accessToken为：" + accessToken].join("\n"));
+//          });
+////这里可以调用自己的保存接口
+//
+//        }
 
         //调用QC.Login方法，指定btnId参数将按钮绑定在容器节点中
               /*  QC.Login({
