@@ -159,7 +159,7 @@
             size: "C_S"
           }, function(reqData, opts){//登录成功
             //根据返回数据，更换按钮显示状态方法
-            window.parent.reload();
+            location.reload();
             top.window.close();
             var dom = document.getElementById(opts['btnId']),
               _logoutTemplate=[
