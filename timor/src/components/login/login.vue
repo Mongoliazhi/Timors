@@ -162,6 +162,7 @@
         //指定接口访问成功的接收函数，s为成功返回Response对象
           .success(function (s) {
             console.log(s);
+            location.reload();
 //成功回调，通过s.data获取OpenAPI的返回数据
             alert("获取用户信息成功！当前用户昵称为：" + s.data.nickname);
           })
