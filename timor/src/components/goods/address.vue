@@ -1,7 +1,11 @@
 <template>
   <div class="address">
-    <div class="address-list-box">
+    <header class="mui-bar mui-bar-nav">
+      <h1 class="mui-title">我的地址</h1>
+      <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+    </header>
 
+    <div class="address-list-box">
         <div class="address-box">
           <div class="address-top">
             <p>12342342<span>3fsdfsdgsdg</span></p>
@@ -28,8 +32,6 @@
             </div>
           </div>
         </div>
-
-
     </div>
   </div>
 </template>

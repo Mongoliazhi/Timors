@@ -85,14 +85,14 @@
           <div class="mui-slider-item">
             <ul class="mui-table-view mui-grid-view mui-grid-9">
               <li class="mui-table-view-cell mui-media  mui-col-xs-4">
-                <router-link to="/address">
+                <!--<router-link to="/address">-->
                       <span class="mui_dps">
                             <svg class="icon" aria-hidden="true">
                               <use xlink:href="#icon-bangong"></use>
                             </svg>
                       </span>
                   <div class="mui-media-body">3C数码</div>
-                </router-link>
+                <!--</router-link>-->
               </li>
               <li class="mui-table-view-cell mui-media  mui-col-xs-4">
                 <a href="#">
@@ -371,12 +371,21 @@
   }
 
   .index_son .index_conImg {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
     -webkit-box-flex: 1;
     -webkit-flex: 1;
     flex: 1;
+    -webkit-flex-direction: column;
     flex-direction: column;
+    -webkit-box-align: center;
+    -moz-align-items: center;
+    -webkit-align-items: center;
     align-items: center;
+    -moz-justify-content: center;
+    -webkit-justify-content: center;
     justify-content: center;
   }
 
@@ -386,17 +395,31 @@
   }
 
   .index_son .index_conP {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
-    -webkit-box-flex: 1;
-    -webkit-flex: 1;
+    -webkit-box-flex: 2;
+    -webkit-flex: 2;
     flex: 2;
+    -webkit-flex-direction: column;
     flex-direction: column;
+    -webkit-box-align: center;
+    -moz-align-items: center;
+    -webkit-align-items: center;
+    align-items: center;
+    -moz-justify-content: center;
+    -webkit-justify-content: center;
     justify-content: center;
+    padding-left: 3%;
   }
 
   .index_son .index_conP em {
+    display: block;
+    width: 100%;
     color: #fff;
     font-size: 16px;
+    text-align: left;
   }
 
   .index_son .index_conP em span {
@@ -404,17 +427,29 @@
   }
 
   .index_son .index_conP i {
+    display: block;
+    width: 100%;
     font-size: 12px;
     color: #fff;
   }
 
   .index_son .index_conDiv {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
     position: relative;
-    -webkit-box-flex: 1;
-    -webkit-flex: 1;
+    -webkit-box-flex: 3;
+    -webkit-flex: 3;
     flex: 3;
+    -webkit-flex-direction: column;
     flex-direction: column;
+    /*-webkit-box-align: center;*/
+    /*-moz-align-items: center;*/
+    /*-webkit-align-items: center;*/
+    /*align-items: center;*/
+    -moz-justify-content: center;
+    -webkit-justify-content: center;
     justify-content: center;
   }
 
