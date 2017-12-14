@@ -2,7 +2,7 @@
   <div class="cart">
     <header class="mui-bar mui-bar-nav">
       <h1 class="mui-title">购物车 <span>(0)</span></h1>
-      <a @click="returnI" class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+      <a class="mui-icon mui-icon-left-nav mui-pull-left"></a>
       <button class="mui-btn mui-btn-blue mui-btn-link mui-pull-right">编辑</button>
     </header>
 
@@ -36,6 +36,7 @@
     },
     methods: {
       returnI() {
+        alert("2332")
         this.$router.go(-1);
       },
     },

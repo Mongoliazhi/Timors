@@ -31,8 +31,8 @@
       </div>
     </div>
 
-    <div id="slider" class="mui-slider" style="">
-      <div class="mui-slider-group mui-slider-loop">
+    <div id="slider" class="mui-slider" style="height: 13rem">
+      <div class="mui-slider-group mui-slider-loop" style="height: 13rem">
         <!-- 额外增加的一个节点(循环轮播：第一个节点是最后一张轮播) -->
         <div class="mui-slider-item mui-slider-item-duplicate">
           <a href="#">
@@ -232,6 +232,7 @@
         'isLogin',
       ]),
       userLogin: function () {
+        alert("1");
         this.isLogin()
       },
       //首页获取商品列表
@@ -366,6 +367,8 @@
     display: flex;
     -webkit-flex-direction: row;
     flex-direction: row;
+    -moz-justify-content: space-between;
+    -webkit-justify-content: space-between;
     justify-content: space-between;
     z-index: 102;
   }
@@ -470,6 +473,19 @@
 
   .mui-grid-view.mui-grid-9 .mui-table-view-cell {
     padding: 0 10px;
+  }
+
+  .mui-slider .mui-slider-group .mui-slider-item {
+    width: 100%;
+    height: 100%;
+  }
+  .mui-slider .mui-slider-group .mui-slider-item a{
+    width: 100%;
+    height: 100%;
+  }
+  .mui-slider .mui-slider-group .mui-slider-item a img{
+    width: 100%;
+    height: 100%;
   }
 </style>
 

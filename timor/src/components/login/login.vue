@@ -11,12 +11,17 @@
           <img class="login_img" src="../../../static/images/women.jpeg" alt="">
         </div>
         <div class="div_gorund">
-          <i class="iconfont gj-wode1"></i>
+          <svg class="icon" aria-hidden="true">
+            <use xlink:href="#icon-user-boy"></use>
+          </svg>
           <input type="text" v-model="userName" class="username" placeholder="Username">
           <p :style="userNameDis" class="redText">{{userNameText}}</p>
         </div>
         <div class="div_gorund">
-          <i class="iconfont gj-daishouhuo"></i>
+          <!--<i class="iconfont gj-daishouhuo"></i>-->
+          <svg class="icon" aria-hidden="true">
+            <use xlink:href="#icon-pc"></use>
+          </svg>
           <input type="password" v-model="passWord" class="password" placeholder="Password">
           <p :style="passWordDis" class="redText">请输入正确的登录密码</p>
         </div>
@@ -285,6 +290,12 @@
     top: 0.7rem;
     color: #fff;
   }
+  .div_gorund svg {
+    position: absolute;
+    left: 1rem;
+    top: 0.7rem;
+    color: #fff;
+  }
 
   .div_gorund input {
     padding-left: 3rem;
@@ -328,13 +339,24 @@
   }
 
   .login_quick .quick_div {
+    position: relative;
     float: left;
     width: 33.33%;
     text-align: center;
+    padding: 0 5%;
   }
 
   .quick_div svg {
     font-size: 3rem;
+  }
+
+  #qqLoginBtn{
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    width: 100%;
+    height: 100%;
+    opacity: 0.1;
   }
 </style>
 

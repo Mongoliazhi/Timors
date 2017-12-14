@@ -15,7 +15,8 @@
         </div>
     </transition>
 
-    <router-view class="router_c"></router-view>
+    <!--<router-view class="router_c"></router-view>-->
+    <router-view></router-view>
   </div>
 </template>
 
