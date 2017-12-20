@@ -128,11 +128,10 @@
                   break;
                 default :
                   console.log(data)
-                  console.log(JSON.stringify(data))
-                  sessionStorage.setItem('user', JSON.stringify(data));
-
+                  console.log(JSON.stringify(data.data))
+                  sessionStorage.setItem('user', JSON.stringify(data.data));
                   self.$store.commit('setUserDate', {
-                    userDate: data
+                    userDate: data.data
                   })
                   self.$router.push({path: '/'})
                   break;
@@ -188,11 +187,11 @@
             }).then((data) => {
               console.log(data)
 
-              console.log(JSON.stringify(data))
-              sessionStorage.setItem('user', JSON.stringify(data));
+              console.log(JSON.stringify(data.data))
+              sessionStorage.setItem('user', JSON.stringify(data.data));
 
-              this.$store.commit('setUserDate', {
-                userDate: data
+              self.$store.commit('setUserDate', {
+                userDate: data.data
               })
               self.$router.push({path: '/'})
 
