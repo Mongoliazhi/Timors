@@ -64,6 +64,7 @@
 </template>
 
 <script>
+  import * as _fetch from '../../config/fetch'
   import {mapState, mapGetters, mapActions} from 'vuex'
 
   export default {
@@ -193,6 +194,8 @@
               self.$store.commit('setUserDate', {
                 userDate: data
               })
+              self.$router.push({path: '/'})
+              
             }).catch((error) => {
               console.log(error)
             })
