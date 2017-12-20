@@ -130,6 +130,7 @@
                   console.log(data)
                   console.log(JSON.stringify(data.data))
                   sessionStorage.setItem('user', JSON.stringify(data.data));
+
                   self.$store.commit('setUserDate', {
                     userDate: data.data
                   })
@@ -159,7 +160,7 @@
     },
     mounted() {
       this.$nextTick(() => {
-
+        var self = this;
         //qq登录
         QC.Login({
           btnId: "qqLoginBtn",    //插入按钮的节点id
@@ -189,7 +190,7 @@
 
               console.log(JSON.stringify(data.data))
               sessionStorage.setItem('user', JSON.stringify(data.data));
-
+              
               self.$store.commit('setUserDate', {
                 userDate: data.data
               })
