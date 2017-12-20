@@ -4,11 +4,11 @@ var returnData = require("../config")
 
 
 module.exports = function (app) {
-    //注册用户
+    //快捷登陆记录用户
     app.post('/registerUser', function (req, res) {
         console.log(req.body)
-        db.fetch("insert into tb_account (user_name,user_password,user_headImg,user_gender)" +
-            "values ('" + req.body.user_name + "','" + req.body.user_password + "','" + req.body.user_headImg + "','" + req.body.user_gender + "')", function (err, rows) {
+        db.fetch("insert into tb_account (user_name,user_headImg,user_gender)" +
+            "values ('" + req.body.user_name + "','" + req.body.user_headImg + "','" + req.body.user_gender + "')", function (err, rows) {
             if (err) {
                 console.log(err);
             } else {

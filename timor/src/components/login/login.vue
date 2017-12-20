@@ -191,11 +191,11 @@
               console.log(JSON.stringify(data))
               sessionStorage.setItem('user', JSON.stringify(data));
 
-              self.$store.commit('setUserDate', {
+              this.$store.commit('setUserDate', {
                 userDate: data
               })
               self.$router.push({path: '/'})
-              
+
             }).catch((error) => {
               console.log(error)
             })
