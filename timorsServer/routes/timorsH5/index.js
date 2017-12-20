@@ -4,6 +4,26 @@ var returnData = require("../config")
 
 
 module.exports = function (app) {
+    //注册用户
+    app.post('/registerUser', function (req, res) {
+        console.log(req.body)
+        db.fetch("insert into tb_account (user_name,user_password,user_headImg,user_gender)" +
+            "values ('" + req.body.user_name + "','" + req.body.user_password + "','" + req.body.user_headImg + "','" + req.body.user_gender + "')", function (err, rows) {
+            if (err) {
+                console.log(err);
+            } else {
+                db.fetch('select * from tb_account where user_name ="'+req.body.user_name+'"', function (err, rows) {
+                    if (err) {
+                        console.log(err);
+                    } else {
+                        console.log(rows)
+                        var data = returnData(rows[0],400,'success','')
+                        res.send(data)
+                    }
+                })
+            }
+        })
+    })
     //用户登陆
     app.post('/timorsLogin', function (req, res) {
         // res.render("login", {'title': 'zhuasdua'})
@@ -11,7 +31,7 @@ module.exports = function (app) {
         let username = req.body.username;
         let password = req.body.password;
         console.log(username+"...."+password)
-        db.fetch('select * from tb_account where user_name="'+username+'"', function (err, rows) {
+        db.fetch('select * from tb_account where user_nameNum="'+username+'"', function (err, rows) {
             if (err) {
                 console.log(err);
             } else {
@@ -32,7 +52,7 @@ module.exports = function (app) {
 
     //首页获取商品列表
     app.post('/mainGetgoodslist', function (req, res) {
-        console.log(req.body)
+        // console.log(req.body)
         db.fetch('select * from tb_goods', function (err, rows) {
             if (err) {
                 console.log(err);
@@ -43,7 +63,7 @@ module.exports = function (app) {
     })
     //首页获取商品详情
     app.post('/getGoodsDetail', function (req, res) {
-        console.log(req.body.goodsId)
+        // console.log(req.body.goodsId)
         db.fetch('select * from tb_goods where goods_id="'+req.body.goodsId+'"', function (err, rows) {
             if (err) {
                 console.log(err);
@@ -59,8 +79,7 @@ module.exports = function (app) {
 
     //music 收藏
     app.post('/musicCollection', function (req, res) {
-        console.log(req.body)
-
+        // console.log(req.body)
         if(req.body.isCollection == 1){ //添加收藏
             db.fetch('select * from tb_userMusic where user_id="'+req.body.user_id+'" and id ="'+ req.body.id +'"', function (err, rows) {
                 if (err) {

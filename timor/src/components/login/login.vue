@@ -129,7 +129,11 @@
                   console.log(data)
                   console.log(JSON.stringify(data))
                   sessionStorage.setItem('user', JSON.stringify(data));
-                  self.returnMain();
+
+                  self.$store.commit('setUserDate', {
+                    userDate: data
+                  })
+                  self.$router.push({path: '/'})
                   break;
               }
             }
@@ -173,9 +177,25 @@
         }
 
         QC.api("get_user_info", {})
-          .success(function(s){
-            console.log(s);
-            alert("获取用户信息成功！当前用户昵称为："+s.data.nickname);
+          .success(function($res){
+            console.log($res);
+
+            _fetch.fetch("/registerUser", {
+              user_name: $res.data.nickname,
+              user_headImg: $res.data.figureurl_2,
+              user_gender: $res.data.gender,
+            }).then((data) => {
+              console.log(data)
+
+              console.log(JSON.stringify(data))
+              sessionStorage.setItem('user', JSON.stringify(data));
+
+              self.$store.commit('setUserDate', {
+                userDate: data
+              })
+            }).catch((error) => {
+              console.log(error)
+            })
           })
           //指定接口访问失败的接收函数，f为失败返回Response对象
           .error(function(f){

@@ -17,7 +17,7 @@
         <div class="index_son" >
           <!--@click="userLogin"-->
           <div class="index_conImg" @click="userLogin">
-            <img src="../../../static/images/women.jpeg" alt="">
+            <img :src="userDate.user_headImg" alt="">
           </div>
           <p class="index_conP">
             <em><span>Timor</span>狮</em>
@@ -232,7 +232,7 @@
         'isLogin',
       ]),
       userLogin: function () {
-        this.isLogin()
+        this.$router.push({path: '/login'})
       },
       //首页获取商品列表
       mainGetgoodslist() {
@@ -266,10 +266,11 @@
       },
       userDate: function (val) {
         console.log(val)
-        if (val.name) {
+        if (val.user_name) {
           console.log("用户已登录")
         } else {
           console.log("用户未登录")
+          this.userDate.user_headImg = Mock.Random.image('500x500', '#8B87C1', '#ffffff', 'T');
         }
       }
     },
@@ -277,8 +278,8 @@
       var self = this;
       this.$nextTick(function () {
 //          监听滚动
+//        self.userDate.user_headImg = Mock.Random.image('500x500', '#8B87C1', '#ffffff', '200*200');
         window.addEventListener('scroll', self.menu);
-
         self.mainGetgoodslist();
 
 //      切换导航栏背景颜色
@@ -286,6 +287,7 @@
           $(".index_son_bg").css("background-color", Mock.mock('@color'))
         }, 3000)
 
+        console.log(Mock.Random.image('200x200', '#DE5246', '#FFF', 'Not'))
 
         mui.init({
           swipeBack: false //启用右滑关闭功能
