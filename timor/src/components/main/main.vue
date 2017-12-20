@@ -232,7 +232,6 @@
         'isLogin',
       ]),
       userLogin: function () {
-        alert("1");
         this.isLogin()
       },
       //首页获取商品列表

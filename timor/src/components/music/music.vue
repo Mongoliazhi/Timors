@@ -115,6 +115,8 @@
       },
       ...mapActions([
         'userState1','playIndexState1'
+
+
       ]),
     },
     mounted(){

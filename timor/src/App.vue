@@ -81,7 +81,9 @@
 
       ...mapState({
         dataUrl(state) {
-          return 'http://ws.stream.qqmusic.qq.com/' + state.musicPayServer.PlayIndex.id + '.m4a?fromtag=46'
+          if(state.musicPayServer.PlayIndex.id){
+            return 'http://ws.stream.qqmusic.qq.com/' + state.musicPayServer.PlayIndex.id + '.m4a?fromtag=46'
+          }
         },
         playing: state => state.musicPayServer.playing,
         user: state => state.User.user
