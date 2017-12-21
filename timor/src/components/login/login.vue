@@ -190,9 +190,9 @@
 
               console.log(JSON.stringify(data.data))
               sessionStorage.setItem('user', JSON.stringify(data.data));
-              
+
               self.$store.commit('setUserDate', {
-                userDate: data.data
+                userDate: data.data.data
               })
               self.$router.push({path: '/'})
 
