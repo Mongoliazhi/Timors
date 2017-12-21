@@ -82,7 +82,8 @@
       ...mapState({
         dataUrl(state) {
           if(state.musicPayServer.PlayIndex.id){
-            return 'http://ws.stream.qqmusic.qq.com/' + state.musicPayServer.PlayIndex.id + '.m4a?fromtag=46'
+//            return 'http://dl.stream.qqmusic.qq.com/' + state.musicPayServer.PlayIndex.id + '.m4a?fromtag=999';
+            return 'http://dl.stream.qqmusic.qq.com/' + state.musicPayServer.PlayIndex.id + '.m4a?guid=1642466368&vkey=8A8B7F3436A853F17BB7C57C9F7AD9CDB53BA1236F11D14ACAC5AA1009A5E2B3E5A5EDB5DB065A4016DF5EE807DDFCC96C97ED178B05C6F0&uin=3222754571&fromtag=999';
           }
         },
         playing: state => state.musicPayServer.playing,
@@ -93,13 +94,15 @@
     watch: {
       playing(val) {
         console.log(new Date() + val)
-        if (val)
+        if (val){
           document.getElementById('music').play()
-        else
+        }else{
           document.getElementById('music').pause()
+        }
 
       },
     },
+
     mounted() {
       var self = this;
       this.$nextTick(function () {
