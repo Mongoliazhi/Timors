@@ -8,53 +8,82 @@
       </svg>
       <div class="login_con">
         <div class="div_gorund1">
-          <img class="login_img" src="../../../static/images/women.jpeg" alt="">
-        </div>
-        <div class="div_gorund">
-          <svg class="icon" aria-hidden="true">
-            <use xlink:href="#icon-user-boy"></use>
-          </svg>
-          <input type="text" v-model="userName" class="username" placeholder="Username">
-          <p :style="userNameDis" class="redText">{{userNameText}}</p>
-        </div>
-        <div class="div_gorund">
-          <!--<i class="iconfont gj-daishouhuo"></i>-->
-          <svg class="icon" aria-hidden="true">
-            <use xlink:href="#icon-pc"></use>
-          </svg>
-          <input type="password" v-model="passWord" class="password" placeholder="Password">
-          <p :style="passWordDis" class="redText">请输入正确的登录密码</p>
-        </div>
-        <div class="div_gorund">
-          <div class="title">
-            <span>忘记密码?</span>
-            <router-link to="/login/register"><span>注册</span></router-link>
-            <router-view></router-view>
-          </div>
-        </div>
-        <div class="div_gorund">
-          <button @click="loginBtn" type="button">登 陆</button>
+          <img class="login_img" :src="userDate.user_headImg" alt="">
         </div>
 
-        <div class="login_quick">
-          <div class="quick_div">
-            <svg class="icon" aria-hidden="true">
-              <use xlink:href="#icon-qq"></use>
-            </svg>
-            <span id="qqLoginBtn"></span>
+        <template>
+          <div>
+            <template v-if="userDate.user_autograph">
+              <div class="div_gorund">
+                <p class="h31" v-html="userDate.user_autograph">{{userDate.user_autograph}}</p>
+              </div>
+            </template>
+            <template>
+              <div class="div_gorund">
+                <p class="h32">请编辑您的个性签名！</p>
+              </div>
+            </template>
 
+            <div class="div_gorund">
+              <div class="downPlay">
+                <svg @click="againLogin" class="icon" aria-hidden="true">
+                  <use xlink:href="#icon-baisoft-xie-top"></use>
+                </svg>
+              </div>
+            </div>
           </div>
-          <div class="quick_div">
-            <svg class="icon" aria-hidden="true">
-              <use xlink:href="#icon-qzone"></use>
-            </svg>
+        </template>
+        <template>
+          <div>
+            <div class="div_gorund">
+              <svg class="icon svg1" aria-hidden="true">
+                <use xlink:href="#icon-user-boy"></use>
+              </svg>
+              <input type="text" v-model="userName" class="username" placeholder="Username">
+              <p :style="userNameDis" class="redText">{{userNameText}}</p>
+            </div>
+            <div class="div_gorund ">
+              <!--<i class="iconfont gj-daishouhuo"></i>-->
+              <svg class="icon svg1" aria-hidden="true">
+                <use xlink:href="#icon-pc"></use>
+              </svg>
+              <input type="password" v-model="passWord" class="password" placeholder="Password">
+              <p :style="passWordDis" class="redText">请输入正确的登录密码</p>
+            </div>
+            <div class="div_gorund">
+              <div class="title">
+                <span>忘记密码?</span>
+                <router-link to="/login/register"><span>注册</span></router-link>
+                <router-view></router-view>
+              </div>
+            </div>
+            <div class="div_gorund">
+              <button @click="loginBtn" type="button">登 陆</button>
+            </div>
+            <div class="login_quick">
+              <div class="quick_div">
+                <svg class="icon" aria-hidden="true">
+                  <use xlink:href="#icon-qq"></use>
+                </svg>
+                <span id="qqLoginBtn"></span>
+
+              </div>
+              <div class="quick_div">
+                <svg class="icon" aria-hidden="true">
+                  <use xlink:href="#icon-qzone"></use>
+                </svg>
+              </div>
+              <div class="quick_div">
+                <svg class="icon" aria-hidden="true">
+                  <use xlink:href="#icon-wechat"></use>
+                </svg>
+              </div>
+            </div>
           </div>
-          <div class="quick_div">
-            <svg class="icon" aria-hidden="true">
-              <use xlink:href="#icon-wechat"></use>
-            </svg>
-          </div>
-        </div>
+        </template>
+
+
+
       </div>
 
 
@@ -86,7 +115,7 @@
     },
     computed: {
       ...mapState({
-        user: state => state.User.user,
+        userDate: state => state.User.user,
       })
 
     },
@@ -96,6 +125,10 @@
       },
       returnMain() {
         this.$router.push({path: '/'})
+      },
+      //弹出登录框
+      againLogin:function () {
+
       },
       loginBtn() {
         var self = this
@@ -290,7 +323,7 @@
     color: #fff;
   }
 
-  .div_gorund svg {
+  .div_gorund .svg1 {
     position: absolute;
     left: 1rem;
     top: 0.7rem;
@@ -302,6 +335,34 @@
     color: #fff;
     background-color: transparent;
     border-bottom: 1px solid #c3b6b6;
+  }
+
+  .div_gorund .h31 {
+    font-size: 1.8rem;
+    width: 100%;
+    color: #e4c8c8;
+    text-align: center;
+  }
+  .div_gorund .h32 {
+    width: 100%;
+    color: #e4c8c8;
+    text-align: center;
+  }
+  .div_gorund .downPlay{
+    text-align: center;
+    font-size: 3rem;
+    animation: myfirst 0.8s infinite;
+  }
+  @keyframes myfirst {
+    0% {
+      transform: translate(0px, 0px);
+    }
+    50% {
+      transform: translate(0px, 20px);
+    }
+    100% {
+      transform: translate(0px, 0px);
+    }
   }
 
   .div_gorund .redText {
@@ -346,7 +407,7 @@
     padding: 0 5%;
   }
 
-  .quick_div svg {
+  .login_quick .quick_div svg {
     font-size: 3rem;
   }
 

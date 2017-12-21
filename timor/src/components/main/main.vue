@@ -197,7 +197,6 @@
       ...mapState({
         userDate: state => state.User.user
       }),
-
     },
     components: {
       'v-footer': footer

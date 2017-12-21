@@ -4,7 +4,7 @@
       <div class="back-button" @touchend.prevent="hideSinger" @click="hideSinger">
         <div class="back-icon">
           <svg class="icon" aria-hidden="true">
-            <use xlink:href="#icon-chuizi"></use>
+            <use xlink:href="#icon-jiantou1"></use>
           </svg>
         </div>
       </div>
@@ -13,7 +13,7 @@
     </div>
     <ul id="OA_task_2" class="mui-table-view">
       <template v-for="(item,index) in musicLoveList1">
-        <li class="mui-table-view-cell">
+        <li @click="playAudio" class="mui-table-view-cell">
           <div class="mui-slider-right mui-disabled">
             <a class="mui-btn mui-btn-red">删除</a>
           </div>
@@ -30,39 +30,13 @@
               </div>
               <div class="action-button">
                 <svg class="icon" aria-hidden="true">
-                  <use xlink:href="#icon-maikefeng"></use>
+                  <use xlink:href="#icon-erji"></use>
                 </svg>
               </div>
             </div>
-
           </div>
         </li>
       </template>
-<!--      <li class="mui-table-view-cell">
-        <div class="mui-slider-right mui-disabled">
-          <a class="mui-btn mui-btn-red">删除</a>
-        </div>
-        <div class="mui-slider-handle mui-table">
-          <div class="mui-table-cell music-info-li">
-            <div class="music-info" >
-              <div class="music-name">
-                sfgsdg
-              </div>
-              <div class="music-singer">
-                <span >asdfasf</span>
-                <span>asdfasf</span>
-              </div>
-            </div>
-            <div class="action-button">
-              <svg class="icon" aria-hidden="true">
-                <use xlink:href="#icon-chuizi"></use>
-              </svg>
-            </div>
-          </div>
-
-        </div>
-      </li>-->
-
 
     </ul>
 
@@ -203,7 +177,7 @@
    height: 50px;
    width: 100%;
    max-width: 68vh;
-   background-color: #2ac845;
+   background-color: #8B87C1;
    color: #fff;
    z-index: 302;
  }
