@@ -11,21 +11,35 @@
 
         <div class="personal-message">
           <!--头像ID-->
-          <div class="stroge-info">
-            <div class="header-img">
-              <img src="../../static/images/women.jpeg" alt="">
+
+          <template v-if="userDate.user_autograph">
+            <div class="stroge-info">
+              <div class="header-img">
+                <img :src="userDate.user_headImg" alt="">
+              </div>
+              <div class="lines"></div>
+              <div class="info-txt">
+                <p>{{userDate.user_name}}</p>
+                <p>T:<span v-html="userDate.user_autograph">{{userDate.user_autograph}}</span></p>
+              </div>
             </div>
-            <div class="lines"></div>
-            <div class="info-txt">
-              <p>小发发</p>
-              <p>VIP:<span>今天</span></p>
+          </template>
+          <template v-else>
+            <div class="stroge-info">
+              <div class="header-img">
+                <img src="../../static/images/women.jpeg" alt="">
+              </div>
+              <div class="lines"></div>
+              <div class="info-txt">
+                <p>您还没有登陆</p>
+                <!--<p>T:<span>今天</span></p>-->
+              </div>
             </div>
-          </div>
+          </template>
         </div>
       </div>
 
       <div class="order-box">
-
 
         <div class="list-type">
           <div>
@@ -128,7 +142,10 @@
 </template>
 
 <script>
+  import * as _fetch from '../config/fetch'
+
   import footer from './footer/footer.vue'
+  import {mapState, mapGetters, mapActions} from 'vuex'
 
   export default {
     name: 'my',
@@ -136,6 +153,11 @@
       return {
         msg: '个人中心'
       }
+    },
+    computed: {
+      ...mapState({
+        userDate: state => state.User.user,
+      })
     },
     components: {
       'v-footer': footer

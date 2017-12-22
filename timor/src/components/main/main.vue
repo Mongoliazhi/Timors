@@ -85,14 +85,14 @@
           <div class="mui-slider-item">
             <ul class="mui-table-view mui-grid-view mui-grid-9">
               <li class="mui-table-view-cell mui-media  mui-col-xs-4">
-                <!--<router-link to="/address">-->
+                <router-link to="/travelList">
                       <span class="mui_dps">
                             <svg class="icon" aria-hidden="true">
-                              <use xlink:href="#icon-bangong"></use>
+                              <use xlink:href="#icon-buhang"></use>
                             </svg>
                       </span>
-                  <div class="mui-media-body">3C数码</div>
-                <!--</router-link>-->
+                  <div class="mui-media-body">旅行</div>
+                </router-link>
               </li>
               <li class="mui-table-view-cell mui-media  mui-col-xs-4">
                 <a href="#">

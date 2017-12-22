@@ -8,6 +8,8 @@ import Main from '@/components/main/main'
 import Login from '@/components/login/login'
   import Register from '@/components/login/register' //注册
 
+import  TravelList from  '@/components/travel/travelList'
+
 import Classfig from '@/components/classfig'
 import Music from '@/components/music/music'
   import TopList from  '@/components/music/topList' //排行榜
@@ -49,6 +51,11 @@ const router = new Router({
       path: '/classfig',
       name: 'Classfig',
       component: Classfig
+    },
+    {
+      path: '/travelList',
+      name: 'TravelList',
+      component: TravelList,
     },
     {
       path: '/music',

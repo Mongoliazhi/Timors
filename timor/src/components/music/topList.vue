@@ -3,7 +3,9 @@
     <div class="header-bar" >
       <div class="back-button" @touchend.prevent="hideSinger" @click="hideSinger">
         <div class="back-icon">
-          <i class="iconfont gj-back"></i>
+          <svg class="icon" aria-hidden="true">
+            <use xlink:href="#icon-fanhui"></use>
+          </svg>
         </div>
         <div class="back-text">
           排行榜

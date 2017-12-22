@@ -18,19 +18,20 @@
                 <p class="h31" v-html="userDate.user_autograph">{{userDate.user_autograph}}</p>
               </div>
             </template>
-            <template>
+            <template v-else>
               <div class="div_gorund">
                 <p class="h32">请编辑您的个性签名！</p>
               </div>
+              <div class="div_gorund">
+                <div class="downPlay">
+                  <svg @click="againLogin" class="icon" aria-hidden="true">
+                    <use xlink:href="#icon-baisoft-xie-top"></use>
+                  </svg>
+                </div>
+              </div>
             </template>
 
-            <div class="div_gorund">
-              <div class="downPlay">
-                <svg @click="againLogin" class="icon" aria-hidden="true">
-                  <use xlink:href="#icon-baisoft-xie-top"></use>
-                </svg>
-              </div>
-            </div>
+
           </div>
         </template>
         <template>
@@ -117,7 +118,6 @@
       ...mapState({
         userDate: state => state.User.user,
       })
-
     },
     methods: {
       returnI() {

@@ -1,6 +1,6 @@
 <template>
   <div class="musicLove">
-    <div class="header-bar" >
+<!--    <div class="header-bar" >
       <div class="back-button" @touchend.prevent="hideSinger" @click="hideSinger">
         <div class="back-icon">
           <svg class="icon" aria-hidden="true">
@@ -10,7 +10,16 @@
       </div>
 
       <div class="back-text">我喜欢</div>
-    </div>
+    </div>-->
+    <header class="mui-bar mui-bar-nav" style="background-color: #8B87C1;">
+      <h1 class="mui-title">我喜欢</h1>
+      <a @touchend.prevent="hideSinger" @click="hideSinger" class="mui-icon">
+        <svg class="icon" aria-hidden="true">
+          <use xlink:href="#icon-jiantou1"></use>
+        </svg>
+      </a>
+    </header>
+
     <ul id="OA_task_2" class="mui-table-view">
       <template v-for="(item,index) in musicLoveList1">
         <li @click="playAudio" class="mui-table-view-cell">
@@ -58,7 +67,18 @@
         topId: this.$route.params.id,
       }
     },
+    computed: {
 
+      ...mapGetters([
+        'currentTime', 'duration','coverImgUrl',
+      ]),
+      ...mapState({
+        musicLoveList1: state => state.musicPayServer.musicLoveList,
+        song: state => state.musicPayServer.PlayIndex,
+        userDate: state => state.User.user,
+      })
+
+    },
     methods: {
       hideSinger: function () {
         this.$router.go(-1);
@@ -70,9 +90,11 @@
         console.log("8989")
         console.log(self.musicLoveList1);
 
-        if(!self.musicLoveList1.id){
+        //判断当前用户存不存在列表
+//        if(!self.musicLoveList1.id){
+        if(true){
           _.fetch("/getMusicLoveList", {
-            user_id: self.user.user_id,
+            user_id: self.userDate.user_id,
             pageIndex: 1,
             pageSize: 6
           }).then(($res) => {
@@ -105,6 +127,8 @@
           }).catch((error) => {
             console.log(error)
           })
+        }else { //去vux 里面我收藏列表
+
         }
 
 
@@ -112,46 +136,24 @@
       ...mapActions([
         'userState1','playIndexState1'
       ]),
-    },
-    computed: {
+      playAudio:function () {
 
-      ...mapGetters([
-        'currentTime', 'duration','coverImgUrl',
-      ]),
-      ...mapState({
-        musicLoveList1: state => state.musicPayServer.musicLoveList,
-        song: state => state.musicPayServer.PlayIndex,
-        user: state => state.User.user,
-      })
-
+      },
     },
+
     watch:{
-      user(val){
-        var self = this;
-        console.log("1111")
-        console.log(val)
-        if(val.user_id){
+
+    },
+    mounted(){
+      var self = this;
+      this.$nextTick(function () {
+        //判断当前用户是否登陆
+        if(self.userDate.user_name){
           self.islogin = true;
           self.getMusicLoveList();  //获取我喜欢 音乐列表
         }else{
           self.islogin = false;
         }
-      },
-   /*   musicLoveList1(val){
-        var self = this;
-        console.log("1122")
-        console.log(val)
-        if(self.islogin && val.user_id){
-          console.log("5555566666")
-        }else{
-          console.log("5555588888")
-        }
-      },*/
-    },
-    mounted(){
-      var self = this;
-      this.$nextTick(function () {
-
       })
     },
   }
@@ -163,7 +165,7 @@
    position: fixed;
    left: 0;
    top:0;
-   padding-top: 80px;
+   padding-top: 44px;
    width: 100%;
    height:100%;
    z-index: 300;
