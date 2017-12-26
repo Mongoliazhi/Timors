@@ -5,11 +5,27 @@ var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 
+var getEveryDate = require('./routes/config/request')
+// 每天获取新的数据
+/*var schedule = require('node-schedule');
+var rule = new schedule.RecurrenceRule();
+rule.second = [10,20,30,40,50];
+console.log("执行任务1");
+var j = schedule.scheduleJob(rule, function(){
+    console.log('The answer to life, the universe, and everything!');
+});*/
+
+// setInterval(function () {
+    console.log("执行任务3");
+    getEveryDate.getDat()
+// },1000000)
+
 
 var index = require('./routes/index');
 var timorsH5 = require('./routes/timorsH5/index');
 
 var app = express();
+
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));

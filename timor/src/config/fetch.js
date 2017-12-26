@@ -5,7 +5,7 @@ import * as  _public from './public'
 // import * as _ from '../util/tool'
 
 
-axios.defaults.timeout = 10000;                        //响应时间
+axios.defaults.timeout = 100000;                        //响应时间
 axios.defaults.headers.post['Content-Type'] = 'application/x-www-form-urlencoded;charset=UTF-8';           //配置请求头
 axios.defaults.baseURL = _public.getHttp;   //本地配置接口地址
 

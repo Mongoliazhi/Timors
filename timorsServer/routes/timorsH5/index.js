@@ -2,6 +2,8 @@ var express = require('express');
 var db = require("../mysql");
 var returnData = require("../config")
 
+var request = require('request'),
+    fs = require('fs');
 
 module.exports = function (app) {
     //快捷登陆记录用户
@@ -137,7 +139,7 @@ module.exports = function (app) {
 
 
 
-    //music 用户收藏 列表
+    //music 用户音乐收藏 列表
     app.post('/getMusicLoveList', function (req, res) {
         console.log(req.body)
         db.fetch('select * from tb_userMusic where user_id="'+req.body.user_id+'"', function (err, rows) {
@@ -145,6 +147,20 @@ module.exports = function (app) {
                 console.log(err);
             } else {
                 console.log(rows)
+                var data = returnData(rows,400,'success','')
+                res.send(data)
+            }
+        })
+    })
+
+
+    //travel 旅行列表
+    app.post('/oneT', function (req, res) {
+        console.log(req.body)
+        db.fetch('select * from tb_travel', function (err, rows) {
+            if (err) {
+                console.log(err);
+            } else {
                 var data = returnData(rows,400,'success','')
                 res.send(data)
             }
