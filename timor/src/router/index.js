@@ -8,7 +8,8 @@ import Main from '@/components/main/main'
 import Login from '@/components/login/login'
   import Register from '@/components/login/register' //注册
 
-import  TravelList from  '@/components/travel/travelList'
+import  TravelList from  '@/components/travel/travelList' //旅行
+import  FundList from  '@/components/fund/fundList' //基金
 
 import Classfig from '@/components/classfig'
 import Music from '@/components/music/music'
@@ -56,6 +57,11 @@ const router = new Router({
       path: '/travelList',
       name: 'TravelList',
       component: TravelList,
+    },
+    {
+      path: '/fundList',
+      name: 'FundList',
+      component: FundList,
     },
     {
       path: '/music',

@@ -2,8 +2,39 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f59b829c-541e-4703-9cf4-6c27ceab15bf" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/timor/src/components/main/main.vue" afterPath="$PROJECT_DIR$/timor/src/components/main/main.vue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/timor/src/components/fund/fundList.vue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/timor/src/components/travel/travelList.vue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/timorsServer/routes/config/request.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/timor/config/index.js" afterPath="$PROJECT_DIR$/timor/config/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/timor/index.html" afterPath="$PROJECT_DIR$/timor/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/timor/package.json" afterPath="$PROJECT_DIR$/timor/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/timor/src/App.vue" afterPath="$PROJECT_DIR$/timor/src/App.vue" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/timor/src/components/classfig.vue" afterPath="$PROJECT_DIR$/timor/src/components/classfig.vue" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/timor/src/components/footer/footer.vue" afterPath="$PROJECT_DIR$/timor/src/components/footer/footer.vue" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/timor/src/components/goods/address.vue" afterPath="$PROJECT_DIR$/timor/src/components/goods/address.vue" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/timor/src/components/goods/cart.vue" afterPath="$PROJECT_DIR$/timor/src/components/goods/cart.vue" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/timor/src/components/goods/goodsDetail.vue" afterPath="$PROJECT_DIR$/timor/src/components/goods/goodsDetail.vue" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/timor/src/components/login/login.vue" afterPath="$PROJECT_DIR$/timor/src/components/login/login.vue" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/timor/src/components/login/register.vue" afterPath="$PROJECT_DIR$/timor/src/components/login/register.vue" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/timor/src/components/main/main.vue" afterPath="$PROJECT_DIR$/timor/src/components/main/main.vue" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/timor/src/components/music/Play.vue" afterPath="$PROJECT_DIR$/timor/src/components/music/Play.vue" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/timor/src/components/music/music.vue" afterPath="$PROJECT_DIR$/timor/src/components/music/music.vue" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/timor/src/components/music/musicLove.vue" afterPath="$PROJECT_DIR$/timor/src/components/music/musicLove.vue" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/timor/src/components/music/topList.vue" afterPath="$PROJECT_DIR$/timor/src/components/music/topList.vue" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/timor/src/components/my.vue" afterPath="$PROJECT_DIR$/timor/src/components/my.vue" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/timor/src/config/fetch.js" afterPath="$PROJECT_DIR$/timor/src/config/fetch.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/timor/src/config/filter.js" afterPath="$PROJECT_DIR$/timor/src/config/filter.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/timor/src/config/public.js" afterPath="$PROJECT_DIR$/timor/src/config/public.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/timor/src/router/index.js" afterPath="$PROJECT_DIR$/timor/src/router/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/timor/src/vuex/User.js" afterPath="$PROJECT_DIR$/timor/src/vuex/User.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/timor/static/fonts/demo.css" afterPath="$PROJECT_DIR$/timor/static/fonts/demo.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/timor/static/fonts/demo_fontclass.html" afterPath="$PROJECT_DIR$/timor/static/fonts/demo_fontclass.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/timor/static/fonts/demo_symbol.html" afterPath="$PROJECT_DIR$/timor/static/fonts/demo_symbol.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/timor/static/fonts/demo_unicode.html" afterPath="$PROJECT_DIR$/timor/static/fonts/demo_unicode.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/timor/static/fonts/iconfont.css" afterPath="$PROJECT_DIR$/timor/static/fonts/iconfont.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/timor/static/fonts/iconfont.svg" afterPath="$PROJECT_DIR$/timor/static/fonts/iconfont.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/timorsServer/package.json" afterPath="$PROJECT_DIR$/timorsServer/package.json" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -22,31 +53,58 @@
           <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/timorsServer/routes/timorsH5/index.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="819">
+                <state relative-caret-position="897">
                   <caret line="39" column="29" lean-forward="false" selection-start-line="39" selection-start-column="29" selection-end-line="39" selection-end-column="29" />
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="footer.vue" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/timor/src/components/footer/footer.vue">
+          <file leaf-file-name="fetch.js" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/timor/src/config/fetch.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="3885">
-                  <caret line="185" column="29" lean-forward="false" selection-start-line="185" selection-start-column="29" selection-end-line="185" selection-end-column="29" />
-                  <folding>
-                    <element signature="n#style#0;n#svg#0;n#a#0;n#li#2;n#ul#0;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
-                    <marker date="1510127171585" expanded="false" signature="846:872" ph="..." />
-                  </folding>
+                <state relative-caret-position="238">
+                  <caret line="36" column="0" lean-forward="false" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
+                  <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="fetch.js" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/timor/src/config/fetch.js">
+          <file leaf-file-name="travelList.vue" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/timor/src/components/travel/travelList.vue">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="316">
-                  <caret line="27" column="4" lean-forward="false" selection-start-line="27" selection-start-column="4" selection-end-line="27" selection-end-column="4" />
+                <state relative-caret-position="0">
+                  <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="fundList.vue" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/timor/src/components/fund/fundList.vue">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="0">
+                  <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/timorsServer/routes/config/index.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="207">
+                  <caret line="9" column="1" lean-forward="true" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="app.js" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/timorsServer/app.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="0">
+                  <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
                   <folding />
                 </state>
               </provider>
@@ -55,7 +113,7 @@
           <file leaf-file-name="User.js" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/timor/src/vuex/User.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="336">
+                <state relative-caret-position="368">
                   <caret line="21" column="7" lean-forward="false" selection-start-line="21" selection-start-column="7" selection-end-line="27" selection-end-column="18" />
                   <folding>
                     <element signature="n#!!doc" expanded="true" />
@@ -65,35 +123,14 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="App.vue" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/timor/src/App.vue">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="777">
-                  <caret line="37" column="37" lean-forward="false" selection-start-line="37" selection-start-column="37" selection-end-line="37" selection-end-column="37" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
           <file leaf-file-name="main.vue" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/timor/src/components/main/main.vue">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="10059">
-                  <caret line="555" column="17" lean-forward="true" selection-start-line="555" selection-start-column="17" selection-end-line="555" selection-end-column="17" />
+                <state relative-caret-position="9614">
+                  <caret line="491" column="0" lean-forward="false" selection-start-line="491" selection-start-column="0" selection-end-line="491" selection-end-column="0" />
                   <folding>
                     <element signature="n#style#0;n#div#1;n#div#0;n#template#0;n#!!top" expanded="true" />
                     <element signature="n#div#0;n#div#2;n#div#0;n#template#0;n#!!top" expanded="false" />
-                    <marker date="1510395133974" expanded="true" signature="18716:18731" ph="{...}" />
-                    <marker date="1510395133974" expanded="true" signature="18716:20212" ph="..." />
-                    <marker date="1510395133974" expanded="true" signature="18763:18927" ph="{...}" />
-                    <marker date="1510395133974" expanded="true" signature="18942:19155" ph="{...}" />
-                    <marker date="1510395133974" expanded="true" signature="19184:19349" ph="{...}" />
-                    <marker date="1510395133974" expanded="true" signature="19382:19428" ph="{...}" />
-                    <marker date="1510395133974" expanded="true" signature="19455:19595" ph="{...}" />
-                    <marker date="1510395133974" expanded="true" signature="19625:19668" ph="{...}" />
-                    <marker date="1510395133974" expanded="true" signature="19703:19728" ph="{...}" />
-                    <marker date="1510395133974" expanded="true" signature="19757:19800" ph="{...}" />
-                    <marker date="1510395133974" expanded="true" signature="19829:19993" ph="{...}" />
                   </folding>
                 </state>
               </provider>
@@ -102,8 +139,8 @@
           <file leaf-file-name="filter.js" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/timor/src/config/filter.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="3360">
-                  <caret line="160" column="11" lean-forward="false" selection-start-line="160" selection-start-column="11" selection-end-line="160" selection-end-column="11" />
+                <state relative-caret-position="460">
+                  <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
                   <folding />
                 </state>
               </provider>
@@ -117,7 +154,7 @@
             <entry file="file://$PROJECT_DIR$/timor/src/components/main/main.vue">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="555">
-                  <caret line="321" column="22" lean-forward="true" selection-start-line="321" selection-start-column="22" selection-end-line="321" selection-end-column="22" />
+                  <caret line="321" column="16" lean-forward="false" selection-start-line="321" selection-start-column="16" selection-end-line="321" selection-end-column="16" />
                   <folding>
                     <element signature="n#style#0;n#div#1;n#div#0;n#template#0;n#!!top" expanded="true" />
                     <element signature="n#div#0;n#div#2;n#div#0;n#template#0;n#!!top" expanded="false" />
@@ -129,7 +166,7 @@
           <file leaf-file-name="goods_list.ejs" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/timorsServer/views/goods/goods_list.ejs">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="1764">
+                <state relative-caret-position="1932">
                   <caret line="84" column="17" lean-forward="false" selection-start-line="84" selection-start-column="17" selection-end-line="84" selection-end-column="61" />
                   <folding />
                 </state>
@@ -139,7 +176,7 @@
           <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/timorsServer/routes/index.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="609">
+                <state relative-caret-position="667">
                   <caret line="29" column="0" lean-forward="false" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
                   <folding />
                 </state>
@@ -241,74 +278,37 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="Timor" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Timor" type="462c0819:PsiDirectoryNode" />
+              <item name="2017Timors" type="b2602c69:ProjectViewProjectNode" />
+              <item name="2017Timors" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="Timor" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Timor" type="462c0819:PsiDirectoryNode" />
-              <item name="timor" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Timor" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Timor" type="462c0819:PsiDirectoryNode" />
-              <item name="timor" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Timor" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Timor" type="462c0819:PsiDirectoryNode" />
-              <item name="timor" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Timor" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Timor" type="462c0819:PsiDirectoryNode" />
-              <item name="timor" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Timor" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Timor" type="462c0819:PsiDirectoryNode" />
+              <item name="2017Timors" type="b2602c69:ProjectViewProjectNode" />
+              <item name="2017Timors" type="462c0819:PsiDirectoryNode" />
               <item name="timorsServer" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="Timor" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Timor" type="462c0819:PsiDirectoryNode" />
-              <item name="timorsServer" type="462c0819:PsiDirectoryNode" />
-              <item name="node_modules" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Timor" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Timor" type="462c0819:PsiDirectoryNode" />
+              <item name="2017Timors" type="b2602c69:ProjectViewProjectNode" />
+              <item name="2017Timors" type="462c0819:PsiDirectoryNode" />
               <item name="timorsServer" type="462c0819:PsiDirectoryNode" />
               <item name="routes" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="Timor" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Timor" type="462c0819:PsiDirectoryNode" />
+              <item name="2017Timors" type="b2602c69:ProjectViewProjectNode" />
+              <item name="2017Timors" type="462c0819:PsiDirectoryNode" />
               <item name="timorsServer" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Timor" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Timor" type="462c0819:PsiDirectoryNode" />
-              <item name="timorsServer" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="goods" type="462c0819:PsiDirectoryNode" />
+              <item name="routes" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -322,9 +322,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Administrator\Desktop\Timor\timor\src\config" />
-      <recent name="C:\Users\Administrator\Desktop\Timors\timorsServer\routes\timor" />
-      <recent name="C:\Users\Administrator\Desktop\Timors\timorsServer\routes" />
+      <recent name="C:\Users\Administrator\Desktop\2017Timors\timorsServer" />
+      <recent name="C:\Users\Administrator\Desktop\2017Timors\timorsServer\routes" />
+      <recent name="C:\Users\Administrator\Desktop\2017Timors\timorsServer\routes\config" />
+      <recent name="C:\Users\Administrator\Desktop\2017Timors\timor\src\components" />
+      <recent name="C:\Users\Administrator\Desktop\2017Timors\timor\src\components\fund" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -361,31 +363,32 @@
       <workItem from="1510392667772" duration="31000" />
       <workItem from="1510393107101" duration="196000" />
       <workItem from="1510537086301" duration="277000" />
+      <workItem from="1514447948708" duration="16000" />
+      <workItem from="1514448300749" duration="753000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="27607000" />
+    <option name="totallyTimeSpent" value="28376000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="83" y="0" width="1723" height="1051" extended-state="0" />
-    <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15348564" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15348564" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32943678" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -403,84 +406,24 @@
           <line>24</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/timor/src/config/fetch.js</url>
+          <line>33</line>
+          <properties />
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="3" />
+      <option name="time" value="4" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/timor/src/App.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="629">
-          <caret line="37" column="37" lean-forward="false" selection-start-line="37" selection-start-column="37" selection-end-line="37" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/timorsServer/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="24" column="31" lean-forward="false" selection-start-line="24" selection-start-column="31" selection-end-line="24" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/timor/src/components/main/main.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="7752">
-          <caret line="523" column="0" lean-forward="false" selection-start-line="523" selection-start-column="0" selection-end-line="523" selection-end-column="0" />
-          <folding>
-            <element signature="n#style#0;n#div#1;n#div#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#div#0;n#div#2;n#div#0;n#template#0;n#!!top" expanded="false" />
-            <marker date="1510395133974" expanded="true" signature="18716:18731" ph="{...}" />
-            <marker date="1510395133974" expanded="true" signature="18716:20212" ph="..." />
-            <marker date="1510395133974" expanded="true" signature="18763:18927" ph="{...}" />
-            <marker date="1510395133974" expanded="true" signature="18942:19155" ph="{...}" />
-            <marker date="1510395133974" expanded="true" signature="19184:19349" ph="{...}" />
-            <marker date="1510395133974" expanded="true" signature="19382:19428" ph="{...}" />
-            <marker date="1510395133974" expanded="true" signature="19455:19595" ph="{...}" />
-            <marker date="1510395133974" expanded="true" signature="19625:19668" ph="{...}" />
-            <marker date="1510395133974" expanded="true" signature="19703:19728" ph="{...}" />
-            <marker date="1510395133974" expanded="true" signature="19757:19800" ph="{...}" />
-            <marker date="1510395133974" expanded="true" signature="19829:19993" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/timor/static/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="27" column="2" lean-forward="false" selection-start-line="27" selection-start-column="2" selection-end-line="27" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/timorsServer/views/index.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/timor/src/components/login/login.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1445">
-          <caret line="85" column="4" lean-forward="false" selection-start-line="85" selection-start-column="4" selection-end-line="86" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/timor/src/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="2" column="7" lean-forward="false" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/timor/src/components/footer/footer.vue">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2074">
           <caret line="122" column="9" lean-forward="false" selection-start-line="106" selection-start-column="8" selection-end-line="122" selection-end-column="9" />
           <folding>
-            <element signature="n#style#0;n#svg#0;n#a#0;n#li#2;n#ul#0;n#div#0;n#div#0;n#template#0;n#!!top" expanded="false" />
-            <marker date="1510127171585" expanded="false" signature="846:872" ph="..." />
+            <element signature="n#style#0;n#svg#0;n#a#0;n#li#2;n#ul#0;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -514,17 +457,6 @@
           <folding>
             <element signature="n#style#0;n#div#1;n#div#0;n#template#0;n#!!top" expanded="true" />
             <element signature="n#div#0;n#div#2;n#div#0;n#template#0;n#!!top" expanded="false" />
-            <marker date="1510395133974" expanded="true" signature="18716:18731" ph="{...}" />
-            <marker date="1510395133974" expanded="true" signature="18716:20212" ph="..." />
-            <marker date="1510395133974" expanded="true" signature="18763:18927" ph="{...}" />
-            <marker date="1510395133974" expanded="true" signature="18942:19155" ph="{...}" />
-            <marker date="1510395133974" expanded="true" signature="19184:19349" ph="{...}" />
-            <marker date="1510395133974" expanded="true" signature="19382:19428" ph="{...}" />
-            <marker date="1510395133974" expanded="true" signature="19455:19595" ph="{...}" />
-            <marker date="1510395133974" expanded="true" signature="19625:19668" ph="{...}" />
-            <marker date="1510395133974" expanded="true" signature="19703:19728" ph="{...}" />
-            <marker date="1510395133974" expanded="true" signature="19757:19800" ph="{...}" />
-            <marker date="1510395133974" expanded="true" signature="19829:19993" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -542,8 +474,8 @@
         <state relative-caret-position="629">
           <caret line="37" column="14" lean-forward="true" selection-start-line="37" selection-start-column="14" selection-end-line="37" selection-end-column="14" />
           <folding>
-            <element signature="n#!!doc" expanded="false" />
-            <element signature="e#55#77#0" expanded="false" />
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="e#55#77#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -598,8 +530,8 @@
     <entry file="file://$PROJECT_DIR$/timorsServer/routes/login.js" />
     <entry file="file://$PROJECT_DIR$/timor/src/App.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="777">
-          <caret line="37" column="37" lean-forward="false" selection-start-line="37" selection-start-column="37" selection-end-line="37" selection-end-column="37" />
+        <state relative-caret-position="782">
+          <caret line="37" column="12" lean-forward="false" selection-start-line="37" selection-start-column="12" selection-end-line="37" selection-end-column="12" />
           <folding />
         </state>
       </provider>
@@ -657,16 +589,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/timorsServer/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="25" column="6" lean-forward="false" selection-start-line="25" selection-start-column="6" selection-end-line="25" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/timorsServer/views/goods/goods_list.ejs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1764">
+        <state relative-caret-position="1932">
           <caret line="84" column="17" lean-forward="false" selection-start-line="84" selection-start-column="17" selection-end-line="84" selection-end-column="61" />
           <folding />
         </state>
@@ -702,7 +627,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/timorsServer/routes/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="609">
+        <state relative-caret-position="667">
           <caret line="29" column="0" lean-forward="false" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
           <folding />
         </state>
@@ -710,18 +635,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/timor/src/components/footer/footer.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3885">
+        <state relative-caret-position="4232">
           <caret line="185" column="29" lean-forward="false" selection-start-line="185" selection-start-column="29" selection-end-line="185" selection-end-column="29" />
           <folding>
-            <element signature="n#style#0;n#svg#0;n#a#0;n#li#2;n#ul#0;n#div#0;n#div#0;n#template#0;n#!!top" expanded="false" />
-            <marker date="1510127171585" expanded="false" signature="846:872" ph="..." />
+            <element signature="n#style#0;n#svg#0;n#a#0;n#li#2;n#ul#0;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/timorsServer/routes/timorsH5/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="819">
+        <state relative-caret-position="897">
           <caret line="39" column="29" lean-forward="false" selection-start-line="39" selection-start-column="29" selection-end-line="39" selection-end-column="29" />
           <folding />
         </state>
@@ -729,49 +653,102 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/timor/src/config/filter.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3360">
-          <caret line="160" column="11" lean-forward="false" selection-start-line="160" selection-start-column="11" selection-end-line="160" selection-end-column="11" />
+        <state relative-caret-position="460">
+          <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/timor/src/components/main/main.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="10059">
-          <caret line="555" column="17" lean-forward="true" selection-start-line="555" selection-start-column="17" selection-end-line="555" selection-end-column="17" />
+        <state relative-caret-position="9614">
+          <caret line="491" column="0" lean-forward="false" selection-start-line="491" selection-start-column="0" selection-end-line="491" selection-end-column="0" />
           <folding>
             <element signature="n#style#0;n#div#1;n#div#0;n#template#0;n#!!top" expanded="true" />
             <element signature="n#div#0;n#div#2;n#div#0;n#template#0;n#!!top" expanded="false" />
-            <marker date="1510395133974" expanded="true" signature="18716:18731" ph="{...}" />
-            <marker date="1510395133974" expanded="true" signature="18716:20212" ph="..." />
-            <marker date="1510395133974" expanded="true" signature="18763:18927" ph="{...}" />
-            <marker date="1510395133974" expanded="true" signature="18942:19155" ph="{...}" />
-            <marker date="1510395133974" expanded="true" signature="19184:19349" ph="{...}" />
-            <marker date="1510395133974" expanded="true" signature="19382:19428" ph="{...}" />
-            <marker date="1510395133974" expanded="true" signature="19455:19595" ph="{...}" />
-            <marker date="1510395133974" expanded="true" signature="19625:19668" ph="{...}" />
-            <marker date="1510395133974" expanded="true" signature="19703:19728" ph="{...}" />
-            <marker date="1510395133974" expanded="true" signature="19757:19800" ph="{...}" />
-            <marker date="1510395133974" expanded="true" signature="19829:19993" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/timor/src/vuex/User.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
+        <state relative-caret-position="368">
           <caret line="21" column="7" lean-forward="false" selection-start-line="21" selection-start-column="7" selection-end-line="27" selection-end-column="18" />
           <folding>
-            <element signature="n#!!doc" expanded="false" />
-            <element signature="e#55#77#0" expanded="false" />
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="e#55#77#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/timor/src/components/a.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/timor/src/components/fund/fundList.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/timor/src/config/fetch.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="316">
-          <caret line="27" column="4" lean-forward="false" selection-start-line="27" selection-start-column="4" selection-end-line="27" selection-end-column="4" />
+        <state relative-caret-position="238">
+          <caret line="36" column="0" lean-forward="false" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/timor/src/components/travel/travelList.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/timor/src/components/fund/fundList.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/timorsServer/routes/config/request.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/timorsServer/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="433">
+          <caret line="21" column="0" lean-forward="true" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/timorsServer/routes/config/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="9" column="1" lean-forward="true" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/timorsServer/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
