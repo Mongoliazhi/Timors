@@ -12,7 +12,7 @@ npm run dev
 
 
 
-后端服务：
+后端服务：（已迁移到TimorsServer 项目中）
 
 cd timorsServer
 
