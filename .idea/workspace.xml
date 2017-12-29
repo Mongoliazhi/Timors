@@ -1,40 +1,670 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f59b829c-541e-4703-9cf4-6c27ceab15bf" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/timor/src/components/fund/fundList.vue" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/timor/src/components/travel/travelList.vue" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/timorsServer/routes/config/request.js" />
+    <list default="true" id="f59b829c-541e-4703-9cf4-6c27ceab15bf" name="Default" comment="旅行">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/assets/logo.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/.gitkeep" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/fonts/iconfont.eot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/fonts/iconfont.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/fonts/iconfont.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/fonts/mui-icons-extra.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/fonts/mui.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/iconfont/iconfont.eot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/iconfont/iconfont.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/iconfont/iconfont.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/111.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/60x60.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/Vue_Music_Blur.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/a1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/a2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/a3.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/a4.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/access.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/assessNull.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/calendar.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/calendar_1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/calendar_2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/calendar_3.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/calendar_4.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/calendar_5.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/cbd.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/collection.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/contact1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/erji.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/hourglass.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/i1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/i2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/i3.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/i4.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/i5.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/i6.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/i7.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/i8.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/icon-...black.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/icon-RANDOM.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/icon-SEQUENTIAL.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/icon-album.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/icon-back.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/icon-jiantou.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/icon-like.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/icon-list.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/icon-music.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/icon-mv.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/icon-pause.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/icon-play.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/icon-search.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/icon-shangyiqu.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/icon-share.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/icon-singer.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/icon-volue-left.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/icon-volue-right.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/icon-xiayiqu.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/icon.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/login-1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/logistics.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/logo (2).png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/logo.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/logo1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/logo3.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/logo4.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/love_1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/love_2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/main_1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/main_2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/main_3.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/main_bo.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/meo.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/music_bg.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/muwu.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/myincome.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/navlist_1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/navlist_2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/navlist_3.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/navlist_4.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/navlist_5.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/navlist_6.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/news_1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/news_2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/news_3.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/news_4.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/news_5.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/payFail.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/paySuccess.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/qrcode.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/ranking_down.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/ranking_up.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/search.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/shopping.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/shopsuccess.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/shouhou.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/shuijiao.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/test.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/tixian.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/tixian1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/tixianSuccess.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/tixian_1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/tixian_2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/women.jpeg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/yuantiao.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/ziying.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.babelrc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.editorconfig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.postcssrc.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/build.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/check-versions.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/dev-client.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/dev-server.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/utils.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/vue-loader.conf.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/webpack.base.conf.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/webpack.dev.conf.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/webpack.prod.conf.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/config/dev.env.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/config/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/config/prod.env.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/App.vue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/bus/bus.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/components/Hello.vue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/components/classfig.vue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/components/footer/footer.vue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/components/footer/goodsFooter.vue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/components/fund/fundList.vue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/components/getData/musicData.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/components/goods/address.vue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/components/goods/cart.vue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/components/goods/goods.vue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/components/goods/goodsDetail.vue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/components/login/login.vue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/components/login/register.vue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/components/main/main.vue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/components/main/main111.vue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/components/music/Play.vue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/components/music/music.vue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/components/music/musicLove.vue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/components/music/topList.vue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/components/music/topList1.vue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/components/my.vue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/components/travel/travelList.vue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/config/fetch.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/config/filter.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/config/public.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/node/request.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/router/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/vuex/User.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/vuex/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/vuex/musicPayServer.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/css/animate.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/css/main.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/css/main.css.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/css/mui.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/css/public/swiper-3.4.2.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/css/style.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/data/home.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/fonts/demo.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/fonts/demo_fontclass.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/fonts/demo_symbol.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/fonts/demo_unicode.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/fonts/iconfont.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/fonts/iconfont.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/fonts/iconfont.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/iconfont/demo.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/iconfont/demo_fontclass.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/iconfont/demo_symbol.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/iconfont/demo_unicode.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/iconfont/iconfont.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/iconfont/iconfont.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/iconfont/iconfont.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/error.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/icon-SINGLE.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/icon-back-white.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/icon-back.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/icon-erji.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/icon-mvcount.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/icon-playing.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/loading.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/feedback.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/jquery-2.0.3.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/jquery.fly.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/mui.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/mui.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/mui.view.js" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timor/.babelrc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timor/.editorconfig" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timor/.gitignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timor/.postcssrc.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timor/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timor/build/build.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timor/build/check-versions.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timor/build/dev-client.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timor/build/dev-server.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timor/build/utils.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timor/build/vue-loader.conf.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timor/build/webpack.base.conf.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timor/build/webpack.dev.conf.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timor/build/webpack.prod.conf.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timor/config/dev.env.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timor/config/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timor/config/prod.env.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timor/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timor/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timor/src/App.vue" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timor/src/assets/logo.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timor/src/bus/bus.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timor/src/components/Hello.vue" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timor/src/components/classfig.vue" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timor/src/components/footer/footer.vue" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timor/src/components/footer/goodsFooter.vue" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timor/src/components/fund/fundList.vue" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timor/src/components/getData/musicData.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timor/src/components/goods/address.vue" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timor/src/components/goods/cart.vue" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timor/src/components/goods/goods.vue" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timor/src/components/goods/goodsDetail.vue" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timor/src/components/login/login.vue" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timor/src/components/login/register.vue" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timor/src/components/main/main.vue" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timor/src/components/music/Play.vue" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timor/src/components/music/music.vue" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timor/src/components/music/musicLove.vue" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timor/src/components/music/topList.vue" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timor/src/components/music/topList1.vue" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timor/src/components/my.vue" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timor/src/components/travel/travelList.vue" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timor/src/config/fetch.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timor/src/config/filter.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timor/src/config/public.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timor/src/main.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timor/src/router/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timor/src/vuex/User.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timor/src/vuex/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timor/src/vuex/musicPayServer.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timor/static/.gitkeep" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timor/static/css/animate.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timor/static/css/main.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timor/static/css/main.css.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timor/static/css/mui.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timor/static/css/public/swiper-3.4.2.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timor/static/css/style.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timor/static/data/home.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timor/static/fonts/demo.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timor/static/fonts/demo_fontclass.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timor/static/fonts/demo_symbol.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timor/static/fonts/demo_unicode.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timor/static/fonts/iconfont.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timor/static/fonts/iconfont.eot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timor/static/fonts/iconfont.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timor/static/fonts/iconfont.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timor/static/fonts/iconfont.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timor/static/fonts/iconfont.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timor/static/fonts/mui-icons-extra.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timor/static/fonts/mui.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timor/static/iconfont/demo.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timor/static/iconfont/demo_fontclass.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timor/static/iconfont/demo_symbol.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timor/static/iconfont/demo_unicode.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timor/static/iconfont/iconfont.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timor/static/iconfont/iconfont.eot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timor/static/iconfont/iconfont.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timor/static/iconfont/iconfont.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timor/static/iconfont/iconfont.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timor/static/iconfont/iconfont.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timor/static/images/111.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timor/static/images/60x60.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timor/static/images/Vue_Music_Blur.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timor/static/images/a1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timor/static/images/a2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timor/static/images/a3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timor/static/images/a4.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timor/static/images/access.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timor/static/images/assessNull.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timor/static/images/calendar.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timor/static/images/calendar_1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timor/static/images/calendar_2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timor/static/images/calendar_3.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timor/static/images/calendar_4.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timor/static/images/calendar_5.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timor/static/images/cbd.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timor/static/images/collection.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timor/static/images/contact1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timor/static/images/erji.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timor/static/images/error.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timor/static/images/hourglass.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timor/static/images/i1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timor/static/images/i2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timor/static/images/i3.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timor/static/images/i4.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timor/static/images/i5.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timor/static/images/i6.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timor/static/images/i7.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timor/static/images/i8.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timor/static/images/icon-...black.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timor/static/images/icon-RANDOM.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timor/static/images/icon-SEQUENTIAL.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timor/static/images/icon-SINGLE.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timor/static/images/icon-album.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timor/static/images/icon-back-white.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timor/static/images/icon-back.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timor/static/images/icon-back.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timor/static/images/icon-erji.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timor/static/images/icon-jiantou.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timor/static/images/icon-like.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timor/static/images/icon-list.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timor/static/images/icon-music.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timor/static/images/icon-mv.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timor/static/images/icon-mvcount.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timor/static/images/icon-pause.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timor/static/images/icon-play.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timor/static/images/icon-playing.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timor/static/images/icon-search.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timor/static/images/icon-shangyiqu.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timor/static/images/icon-share.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timor/static/images/icon-singer.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timor/static/images/icon-volue-left.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timor/static/images/icon-volue-right.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timor/static/images/icon-xiayiqu.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timor/static/images/icon.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timor/static/images/loading.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timor/static/images/login-1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timor/static/images/logistics.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timor/static/images/logo (2).png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timor/static/images/logo.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timor/static/images/logo1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timor/static/images/logo3.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timor/static/images/logo4.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timor/static/images/love_1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timor/static/images/love_2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timor/static/images/main_1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timor/static/images/main_2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timor/static/images/main_3.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timor/static/images/main_bo.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timor/static/images/meo.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timor/static/images/music_bg.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timor/static/images/muwu.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timor/static/images/myincome.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timor/static/images/navlist_1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timor/static/images/navlist_2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timor/static/images/navlist_3.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timor/static/images/navlist_4.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timor/static/images/navlist_5.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timor/static/images/navlist_6.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timor/static/images/news_1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timor/static/images/news_2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timor/static/images/news_3.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timor/static/images/news_4.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timor/static/images/news_5.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timor/static/images/payFail.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timor/static/images/paySuccess.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timor/static/images/qrcode.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timor/static/images/ranking_down.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timor/static/images/ranking_up.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timor/static/images/search.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timor/static/images/shopping.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timor/static/images/shopsuccess.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timor/static/images/shouhou.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timor/static/images/shuijiao.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timor/static/images/test.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timor/static/images/tixian.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timor/static/images/tixian1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timor/static/images/tixianSuccess.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timor/static/images/tixian_1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timor/static/images/tixian_2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timor/static/images/women.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timor/static/images/yuantiao.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timor/static/images/yueke.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timor/static/images/ziying.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timor/static/js/feedback.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timor/static/js/jquery-2.0.3.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timor/static/js/jquery.fly.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timor/static/js/mui.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timor/static/js/mui.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timor/static/js/mui.view.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timorsServer/app.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timorsServer/bin/www" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timorsServer/controller/goods/goods_upload.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timorsServer/controller/public/img_upload.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timorsServer/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timorsServer/public/HPlus/css/animate.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timorsServer/public/HPlus/css/bootstrap.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timorsServer/public/HPlus/css/bootstrap.min14ed.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timorsServer/public/HPlus/css/demo/webuploader-demo.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timorsServer/public/HPlus/css/font-awesome.min93e3.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timorsServer/public/HPlus/css/login.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timorsServer/public/HPlus/css/patterns/header-profile-skin-1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timorsServer/public/HPlus/css/patterns/header-profile-skin-3.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timorsServer/public/HPlus/css/patterns/header-profile.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timorsServer/public/HPlus/css/patterns/shattered.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timorsServer/public/HPlus/css/plugins/awesome-bootstrap-checkbox/awesome-bootstrap-checkbox.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timorsServer/public/HPlus/css/plugins/blueimp/css/blueimp-gallery.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timorsServer/public/HPlus/css/plugins/blueimp/img/error.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timorsServer/public/HPlus/css/plugins/blueimp/img/error.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timorsServer/public/HPlus/css/plugins/blueimp/img/loading.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timorsServer/public/HPlus/css/plugins/blueimp/img/play-pause.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timorsServer/public/HPlus/css/plugins/blueimp/img/play-pause.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timorsServer/public/HPlus/css/plugins/blueimp/img/video-play.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timorsServer/public/HPlus/css/plugins/blueimp/img/video-play.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timorsServer/public/HPlus/css/plugins/bootstrap-table/bootstrap-table.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timorsServer/public/HPlus/css/plugins/chosen/chosen-sprite.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timorsServer/public/HPlus/css/plugins/chosen/chosen-sprite@2x.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timorsServer/public/HPlus/css/plugins/chosen/chosen.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timorsServer/public/HPlus/css/plugins/clockpicker/clockpicker.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timorsServer/public/HPlus/css/plugins/codemirror/ambiance.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timorsServer/public/HPlus/css/plugins/codemirror/codemirror.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timorsServer/public/HPlus/css/plugins/colorpicker/css/bootstrap-colorpicker.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timorsServer/public/HPlus/css/plugins/colorpicker/img/bootstrap-colorpicker/alpha-horizontal.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timorsServer/public/HPlus/css/plugins/colorpicker/img/bootstrap-colorpicker/alpha.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timorsServer/public/HPlus/css/plugins/colorpicker/img/bootstrap-colorpicker/hue-horizontal.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timorsServer/public/HPlus/css/plugins/colorpicker/img/bootstrap-colorpicker/hue.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timorsServer/public/HPlus/css/plugins/colorpicker/img/bootstrap-colorpicker/saturation.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timorsServer/public/HPlus/css/plugins/cropper/cropper.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timorsServer/public/HPlus/css/plugins/dataTables/dataTables.bootstrap.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timorsServer/public/HPlus/css/plugins/datapicker/datepicker3.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timorsServer/public/HPlus/css/plugins/dropzone/basic.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timorsServer/public/HPlus/css/plugins/dropzone/dropzone.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timorsServer/public/HPlus/css/plugins/footable/fonts/footable.eot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timorsServer/public/HPlus/css/plugins/footable/fonts/footable.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timorsServer/public/HPlus/css/plugins/footable/fonts/footable.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timorsServer/public/HPlus/css/plugins/footable/fonts/footable.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timorsServer/public/HPlus/css/plugins/footable/fonts/footabled41d.eot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timorsServer/public/HPlus/css/plugins/footable/footable.core.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timorsServer/public/HPlus/css/plugins/fullcalendar/fullcalendar.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timorsServer/public/HPlus/css/plugins/fullcalendar/fullcalendar.print.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timorsServer/public/HPlus/css/plugins/iCheck/custom.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timorsServer/public/HPlus/css/plugins/iCheck/green.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timorsServer/public/HPlus/css/plugins/iCheck/green@2x.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timorsServer/public/HPlus/css/plugins/images/sort_asc.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timorsServer/public/HPlus/css/plugins/images/sort_desc.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timorsServer/public/HPlus/css/plugins/images/sprite-skin-flat.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timorsServer/public/HPlus/css/plugins/images/spritemap.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timorsServer/public/HPlus/css/plugins/images/spritemap@2x.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timorsServer/public/HPlus/css/plugins/ionRangeSlider/ion.rangeSlider.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timorsServer/public/HPlus/css/plugins/ionRangeSlider/ion.rangeSlider.skinFlat.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timorsServer/public/HPlus/css/plugins/jasny/jasny-bootstrap.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timorsServer/public/HPlus/css/plugins/jqgrid/ui.jqgridffe4.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timorsServer/public/HPlus/css/plugins/jsTree/style.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timorsServer/public/HPlus/css/plugins/markdown/bootstrap-markdown.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timorsServer/public/HPlus/css/plugins/morris/morris-0.4.3.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timorsServer/public/HPlus/css/plugins/nouslider/jquery.nouislider.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timorsServer/public/HPlus/css/plugins/plyr/plyr.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timorsServer/public/HPlus/css/plugins/plyr/sprite.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timorsServer/public/HPlus/css/plugins/simditor/simditor.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timorsServer/public/HPlus/css/plugins/steps/jquery.steps.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timorsServer/public/HPlus/css/plugins/summernote/font/summernote.eot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timorsServer/public/HPlus/css/plugins/summernote/font/summernote.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timorsServer/public/HPlus/css/plugins/summernote/font/summernote.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timorsServer/public/HPlus/css/plugins/summernote/summernote.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timorsServer/public/HPlus/css/plugins/sweetalert/sweetalert.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timorsServer/public/HPlus/css/plugins/switchery/switchery.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timorsServer/public/HPlus/css/plugins/toastr/toastr.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timorsServer/public/HPlus/css/plugins/treeview/bootstrap-treeview.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timorsServer/public/HPlus/css/plugins/webuploader/webuploader.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timorsServer/public/HPlus/css/style.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timorsServer/public/HPlus/css/style.min862f.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timorsServer/public/HPlus/fonts/fontawesome-webfont93e3.eot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timorsServer/public/HPlus/fonts/fontawesome-webfont93e3.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timorsServer/public/HPlus/fonts/fontawesome-webfont93e3.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timorsServer/public/HPlus/fonts/fontawesome-webfont93e3.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timorsServer/public/HPlus/fonts/fontawesome-webfont93e3.woff2" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timorsServer/public/HPlus/fonts/fontawesome-webfontd41d.eot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timorsServer/public/HPlus/fonts/glyphicons-halflings-regular.eot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timorsServer/public/HPlus/fonts/glyphicons-halflings-regular.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timorsServer/public/HPlus/fonts/glyphicons-halflings-regular.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timorsServer/public/HPlus/fonts/glyphicons-halflings-regular.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timorsServer/public/HPlus/fonts/glyphicons-halflings-regular.woff2" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timorsServer/public/HPlus/fonts/glyphicons-halflings-regulard41d.eot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timorsServer/public/HPlus/img/a1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timorsServer/public/HPlus/img/a2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timorsServer/public/HPlus/img/a3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timorsServer/public/HPlus/img/a4.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timorsServer/public/HPlus/img/a5.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timorsServer/public/HPlus/img/a6.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timorsServer/public/HPlus/img/a7.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timorsServer/public/HPlus/img/a8.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timorsServer/public/HPlus/img/a9.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timorsServer/public/HPlus/img/bg.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timorsServer/public/HPlus/img/iconfont-logo.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timorsServer/public/HPlus/img/icons.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timorsServer/public/HPlus/img/index.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timorsServer/public/HPlus/img/index_4.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timorsServer/public/HPlus/img/loading-upload.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timorsServer/public/HPlus/img/locked.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timorsServer/public/HPlus/img/login-background.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timorsServer/public/HPlus/img/p1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timorsServer/public/HPlus/img/p2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timorsServer/public/HPlus/img/p3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timorsServer/public/HPlus/img/p_big1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timorsServer/public/HPlus/img/p_big2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timorsServer/public/HPlus/img/p_big3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timorsServer/public/HPlus/img/pay.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timorsServer/public/HPlus/img/profile.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timorsServer/public/HPlus/img/profile_big.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timorsServer/public/HPlus/img/profile_small.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timorsServer/public/HPlus/img/progress.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timorsServer/public/HPlus/img/qr_code.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timorsServer/public/HPlus/img/success.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timorsServer/public/HPlus/img/user.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timorsServer/public/HPlus/img/wenku_logo.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timorsServer/public/HPlus/js/bootstrap.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timorsServer/public/HPlus/js/contabs.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timorsServer/public/HPlus/js/content.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timorsServer/public/HPlus/js/demo/bootstrap-table-demo.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timorsServer/public/HPlus/js/demo/echarts-demo.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timorsServer/public/HPlus/js/demo/flot-demo.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timorsServer/public/HPlus/js/demo/form-advanced-demo.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timorsServer/public/HPlus/js/demo/form-validate-demo.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timorsServer/public/HPlus/js/demo/layer-demo.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timorsServer/public/HPlus/js/demo/morris-demo.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timorsServer/public/HPlus/js/demo/peity-demo.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timorsServer/public/HPlus/js/demo/rickshaw-demo.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timorsServer/public/HPlus/js/demo/sparkline-demo.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timorsServer/public/HPlus/js/demo/treeview-demo.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timorsServer/public/HPlus/js/hplus.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timorsServer/public/HPlus/js/jquery-ui-1.10.4.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timorsServer/public/HPlus/js/jquery-ui.custom.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timorsServer/public/HPlus/js/jquery.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timorsServer/public/HPlus/js/plugins/beautifyhtml/beautifyhtml.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timorsServer/public/HPlus/js/plugins/blueimp/jquery.blueimp-gallery.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timorsServer/public/HPlus/js/plugins/bootstrap-table/bootstrap-table-mobile.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timorsServer/public/HPlus/js/plugins/bootstrap-table/bootstrap-table.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timorsServer/public/HPlus/js/plugins/bootstrap-table/locale/bootstrap-table-zh-CN.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timorsServer/public/HPlus/js/plugins/chartJs/Chart.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timorsServer/public/HPlus/js/plugins/chosen/chosen.jquery.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timorsServer/public/HPlus/js/plugins/clockpicker/clockpicker.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timorsServer/public/HPlus/js/plugins/codemirror/codemirror.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timorsServer/public/HPlus/js/plugins/codemirror/mode/javascript/javascript.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timorsServer/public/HPlus/js/plugins/colorpicker/bootstrap-colorpicker.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timorsServer/public/HPlus/js/plugins/cropper/cropper.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timorsServer/public/HPlus/js/plugins/dataTables/dataTables.bootstrap.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timorsServer/public/HPlus/js/plugins/dataTables/jquery.dataTables.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timorsServer/public/HPlus/js/plugins/datapicker/bootstrap-datepicker.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timorsServer/public/HPlus/js/plugins/diff_match_patch/diff_match_patch.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timorsServer/public/HPlus/js/plugins/dropzone/dropzone.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timorsServer/public/HPlus/js/plugins/easypiechart/jquery.easypiechart.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timorsServer/public/HPlus/js/plugins/echarts/echarts-all.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timorsServer/public/HPlus/js/plugins/fancybox/blank.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timorsServer/public/HPlus/js/plugins/fancybox/fancybox_loading.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timorsServer/public/HPlus/js/plugins/fancybox/fancybox_loading@2x.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timorsServer/public/HPlus/js/plugins/fancybox/fancybox_overlay.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timorsServer/public/HPlus/js/plugins/fancybox/fancybox_sprite.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timorsServer/public/HPlus/js/plugins/fancybox/fancybox_sprite@2x.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timorsServer/public/HPlus/js/plugins/fancybox/jquery.fancybox.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timorsServer/public/HPlus/js/plugins/fancybox/jquery.fancybox.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timorsServer/public/HPlus/js/plugins/flot/curvedLines.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timorsServer/public/HPlus/js/plugins/flot/jquery.flot.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timorsServer/public/HPlus/js/plugins/flot/jquery.flot.pie.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timorsServer/public/HPlus/js/plugins/flot/jquery.flot.resize.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timorsServer/public/HPlus/js/plugins/flot/jquery.flot.spline.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timorsServer/public/HPlus/js/plugins/flot/jquery.flot.symbol.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timorsServer/public/HPlus/js/plugins/flot/jquery.flot.tooltip.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timorsServer/public/HPlus/js/plugins/footable/footable.all.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timorsServer/public/HPlus/js/plugins/fullcalendar/fullcalendar.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timorsServer/public/HPlus/js/plugins/gritter/images/gritter-light.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timorsServer/public/HPlus/js/plugins/gritter/images/gritter.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timorsServer/public/HPlus/js/plugins/gritter/images/ie-spacer.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timorsServer/public/HPlus/js/plugins/gritter/jquery.gritter.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timorsServer/public/HPlus/js/plugins/gritter/jquery.gritter.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timorsServer/public/HPlus/js/plugins/iCheck/icheck.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timorsServer/public/HPlus/js/plugins/ionRangeSlider/ion.rangeSlider.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timorsServer/public/HPlus/js/plugins/jasny/jasny-bootstrap.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timorsServer/public/HPlus/js/plugins/jeditable/jquery.jeditable.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timorsServer/public/HPlus/js/plugins/jqgrid/i18n/grid.locale-cnffe4.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timorsServer/public/HPlus/js/plugins/jqgrid/jquery.jqGrid.minffe4.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timorsServer/public/HPlus/js/plugins/jquery-ui/jquery-ui.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timorsServer/public/HPlus/js/plugins/jsKnob/jquery.knob.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timorsServer/public/HPlus/js/plugins/jsTree/jstree.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timorsServer/public/HPlus/js/plugins/jvectormap/jquery-jvectormap-1.2.2.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timorsServer/public/HPlus/js/plugins/jvectormap/jquery-jvectormap-world-mill-en.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timorsServer/public/HPlus/js/plugins/layer/extend/layer.ext.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timorsServer/public/HPlus/js/plugins/layer/laydate-v1.1.zip" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timorsServer/public/HPlus/js/plugins/layer/laydate-v1.1/demo.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timorsServer/public/HPlus/js/plugins/layer/laydate-v1.1/layDate官网.url" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timorsServer/public/HPlus/js/plugins/layer/laydate-v1.1/laydate/laydate.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timorsServer/public/HPlus/js/plugins/layer/laydate-v1.1/laydate/need/laydate.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timorsServer/public/HPlus/js/plugins/layer/laydate-v1.1/laydate/skins/dahong/icon.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timorsServer/public/HPlus/js/plugins/layer/laydate-v1.1/laydate/skins/dahong/laydate.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timorsServer/public/HPlus/js/plugins/layer/laydate-v1.1/laydate/skins/default/icon.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timorsServer/public/HPlus/js/plugins/layer/laydate-v1.1/laydate/skins/default/laydate.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timorsServer/public/HPlus/js/plugins/layer/laydate-v1.1/laydate/skins/molv/icon.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timorsServer/public/HPlus/js/plugins/layer/laydate-v1.1/laydate/skins/molv/laydate.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timorsServer/public/HPlus/js/plugins/layer/laydate-v1.1/更新日志.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timorsServer/public/HPlus/js/plugins/layer/laydate/laydate.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timorsServer/public/HPlus/js/plugins/layer/laydate/need/laydate.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timorsServer/public/HPlus/js/plugins/layer/laydate/skins/dahong/icon.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timorsServer/public/HPlus/js/plugins/layer/laydate/skins/dahong/laydate.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timorsServer/public/HPlus/js/plugins/layer/laydate/skins/default/icon.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timorsServer/public/HPlus/js/plugins/layer/laydate/skins/default/laydate.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timorsServer/public/HPlus/js/plugins/layer/laydate/skins/molv/icon.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timorsServer/public/HPlus/js/plugins/layer/laydate/skins/molv/laydate.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timorsServer/public/HPlus/js/plugins/layer/layer.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timorsServer/public/HPlus/js/plugins/layer/layim/layim.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timorsServer/public/HPlus/js/plugins/layer/layim/layim.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timorsServer/public/HPlus/js/plugins/layer/layim/loading.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timorsServer/public/HPlus/js/plugins/layer/skin/layer.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timorsServer/public/HPlus/js/plugins/layer/skin/layer.ext.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timorsServer/public/HPlus/js/plugins/layer/skin/moon/style.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timorsServer/public/HPlus/js/plugins/markdown/bootstrap-markdown.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timorsServer/public/HPlus/js/plugins/markdown/bootstrap-markdown.zh.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timorsServer/public/HPlus/js/plugins/markdown/markdown.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timorsServer/public/HPlus/js/plugins/markdown/to-markdown.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timorsServer/public/HPlus/js/plugins/metisMenu/jquery.metisMenu.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timorsServer/public/HPlus/js/plugins/morris/morris.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timorsServer/public/HPlus/js/plugins/morris/raphael-2.1.0.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timorsServer/public/HPlus/js/plugins/nestable/jquery.nestable.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timorsServer/public/HPlus/js/plugins/nouslider/jquery.nouislider.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timorsServer/public/HPlus/js/plugins/pace/pace.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timorsServer/public/HPlus/js/plugins/peity/jquery.peity.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timorsServer/public/HPlus/js/plugins/plyr/plyr.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timorsServer/public/HPlus/js/plugins/preetyTextDiff/jquery.pretty-text-diff.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timorsServer/public/HPlus/js/plugins/prettyfile/bootstrap-prettyfile.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timorsServer/public/HPlus/js/plugins/rickshaw/rickshaw.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timorsServer/public/HPlus/js/plugins/rickshaw/vendor/d3.v3.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timorsServer/public/HPlus/js/plugins/simditor/hotkeys.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timorsServer/public/HPlus/js/plugins/simditor/module.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timorsServer/public/HPlus/js/plugins/simditor/simditor.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timorsServer/public/HPlus/js/plugins/simditor/uploader.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timorsServer/public/HPlus/js/plugins/slimscroll/jquery.slimscroll.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timorsServer/public/HPlus/js/plugins/sparkline/jquery.sparkline.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timorsServer/public/HPlus/js/plugins/staps/jquery.steps.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timorsServer/public/HPlus/js/plugins/suggest/bootstrap-suggest.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timorsServer/public/HPlus/js/plugins/summernote/summernote.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timorsServer/public/HPlus/js/plugins/summernote/summernote.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timorsServer/public/HPlus/js/plugins/sweetalert/sweetalert.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timorsServer/public/HPlus/js/plugins/switchery/switchery.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timorsServer/public/HPlus/js/plugins/toastr/toastr.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timorsServer/public/HPlus/js/plugins/treeview/bootstrap-treeview.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timorsServer/public/HPlus/js/plugins/validate/jquery.validate.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timorsServer/public/HPlus/js/plugins/validate/messages_zh.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timorsServer/public/HPlus/js/plugins/webuploader/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timorsServer/public/HPlus/js/plugins/webuploader/webuploader.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timorsServer/public/HPlus/js/welcome.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timorsServer/public/HPlus/plugins/fullavatareditor/scripts/fullAvatarEditor.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timorsServer/public/HPlus/plugins/fullavatareditor/scripts/jQuery.Cookie.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timorsServer/public/HPlus/plugins/fullavatareditor/scripts/swfobject.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timorsServer/public/HPlus/plugins/fullavatareditor/scripts/test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timorsServer/public/images/timor.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timorsServer/public/images/timor1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timorsServer/public/javascripts/jquery.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timorsServer/public/javascripts/webuploader-demo.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timorsServer/public/stylesheets/style.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timorsServer/routes/config/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timorsServer/routes/config/request.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timorsServer/routes/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timorsServer/routes/mysql.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timorsServer/routes/timorsH5/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timorsServer/routes/users.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timorsServer/views/error.ejs" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timorsServer/views/form_basic.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timorsServer/views/goods/goods_list.ejs" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timorsServer/views/goods/goods_upload.ejs" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timorsServer/views/index.ejs" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timorsServer/views/index_con.ejs" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timorsServer/views/index_left.ejs" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/timorsServer/views/login.ejs" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/timor/config/index.js" afterPath="$PROJECT_DIR$/timor/config/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/timor/index.html" afterPath="$PROJECT_DIR$/timor/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/timor/package.json" afterPath="$PROJECT_DIR$/timor/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/timor/src/App.vue" afterPath="$PROJECT_DIR$/timor/src/App.vue" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/timor/src/components/classfig.vue" afterPath="$PROJECT_DIR$/timor/src/components/classfig.vue" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/timor/src/components/footer/footer.vue" afterPath="$PROJECT_DIR$/timor/src/components/footer/footer.vue" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/timor/src/components/goods/address.vue" afterPath="$PROJECT_DIR$/timor/src/components/goods/address.vue" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/timor/src/components/goods/cart.vue" afterPath="$PROJECT_DIR$/timor/src/components/goods/cart.vue" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/timor/src/components/goods/goodsDetail.vue" afterPath="$PROJECT_DIR$/timor/src/components/goods/goodsDetail.vue" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/timor/src/components/login/login.vue" afterPath="$PROJECT_DIR$/timor/src/components/login/login.vue" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/timor/src/components/login/register.vue" afterPath="$PROJECT_DIR$/timor/src/components/login/register.vue" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/timor/src/components/main/main.vue" afterPath="$PROJECT_DIR$/timor/src/components/main/main.vue" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/timor/src/components/music/Play.vue" afterPath="$PROJECT_DIR$/timor/src/components/music/Play.vue" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/timor/src/components/music/music.vue" afterPath="$PROJECT_DIR$/timor/src/components/music/music.vue" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/timor/src/components/music/musicLove.vue" afterPath="$PROJECT_DIR$/timor/src/components/music/musicLove.vue" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/timor/src/components/music/topList.vue" afterPath="$PROJECT_DIR$/timor/src/components/music/topList.vue" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/timor/src/components/my.vue" afterPath="$PROJECT_DIR$/timor/src/components/my.vue" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/timor/src/config/fetch.js" afterPath="$PROJECT_DIR$/timor/src/config/fetch.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/timor/src/config/filter.js" afterPath="$PROJECT_DIR$/timor/src/config/filter.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/timor/src/config/public.js" afterPath="$PROJECT_DIR$/timor/src/config/public.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/timor/src/router/index.js" afterPath="$PROJECT_DIR$/timor/src/router/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/timor/src/vuex/User.js" afterPath="$PROJECT_DIR$/timor/src/vuex/User.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/timor/static/fonts/demo.css" afterPath="$PROJECT_DIR$/timor/static/fonts/demo.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/timor/static/fonts/demo_fontclass.html" afterPath="$PROJECT_DIR$/timor/static/fonts/demo_fontclass.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/timor/static/fonts/demo_symbol.html" afterPath="$PROJECT_DIR$/timor/static/fonts/demo_symbol.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/timor/static/fonts/demo_unicode.html" afterPath="$PROJECT_DIR$/timor/static/fonts/demo_unicode.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/timor/static/fonts/iconfont.css" afterPath="$PROJECT_DIR$/timor/static/fonts/iconfont.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/timor/static/fonts/iconfont.svg" afterPath="$PROJECT_DIR$/timor/static/fonts/iconfont.svg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/timorsServer/package.json" afterPath="$PROJECT_DIR$/timorsServer/package.json" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -47,145 +677,111 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.4214533">
-      <split-first>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/timorsServer/routes/timorsH5/index.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="897">
-                  <caret line="39" column="29" lean-forward="false" selection-start-line="39" selection-start-column="29" selection-end-line="39" selection-end-column="29" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="fetch.js" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/timor/src/config/fetch.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="238">
-                  <caret line="36" column="0" lean-forward="false" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="travelList.vue" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/timor/src/components/travel/travelList.vue">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="0">
-                  <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="fundList.vue" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/timor/src/components/fund/fundList.vue">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="0">
-                  <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/timorsServer/routes/config/index.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="207">
-                  <caret line="9" column="1" lean-forward="true" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="app.js" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/timorsServer/app.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="0">
-                  <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="User.js" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/timor/src/vuex/User.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="368">
-                  <caret line="21" column="7" lean-forward="false" selection-start-line="21" selection-start-column="7" selection-end-line="27" selection-end-column="18" />
-                  <folding>
-                    <element signature="n#!!doc" expanded="true" />
-                    <element signature="e#55#77#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="main.vue" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/timor/src/components/main/main.vue">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="9614">
-                  <caret line="491" column="0" lean-forward="false" selection-start-line="491" selection-start-column="0" selection-end-line="491" selection-end-column="0" />
-                  <folding>
-                    <element signature="n#style#0;n#div#1;n#div#0;n#template#0;n#!!top" expanded="true" />
-                    <element signature="n#div#0;n#div#2;n#div#0;n#template#0;n#!!top" expanded="false" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="filter.js" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/timor/src/config/filter.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="460">
-                  <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-first>
-      <split-second>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="main.vue" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/timor/src/components/main/main.vue">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="555">
-                  <caret line="321" column="16" lean-forward="false" selection-start-line="321" selection-start-column="16" selection-end-line="321" selection-end-column="16" />
-                  <folding>
-                    <element signature="n#style#0;n#div#1;n#div#0;n#template#0;n#!!top" expanded="true" />
-                    <element signature="n#div#0;n#div#2;n#div#0;n#template#0;n#!!top" expanded="false" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="goods_list.ejs" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/timorsServer/views/goods/goods_list.ejs">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="1932">
-                  <caret line="84" column="17" lean-forward="false" selection-start-line="84" selection-start-column="17" selection-end-line="84" selection-end-column="61" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/timorsServer/routes/index.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="667">
-                  <caret line="29" column="0" lean-forward="false" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-second>
-    </splitter>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="build.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/build/build.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-7">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config/index.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-7">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="bus.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/bus/bus.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-7">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="mui.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/static/js/mui.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-7">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding>
+                <marker date="1511749356748" expanded="true" signature="248934:248940" ph=" " />
+                <marker date="1511749356748" expanded="true" signature="249104:249110" ph=" " />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".editorconfig" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.editorconfig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".postcssrc.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.postcssrc.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-7">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-7">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="package.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/package.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-7">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -205,6 +801,7 @@
       <find>footer_logoimg</find>
       <find>main</find>
       <find>goodsList_img</find>
+      <find>merge-descriptors</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -238,6 +835,7 @@
         <option value="$PROJECT_DIR$/timor/src/config/filter.js" />
         <option value="$PROJECT_DIR$/timor/src/components/main/main.vue" />
         <option value="$PROJECT_DIR$/timor/src/config/fetch.js" />
+        <option value="$PROJECT_DIR$/timor/src/components/travel/travelList.vue" />
       </list>
     </option>
   </component>
@@ -254,14 +852,14 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="NodeModulesDirectoryManager">
-    <handled-path value="$PROJECT_DIR$/timor/node_modules" />
-    <handled-path value="$PROJECT_DIR$/timorsServer/node_modules" />
-  </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="83" />
-    <option name="width" value="1723" />
-    <option name="height" value="1051" />
+    <option name="x" value="459" />
+    <option name="y" value="43" />
+    <option name="width" value="1353" />
+    <option name="height" value="932" />
+  </component>
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -278,6 +876,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -285,30 +884,11 @@
               <item name="2017Timors" type="b2602c69:ProjectViewProjectNode" />
               <item name="2017Timors" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="2017Timors" type="b2602c69:ProjectViewProjectNode" />
-              <item name="2017Timors" type="462c0819:PsiDirectoryNode" />
-              <item name="timorsServer" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="2017Timors" type="b2602c69:ProjectViewProjectNode" />
-              <item name="2017Timors" type="462c0819:PsiDirectoryNode" />
-              <item name="timorsServer" type="462c0819:PsiDirectoryNode" />
-              <item name="routes" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="2017Timors" type="b2602c69:ProjectViewProjectNode" />
-              <item name="2017Timors" type="462c0819:PsiDirectoryNode" />
-              <item name="timorsServer" type="462c0819:PsiDirectoryNode" />
-              <item name="routes" type="462c0819:PsiDirectoryNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="Scope" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -322,11 +902,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Administrator\Desktop\2017Timors" />
       <recent name="C:\Users\Administrator\Desktop\2017Timors\timorsServer" />
       <recent name="C:\Users\Administrator\Desktop\2017Timors\timorsServer\routes" />
       <recent name="C:\Users\Administrator\Desktop\2017Timors\timorsServer\routes\config" />
       <recent name="C:\Users\Administrator\Desktop\2017Timors\timor\src\components" />
-      <recent name="C:\Users\Administrator\Desktop\2017Timors\timor\src\components\fund" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -364,31 +944,44 @@
       <workItem from="1510393107101" duration="196000" />
       <workItem from="1510537086301" duration="277000" />
       <workItem from="1514447948708" duration="16000" />
-      <workItem from="1514448300749" duration="753000" />
+      <workItem from="1514448300749" duration="1012000" />
+      <workItem from="1514452323309" duration="1308000" />
+      <workItem from="1514519009100" duration="182000" />
+      <workItem from="1514526971060" duration="395000" />
+      <workItem from="1514530771552" duration="26000" />
+      <workItem from="1514531280418" duration="265000" />
     </task>
+    <task id="LOCAL-00001" summary="旅行">
+      <created>1514449122491</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1514449122491</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="28376000" />
+    <option name="totallyTimeSpent" value="30811000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="83" y="0" width="1723" height="1051" extended-state="0" />
+    <frame x="459" y="43" width="1353" height="932" extended-state="0" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15348564" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1959611" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32943678" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32943678" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -397,6 +990,10 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="旅行" />
+    <option name="LAST_COMMIT_MESSAGE" value="旅行" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -409,7 +1006,6 @@
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/timor/src/config/fetch.js</url>
           <line>33</line>
-          <properties />
           <option name="timeStamp" value="3" />
         </line-breakpoint>
       </breakpoints>
@@ -418,89 +1014,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/timor/src/components/footer/footer.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2074">
-          <caret line="122" column="9" lean-forward="false" selection-start-line="106" selection-start-column="8" selection-end-line="122" selection-end-column="9" />
-          <folding>
-            <element signature="n#style#0;n#svg#0;n#a#0;n#li#2;n#ul#0;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/timorsServer/routes/mysql.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="11" lean-forward="false" selection-start-line="17" selection-start-column="11" selection-end-line="17" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/timorsServer/routes/timorsH5/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="28" column="13" lean-forward="true" selection-start-line="28" selection-start-column="13" selection-end-line="28" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/timorsServer/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="25" column="6" lean-forward="false" selection-start-line="25" selection-start-column="6" selection-end-line="25" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/timor/src/components/main/main.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="25" column="44" lean-forward="false" selection-start-line="25" selection-start-column="44" selection-end-line="25" selection-end-column="44" />
-          <folding>
-            <element signature="n#style#0;n#div#1;n#div#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#div#0;n#div#2;n#div#0;n#template#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/timor/src/App.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="629">
-          <caret line="37" column="37" lean-forward="true" selection-start-line="37" selection-start-column="37" selection-end-line="37" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/timor/src/vuex/User.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="629">
-          <caret line="37" column="14" lean-forward="true" selection-start-line="37" selection-start-column="14" selection-end-line="37" selection-end-column="14" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <element signature="e#55#77#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/timorsServer/views/index.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="13" lean-forward="false" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/timor/src/components/login/login.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1292">
-          <caret line="76" column="29" lean-forward="true" selection-start-line="76" selection-start-column="29" selection-end-line="76" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/timor/config/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="25" column="13" lean-forward="false" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/timorsServer/views/error.jade" />
     <entry file="file://$PROJECT_DIR$/timorsServer/views/index.jade" />
     <entry file="file://$PROJECT_DIR$/timorsServer/views/layout.jade" />
@@ -532,7 +1045,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="782">
           <caret line="37" column="12" lean-forward="false" selection-start-line="37" selection-start-column="12" selection-end-line="37" selection-end-column="12" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -593,7 +1105,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1932">
           <caret line="84" column="17" lean-forward="false" selection-start-line="84" selection-start-column="17" selection-end-line="84" selection-end-column="61" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -629,7 +1140,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="667">
           <caret line="29" column="0" lean-forward="false" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -637,9 +1147,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="4232">
           <caret line="185" column="29" lean-forward="false" selection-start-line="185" selection-start-column="29" selection-end-line="185" selection-end-column="29" />
-          <folding>
-            <element signature="n#style#0;n#svg#0;n#a#0;n#li#2;n#ul#0;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -647,7 +1154,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="897">
           <caret line="39" column="29" lean-forward="false" selection-start-line="39" selection-start-column="29" selection-end-line="39" selection-end-column="29" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -655,18 +1161,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="460">
           <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/timor/src/components/main/main.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="9614">
-          <caret line="491" column="0" lean-forward="false" selection-start-line="491" selection-start-column="0" selection-end-line="491" selection-end-column="0" />
-          <folding>
-            <element signature="n#style#0;n#div#1;n#div#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#div#0;n#div#2;n#div#0;n#template#0;n#!!top" expanded="false" />
-          </folding>
+        <state relative-caret-position="410">
+          <caret line="317" column="9" lean-forward="true" selection-start-line="317" selection-start-column="9" selection-end-line="317" selection-end-column="9" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -674,41 +1176,21 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="368">
           <caret line="21" column="7" lean-forward="false" selection-start-line="21" selection-start-column="7" selection-end-line="27" selection-end-column="18" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <element signature="e#55#77#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/timor/src/components/a.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/timor/src/components/a.css" />
     <entry file="file://$PROJECT_DIR$/timor/src/components/fund/fundList.vue">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/timor/src/config/fetch.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
+        <state relative-caret-position="805">
           <caret line="36" column="0" lean-forward="false" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/timor/src/components/travel/travelList.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -717,7 +1199,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -725,7 +1206,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -733,19 +1213,107 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="433">
           <caret line="21" column="0" lean-forward="true" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/timorsServer/routes/config/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="207">
-          <caret line="9" column="1" lean-forward="true" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
-          <folding />
+          <caret line="9" column="1" lean-forward="false" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/timorsServer/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/timor/src/components/travel/travelList.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="23">
+          <caret line="133" column="16" lean-forward="false" selection-start-line="133" selection-start-column="16" selection-end-line="133" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build/build.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-7">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-7">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/bus/bus.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-7">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/js/mui.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-7">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1511749356748" expanded="true" signature="248934:248940" ph=" " />
+            <marker date="1511749356748" expanded="true" signature="249104:249110" ph=" " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.editorconfig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.postcssrc.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-7">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-7">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-7">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
