@@ -25,7 +25,10 @@
           </p>
           <div class="index_conDiv">
             <a><input type="text" disabled="disabled" placeholder=""></a>
-            <i class="iconfont gj-search"></i>
+            <!--<i class="iconfont gj-search"></i>-->
+            <svg class="icon" aria-hidden="true">
+              <use xlink:href="#icon-jiantou122"></use>
+            </svg>
           </div>
         </div>
       </div>
@@ -105,14 +108,14 @@
                 </a>
               </li>
               <li class="mui-table-view-cell mui-media  mui-col-xs-4">
-                <a href="#">
+                <router-link to="/fundList">
                       <span class="mui_dps">
                             <svg class="icon" aria-hidden="true">
-                              <use xlink:href="#icon-DJ"></use>
+                              <use xlink:href="#icon-project"></use>
                             </svg>
                       </span>
-                  <div class="mui-media-body">音乐</div>
-                </a>
+                  <div class="mui-media-body">基金</div>
+                </router-link>
               </li>
               <li class="mui-table-view-cell mui-media  mui-col-xs-4">
                 <a href="#">
@@ -462,6 +465,11 @@
   }
 
   .index_son .index_conDiv i {
+    position: absolute;
+    right: 5px;
+    top: 34%;
+  }
+  .index_son .index_conDiv svg {
     position: absolute;
     right: 5px;
     top: 34%;
