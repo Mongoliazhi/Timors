@@ -214,7 +214,7 @@
           $(".index_conImg").hide()
           $(".index_conP").hide()
           $(".index_conDiv a").css("width", "100%")
-          $(".index_conDiv i").css("top", "24%")
+          $(".index_conDiv svg").css("top", "25%")
           $(".index_conDiv input").attr({
             "placeholder": "请输入关键字"
           })
@@ -223,7 +223,7 @@
           $(".index_header").css("position", "relative")
           $(".index_conImg").show()
           $(".index_conP").show()
-          $(".index_conDiv i").css("top", "34%")
+          $(".index_conDiv svg").css("top", "34%")
           $(".index_conDiv input").attr({
             "placeholder": ""
           })

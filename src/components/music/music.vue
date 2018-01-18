@@ -148,7 +148,7 @@
 <style scoped>
   .mui-table-view .mui-table-view-cell a span {
     font-size: 42px;
-    color: #2ac845;
+    color: #8B87C1;
   }
 
   .mui-badge {
@@ -173,7 +173,10 @@
   }
 
   .rank-item {
+    display: -webkit-box;
+    display: -webkit-flex;;
     display: flex;
+    -webkit-flex-direction: row;
     flex-direction: row;
     height: 100px;
     background: #fff;
@@ -185,14 +188,14 @@
   }
 
   .rank-item .rank-media {
-    width: 100px;
-    height: 100px;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    flex: 1.2;
     position: relative;
   }
 
   .rank-item .rank-media img {
-    width: 100px;
-    height: 100px;
+    width: 100%;
     border-bottom-left-radius: 5px;
     border-top-left-radius: 5px;
     z-index: 0;
@@ -200,14 +203,17 @@
 
   .rank-item .rank-media .listen-count {
     position: absolute;
-    bottom: 3px;
+    bottom: 5px;
     left: 5px;
     color: #fff;
     font-size: 12px;
   }
 
   .rank-item .rank-info {
-    padding: 5px 10px;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    flex: 3;
+    padding-left: 10px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;

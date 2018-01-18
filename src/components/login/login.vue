@@ -95,6 +95,7 @@
 
 <script>
   import * as _fetch from '../../config/fetch'
+  import Mock from 'mockjs'
   import {mapState, mapGetters, mapActions} from 'vuex'
 
   export default {
@@ -193,6 +194,7 @@
     },
     mounted() {
       this.$nextTick(() => {
+        this.userDate.user_headImg = Mock.Random.image('500x500', '#8B87C1', '#ffffff', 'T');
         var self = this;
         //qq登录
         QC.Login({
@@ -301,7 +303,7 @@
   .div_gorund1 {
     width: 100%;
     text-align: center;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
   }
 
   .div_gorund1 .login_img {
@@ -313,7 +315,7 @@
   .div_gorund {
     position: relative;
     width: 100%;
-    margin: 1rem 0;
+    margin: 0.5rem 0;
   }
 
   .div_gorund i {
@@ -396,7 +398,7 @@
 
   .login_quick {
     width: 100%;
-    margin-top: 3rem;
+    margin-top: 1rem;
   }
 
   .login_quick .quick_div {
@@ -404,7 +406,7 @@
     float: left;
     width: 33.33%;
     text-align: center;
-    padding: 0 5%;
+    padding: 0 2%;
   }
 
   .login_quick .quick_div svg {

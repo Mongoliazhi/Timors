@@ -122,8 +122,12 @@
           this.playPageShow = data
         })
 
-
+        console.log("您当前的路由")
+        console.log(this.$route.name)
         switch (this.$route.name) {
+          case 'Main':
+            self.setLicolor(0)
+            break;
           case 'Main1':
             self.setLicolor(0)
             break;

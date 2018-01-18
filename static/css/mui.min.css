@@ -183,8 +183,8 @@ td, th {
 
 body {
   font-family: 'Helvetica Neue', Helvetica, sans-serif;
-  font-size: 17px;
-  line-height: 21px;
+  font-size: 16px;
+  /*line-height: 21px;*/
   color: #000;
   background-color: #efeff4;
   -webkit-overflow-scrolling: touch
@@ -1627,7 +1627,7 @@ p {
 }
 
 .mui-table-view-chevron .mui-table-view-cell {
-  padding-right: 65px
+  padding-right: 55px
 }
 
 .mui-table-view-chevron .mui-table-view-cell > a:not(.mui-btn) {

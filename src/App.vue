@@ -16,7 +16,10 @@
     </transition>
 
     <!--<router-view class="router_c"></router-view>-->
-    <router-view></router-view>
+    <keep-alive>
+      <router-view></router-view>
+    </keep-alive>
+
   </div>
 </template>
 
@@ -83,7 +86,9 @@
         dataUrl(state) {
           if(state.musicPayServer.PlayIndex.id){
 //            return 'http://dl.stream.qqmusic.qq.com/' + state.musicPayServer.PlayIndex.id + '.m4a?fromtag=999';
-            return 'http://dl.stream.qqmusic.qq.com/' + state.musicPayServer.PlayIndex.id + '.m4a?guid=1642466368&vkey=8A8B7F3436A853F17BB7C57C9F7AD9CDB53BA1236F11D14ACAC5AA1009A5E2B3E5A5EDB5DB065A4016DF5EE807DDFCC96C97ED178B05C6F0&uin=3222754571&fromtag=999';
+//            return 'http://dl.stream.qqmusic.qq.com/' + state.musicPayServer.PlayIndex.id + '.m4a?guid=1642466368&vkey=8A8B7F3436A853F17BB7C57C9F7AD9CDB53BA1236F11D14ACAC5AA1009A5E2B3E5A5EDB5DB065A4016DF5EE807DDFCC96C97ED178B05C6F0&uin=3222754571&fromtag=999';
+            //由于QQ音乐数据变动 不清楚变化的内容 导致不能准确捕获每次音乐的数据
+            return 'http://dl.stream.qqmusic.qq.com/C400000Md1wq0vnwzE.m4a?guid=1642466368&vkey=F5D1F108B1740CB77686D533343AD60B7D8CB510DDEDF7E59960E03BCABBE63AB36246B978E238FD49063E6A9AF12AE4F529243A359D0B3E&uin=&fromtag=999';
           }
         },
         playing: state => state.musicPayServer.playing,

@@ -10,6 +10,7 @@ import Login from '@/components/login/login'
 
 import  TravelList from  '@/components/travel/travelList' //旅行
 import  FundList from  '@/components/fund/fundList' //基金
+import  FundDetail from  '@/components/fund/fundDetail' //基金
 
 import Classfig from '@/components/classfig'
 import Music from '@/components/music/music'
@@ -58,11 +59,18 @@ const router = new Router({
       name: 'TravelList',
       component: TravelList,
     },
+    //基金
     {
       path: '/fundList',
       name: 'FundList',
       component: FundList,
     },
+    {
+      path: '/fundDetail:fundId',
+      name: 'FundDetail',
+      component: FundDetail,
+    },
+    //音乐
     {
       path: '/music',
       name: 'Music',

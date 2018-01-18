@@ -81,7 +81,7 @@
               </div>
               <div class="pull-right right">
                 <svg class="icon" aria-hidden="true">
-                  <use xlink:href="#icon-jiantou2"></use>
+                  <use xlink:href="#icon-jiantou122"></use>
                 </svg>
               </div>
             </a>
@@ -96,7 +96,7 @@
               </div>
               <div class="pull-right right">
                 <svg class="icon" aria-hidden="true">
-                  <use xlink:href="#icon-jiantou2"></use>
+                  <use xlink:href="#icon-jiantou122"></use>
                 </svg>
               </div>
             </a>
@@ -111,7 +111,7 @@
               </div>
               <div class="pull-right right">
                 <svg class="icon" aria-hidden="true">
-                  <use xlink:href="#icon-jiantou2"></use>
+                  <use xlink:href="#icon-jiantou122"></use>
                 </svg>
               </div>
             </router-link>
@@ -126,7 +126,7 @@
               </div>
               <div class="pull-right right">
                 <svg class="icon" aria-hidden="true">
-                  <use xlink:href="#icon-jiantou2"></use>
+                  <use xlink:href="#icon-jiantou122"></use>
                 </svg>
               </div>
             </a>
