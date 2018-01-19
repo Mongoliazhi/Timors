@@ -236,4 +236,8 @@
   .rank-item .rank-info .rank-singername {
     color: #8f8f8f;
   }
+
+  .mui-grid-view.mui-grid-9 .mui-table-view-cell{
+    padding:0 5px;
+  }
 </style>

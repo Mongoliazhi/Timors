@@ -1,7 +1,8 @@
 <template>
   <div class="login">
-
     <div class="login_bg">
+    </div>
+    <div class="login_bg1">
       <!--<i @click="returnI" class="returnI iconfont gj-back"></i>-->
       <svg @click="returnI" class="returnI icon" aria-hidden="true">
         <use xlink:href="#icon-fanhui"></use>
@@ -283,6 +284,10 @@
     background-color: #000;
     opacity: 0.8;
     z-index: 2000;
+  }
+  .login_bg1 {
+    position: relative;
+    z-index: 2001;
   }
 
   .returnI {
