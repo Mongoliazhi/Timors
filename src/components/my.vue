@@ -46,7 +46,8 @@
             <a>
               <svg class="icon" aria-hidden="true">
                 <use xlink:href="#icon-spring"></use>
-              </svg>待付款
+              </svg>
+              待付款
               <b>4</b>
             </a>
           </div>
@@ -54,7 +55,8 @@
             <a>
               <svg class="icon" aria-hidden="true">
                 <use xlink:href="#icon-spring"></use>
-              </svg>待付款
+              </svg>
+              待付款
               <b>4</b>
             </a>
           </div>
@@ -62,7 +64,8 @@
             <a>
               <svg class="icon" aria-hidden="true">
                 <use xlink:href="#icon-spring"></use>
-              </svg>待付款
+              </svg>
+              待付款
               <b>4</b>
             </a>
           </div>
@@ -102,7 +105,7 @@
             </a>
           </li>
           <li class="other-list-shop">
-            <router-link to="/address">
+            <a @click="address">
               <div class="pull-left">
                 <svg class="icon" aria-hidden="true">
                   <use xlink:href="#icon-position"></use>
@@ -114,10 +117,25 @@
                   <use xlink:href="#icon-jiantou122"></use>
                 </svg>
               </div>
+            </a>
+          </li>
+          <li class="other-list-shop">
+            <router-link to="/coupon">
+              <div class="pull-left">
+                <svg class="icon" aria-hidden="true">
+                  <use xlink:href="#icon-medal"></use>
+                </svg>
+                <span>优惠券</span>
+              </div>
+              <div class="pull-right right">
+                <svg class="icon" aria-hidden="true">
+                  <use xlink:href="#icon-jiantou122"></use>
+                </svg>
+              </div>
             </router-link>
           </li>
           <li class="other-list-shop">
-            <a href="">
+            <a>
               <div class="pull-left">
                 <svg class="icon" aria-hidden="true">
                   <use xlink:href="#icon-set"></use>
@@ -161,6 +179,20 @@
     },
     components: {
       'v-footer': footer
+    },
+    methods: {
+      address() {
+        var self = this;
+        self.userState1().then(function (result) {
+          var userState = result
+          if (userState) {
+            self.$router.push({name: 'Address'})
+          }
+        })
+      },
+      ...mapActions([
+        'userState1', 'playIndexState1'
+      ]),
     },
     mounted() {
       this.$nextTick(function () {
@@ -327,6 +359,7 @@
     font-size: 2.6rem;
     margin-bottom: 0.5rem;
   }
+
   .personal-center .order-box .list-type a svg {
     display: block;
     position: relative;
@@ -403,6 +436,7 @@
     font-size: 1.6rem;
     margin-right: 1rem;
   }
+
   .personal-center .order-box .other-list a div span {
     font-size: 1.1rem;
   }

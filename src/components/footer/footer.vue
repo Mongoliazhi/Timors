@@ -1,5 +1,5 @@
 <template>
-  <div class="footer">
+  <div class="footer_1">
     <transition name="play-slide"
                 @after-enter="showBlurBg"
                 @before-leave="hideBlurBg"
@@ -62,7 +62,7 @@
   import Play from '../music/Play'
   import bus from '../../bus/bus'
   export default {
-    name: 'footer',
+    name: 'footer_1',
     data () {
       return {
         msg: 'footer',

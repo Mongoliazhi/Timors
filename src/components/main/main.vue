@@ -1,5 +1,5 @@
 <template>
-  <div class="main">
+  <div class="main_1">
 <!--    <transition name="play-slide"
                 @after-leave="routerViewAnimation='page-slide'">
       <div class="userC">
@@ -118,14 +118,14 @@
                 </router-link>
               </li>
               <li class="mui-table-view-cell mui-media  mui-col-xs-4">
-                <a href="#">
+                <router-link to="/chatRoom">
                           <span class="mui_dps">
                             <svg class="icon" aria-hidden="true">
-                              <use xlink:href="#icon-jiweijiu"></use>
+                              <use xlink:href="#icon-kafei"></use>
                             </svg>
                       </span>
-                  <div class="mui-media-body">酒水饮料</div>
-                </a>
+                  <div class="mui-media-body">聊天室</div>
+                </router-link>
               </li>
               <li class="mui-table-view-cell mui-media  mui-col-xs-4">
                 <a href="#">
@@ -174,7 +174,7 @@
       </template>
 
     </div>
-    <v-footer message="main"></v-footer>
+    <v-footer></v-footer>
 
 
   </div>
@@ -190,7 +190,7 @@
   import {mapState, mapGetters, mapActions, mapMutations} from 'vuex'
 
   export default {
-    name: 'main',
+    name: 'main_1',
     data() {
       return {
         goodsList: [],
