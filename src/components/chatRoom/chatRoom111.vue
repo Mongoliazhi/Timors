@@ -2,8 +2,31 @@
   <div class="chatRoom">
     <router-view></router-view>
 
-    <v-nav :nav-name="'机器人'" :nav-num="0"></v-nav>
+    <v-nav :nav-name="'聊天室'" :nav-num="0"></v-nav>
     <div class="cr_content">
+      <div class="crCont crCont_left">
+        <div class="crCont_img"><img src="../../../static/images/qq.png" alt=""></div>
+        <div class="crCont_cont">
+          <p class="p1">中国队加油</p>
+        </div>
+      </div>
+      <div class="crCont crCont_left">
+        <div class="crCont_img"><img src="../../../static/images/qq.png" alt=""></div>
+        <div class="crCont_cont">
+          <div class="voice">
+            <div class="img2">
+              <img src="../../../static/images/women.jpeg" alt="">
+            </div>
+            <p class="voice_s">2″</p>
+          </div>
+        </div>
+      </div>
+      <div class="crCont crCont_left">
+        <div class="crCont_img"><img src="../../../static/images/women.jpeg" alt=""></div>
+        <div class="crCont_cont">
+          <p class="p1">中国队加油中国队加油</p>
+        </div>
+      </div>
       <div class="crCont crCont_left">
         <div class="crCont_contC">
           <p>星期三 下午09:00</p>
@@ -11,28 +34,63 @@
       </div>
       <div class="crCont crCont_left">
         <div class="crCont_contC">
-          <p>小发发</p>
+          <p>用户M进入房间</p>
+        </div>
+      </div>
+      <div class="crCont crCont_right">
+        <div class="crCont_img"><img src="../../../static/images/qq.png" alt=""></div>
+        <div class="crCont_cont1">
+          <p class="p1">中国队加油中国队加油</p>
+        </div>
+      </div>
+      <div class="crCont crCont_right">
+        <div class="crCont_img"><img src="../../../static/images/qq.png" alt=""></div>
+        <div class="crCont_cont1">
+          <div class="img1">
+            <img src="../../../static/images/qq.png" alt="">
+          </div>
+        </div>
+      </div>
+      <div class="crCont crCont_left">
+        <div class="crCont_img"><img src="../../../static/images/qq.png" alt=""></div>
+        <div class="crCont_cont">
+          <div class="img1">
+            <img src="../../../static/images/qq.png" alt="">
+          </div>
         </div>
       </div>
 
-      <template v-for="v in dataList.message">
-        <template v-if="v.messageType == 'you'">
-          <div class="crCont crCont_left">
-            <div class="crCont_img"><img :src="v.user_face" alt=""></div>
-            <div class="crCont_cont">
-              <p class="p1">{{v.messageValue}}</p>
+      <div class="crCont crCont_right">
+        <div class="crCont_img"><img src="../../../static/images/qq.png" alt=""></div>
+        <div class="crCont_cont1">
+          <div class="voice">
+            <div class="img2">
+              <img src="../../../static/images/qq.png" alt="">
             </div>
+            <p class="voice_s">2″</p>
           </div>
-        </template>
-        <template v-else>
-          <div class="crCont crCont_right">
-            <div class="crCont_img"><img :src="v.user_face" alt=""></div>
-            <div class="crCont_cont1">
-              <p class="p1">{{v.messageValue}}</p>
+        </div>
+      </div>
+      <div class="crCont crCont_left">
+        <div class="crCont_img"><img src="../../../static/images/qq.png" alt=""></div>
+        <div class="crCont_cont">
+          <div class="img1">
+            <img src="../../../static/images/qq.png" alt="">
+          </div>
+        </div>
+      </div>
+
+      <div class="crCont crCont_right">
+        <div class="crCont_img"><img src="../../../static/images/qq.png" alt=""></div>
+        <div class="crCont_cont1">
+          <div class="voice">
+            <div class="img2">
+              <img src="../../../static/images/qq.png" alt="">
             </div>
+            <p class="voice_s">2″</p>
           </div>
-        </template>
-      </template>
+        </div>
+      </div>
 
 
     </div>
@@ -43,12 +101,12 @@
           <img src="../../../static/images/shuohua.png" alt="">
         </div>
         <div class="cr_div2">
-          <input v-model="writeMessage" @keydown.enter.prevent="sendMessage" type="text">
+          <input type="text">
         </div>
         <div class="cr_div1">
           <img src="../../../static/images/biaoqing.png" alt="">
         </div>
-        <div class="cr_div1" @click="sendMessage">
+        <div class="cr_div1">
           <img src="../../../static/images/add1.png" alt="">
         </div>
       </div>
@@ -65,37 +123,10 @@
     name: 'chatRoom',
     data() {
       return {
-        writeMessage:'',
-        dataList:{
-          user_id:'999',   //别人的id
-          chatWith:'正在加载中...',  //自己对别人的备注
-          status:'4G在线', //别人的设备状态
-          user_face:'https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=2112873150,678007007&fm=27&gp=0.jpg',  //别人的头像
-          beizhu:'机器人',  //别人对自己的备注
-          message:[{
-            messageType: 'you',
-            messageValue:'你好！认识你很高兴。',
-            user_face:'https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=2112873150,678007007&fm=27&gp=0.jpg',
-            time:Date.parse(new Date())/1000  //时间
-          },{
-            messageType: 'you',
-            messageValue:'请问你怎么称呼？',
-            user_face:'https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=2112873150,678007007&fm=27&gp=0.jpg',
-            time:Date.parse(new Date())/1000  //时间
-          },{
-            messageType:'me',
-            messageValue:'叫我小发发就可以了',
-            user_face:'https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=1913964804,3663601362&fm=27&gp=0.jpg',
-            time:Date.parse(new Date())/1000  //时间
-          },
-          ]  //消息
-        },
+        msg: '购物车'
       }
     },
     computed: {
-      ...mapGetters([
-        'user',
-      ]),
       ...mapState({
         userDate: state => state.User.user,
       })
@@ -104,57 +135,15 @@
       'v-nav': nav
     },
     watch: {},
-    methods: {
-      async sendMessage() {
-        console.log(this.writeMessage.trim())
-        if (this.writeMessage.trim() == '') return
-
-        this.sendBySocket()  //先通过socket发送消息
-        //本地追加自己发送的消息
-        const data = {
-          messageType:'me',
-          messageValue: this.writeMessage,
-          user_face:'https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=1913964804,3663601362&fm=27&gp=0.jpg',
-          time:Date.parse(new Date())/1000  //时间
-        }
-        this.addMessageLocal(data)
-        this.writeMessage=''
-      },
-      sendBySocket(){
-        this.$socket.emit('oneMessage',{
-          from_user: "111",  //发送方id（即自己的id）
-          from_user_face:"https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=1913964804,3663601362&fm=27&gp=0.jpg",//发送方头像（即自己的头像）
-          from_user_beizhu:this.dataList.beizhu,//发送方名字（即别人对自己的备注）
-          to_user:this.dataList.user_id,//接收方id
-          message:this.writeMessage,//消息内容
-          time:Date.parse(new Date())/1000 //时间
-        })
-      },
-      addMessageLocal(data){
-        console.log(this.dataList.message)
-        this.dataList.message.push(data)
-      },
-      updateBySocket(){
-        console.log("监听到oneReturnMessage1")
-//        this.$socket.removeAllListeners()  //一定要先移除原来的事件，否则会有重复的监听器
-        this.$socket.on('oneReturnMessage', (data) => {
-          console.log("监听到oneReturnMessage2")
-          console.log(data)
-          this.dataList.message.push(data)
-        });
-      }
-    },
+    methods: {},
     mounted() {
       var self = this;
-      this.updateBySocket() //监听接受到的消息
-
       this.$nextTick(function () {
-
-//        this.$socket.emit('message', "1213123123111");
-//        this.$socket.on('news', function ($res) {
-//          console.log("0-90-0-0")
-//          console.log($res)
-//        });
+        this.$socket.emit('message', "1213123123111");
+        this.$socket.on('news', function ($res) {
+          console.log("0-90-0-0")
+          console.log($res)
+        });
       })
     },
   }
@@ -223,8 +212,7 @@
 
   .crCont_cont .p1 {
     position: relative;
-    background-color: #f151a8;
-    color: #fff;
+    background-color: #fff;
     padding: 0.5rem;
     border-radius: 5px;
   }
@@ -237,7 +225,7 @@
     content: '';
     border-width: 0.4rem 0.4rem 0.4rem 0.4rem;
     border-style: solid;
-    border-color: transparent #f151a8 transparent transparent;
+    border-color: transparent #fff transparent transparent;
   }
 
   .crCont_cont .img1 {

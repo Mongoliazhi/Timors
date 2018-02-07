@@ -118,7 +118,7 @@
                 </router-link>
               </li>
               <li class="mui-table-view-cell mui-media  mui-col-xs-4">
-                <router-link to="/chatRoom">
+                <router-link to="/chatRoomList">
                           <span class="mui_dps">
                             <svg class="icon" aria-hidden="true">
                               <use xlink:href="#icon-kafei"></use>
@@ -203,6 +203,9 @@
     },
     components: {
       'v-footer': footer
+    },
+    create:function(){
+      this.userDate.user_headImg = Mock.Random.image('500x500', '#8B87C1', '#ffffff', 'T');
     },
     methods: {
 

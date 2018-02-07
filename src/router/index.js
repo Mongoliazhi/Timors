@@ -11,8 +11,11 @@ import FundList from '@/components/fund/fundList' //基金
 import FundDetail from '@/components/fund/fundDetail' //基金详情
 
 import ChatRoom from '@/components/chatRoom/chatRoom' //聊天室
+import ChatRoomList from '@/components/chatRoom/chatRoomList' //聊天室
+
 
 import Classfig from '@/components/classfig'
+
 import Music from '@/components/music/music'
 import TopList from '@/components/music/topList' //排行榜
 import MusicLove from '@/components/music/musicLove' //排行榜
@@ -22,8 +25,9 @@ import GoodsDetail from '@/components/goods/goodsDetail' //商品详情
 import Address from '@/components/goods/address'  //地址
 import AddressEdit from '@/components/goods/addressEdit' //地址编辑
 import Coupon from '@/components/goods/coupon' //优惠券
-
 import Cart from '@/components/goods/cart' //购物车
+
+
 import My from '@/components/my'
 
 Vue.use(Router)
@@ -74,12 +78,34 @@ const router = new Router({
       component: FundDetail,
     },
 
-    // 聊天室
+    // 聊天室列表
     {
-      path: '/chatRoom',
-      name: 'ChatRoom',
-      component: ChatRoom,
+      path: '/chatRoomList',
+      name: 'ChatRoomList',
+      component: ChatRoomList,
+      children: [
+        {
+          path: 'chatRoom:chatRoomId',
+          name: 'ChatRoom',
+          component: ChatRoom,
+        },
+      ]
     },
+
+    // {
+    //   path: '/chatroomList',
+    //   name: 'ChatroomList',
+    //   component: ChatroomList,
+    // //   children: [
+    // //     {
+    // //       path: 'chatRoom:id',
+    // //       name: 'ChatRoom',
+    // //       component: ChatRoom,
+    // //     }
+    // //   ]
+    // },
+
+
     //音乐
     {
       path: '/music',

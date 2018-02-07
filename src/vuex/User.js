@@ -59,6 +59,8 @@ export default {
       }
     }
   },
-  getters: {}
+  getters: {
+    // const userId = state => state.loginStatus.userId
+  }
 }
 

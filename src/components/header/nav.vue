@@ -1,7 +1,7 @@
 <template>
   <div class="nav_1">
     <header class="mui-bar mui-bar-nav" :style="headerColor">
-      <h1 class="mui-title">{{navName}}
+      <h1 class="mui-title" style="color: #fff">{{navName}}
         <template v-if="navNum != undefined && navNum > 0">
           ({{navNum}})
         </template>
@@ -52,8 +52,8 @@
     mounted() {
       var self = this;
       this.$nextTick(function () {
-        console.log(this.navName)
-        console.log(this.navNum)
+//        console.log(this.navName)
+//        console.log(this.navNum)
       })
     }
   }
