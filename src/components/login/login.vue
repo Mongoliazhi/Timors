@@ -9,10 +9,15 @@
       </svg>
       <div class="login_con">
         <div class="div_gorund1">
-          <img class="login_img" :src="userDate.user_headImg" alt="">
+          <template v-if="userDate.user_headImg">
+            <img style="width: 6rem;height: 6rem;border-radius: 50%;" :src="userDate.user_headImg" alt="">
+          </template>
+          <template v-else>
+            <img style="width: 6rem;height: 6rem;border-radius: 50%;" :src="user_headImg" alt="">
+          </template>
         </div>
 
-        <template>
+        <template v-if="userDate.user_autograph">
           <div>
             <template v-if="userDate.user_autograph">
               <div class="div_gorund">
@@ -31,11 +36,9 @@
                 </div>
               </div>
             </template>
-
-
           </div>
         </template>
-        <template>
+        <template v-else>
           <div>
             <div class="div_gorund">
               <svg class="icon svg1" aria-hidden="true">
@@ -85,7 +88,6 @@
         </template>
 
 
-
       </div>
 
 
@@ -97,12 +99,13 @@
 <script>
   import * as _fetch from '../../config/fetch'
   import Mock from 'mockjs'
-  import {mapState, mapGetters, mapActions} from 'vuex'
+  import {mapState, mapGetters, mapActions,mapMutations} from 'vuex'
 
   export default {
     name: 'login',
     data() {
       return {
+        user_headImg: Mock.Random.image('500x500', '#8B87C1', '#ffffff', 'T'),
         userName: "",
 
         userNameDis: {
@@ -119,7 +122,10 @@
     computed: {
       ...mapState({
         userDate: state => state.User.user,
-      })
+      }),
+      ...mapGetters([
+        'getUser'
+      ])
     },
     methods: {
       returnI() {
@@ -129,7 +135,7 @@
         this.$router.push({path: '/'})
       },
       //弹出登录框
-      againLogin:function () {
+      againLogin: function () {
 
       },
       loginBtn() {
@@ -166,10 +172,11 @@
                   console.log(JSON.stringify(data.data))
                   sessionStorage.setItem('user', JSON.stringify(data.data));
 
-                  self.$store.commit('setUserDate', {
-                    userDate: data.data
-                  })
-                  self.$router.push({path: '/'})
+//                  self.$store.commit('setUserDate', {
+//                    userDate: data.data
+//                  })
+                  self.setUserDate(data.data)
+//                  self.$router.push({path: '/'})
                   break;
               }
             }
@@ -178,6 +185,9 @@
         }
 
       },
+      ...mapMutations([
+        'setUserDate'
+      ])
     },
     watch: {
       userName(val) {
@@ -194,8 +204,10 @@
       },
     },
     mounted() {
+      console.log("9-9-9-9-9")
+      console.log(this.getUser);
       this.$nextTick(() => {
-        this.userDate.user_headImg = Mock.Random.image('500x500', '#8B87C1', '#ffffff', 'T');
+//        this.userDate.user_headImg = Mock.Random.image('500x500', '#8B87C1', '#ffffff', 'T');
         var self = this;
         //qq登录
         QC.Login({
@@ -214,7 +226,7 @@
         }
 
         QC.api("get_user_info", {})
-          .success(function($res){
+          .success(function ($res) {
             console.log($res);
 
             _fetch.fetch("/registerUser", {
@@ -237,17 +249,17 @@
             })
           })
           //指定接口访问失败的接收函数，f为失败返回Response对象
-          .error(function(f){
+          .error(function (f) {
             alert("获取用户信息失败！");
           })
-          .complete(function(c){
+          .complete(function (c) {
             alert("获取用户信息完成！");
           });
 
 //检查是否登录
-        if(QC.Login.check()){//如果已登录
-          QC.Login.getMe(function(openId, accessToken){
-            alert(["当前登录用户的", "openId为："+openId, "accessToken为："+accessToken].join("\n"));
+        if (QC.Login.check()) {//如果已登录
+          QC.Login.getMe(function (openId, accessToken) {
+            alert(["当前登录用户的", "openId为：" + openId, "accessToken为：" + accessToken].join("\n"));
           });
 //这里可以调用自己的保存接口
 //...
@@ -285,6 +297,7 @@
     opacity: 0.8;
     z-index: 2000;
   }
+
   .login_bg1 {
     position: relative;
     z-index: 2001;
@@ -350,16 +363,19 @@
     color: #e4c8c8;
     text-align: center;
   }
+
   .div_gorund .h32 {
     width: 100%;
     color: #e4c8c8;
     text-align: center;
   }
-  .div_gorund .downPlay{
+
+  .div_gorund .downPlay {
     text-align: center;
     font-size: 3rem;
     animation: myfirst 0.8s infinite;
   }
+
   @keyframes myfirst {
     0% {
       transform: translate(0px, 0px);

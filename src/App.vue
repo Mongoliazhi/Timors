@@ -53,9 +53,9 @@
       ...mapMutations([
         'play', 'pause', 'playContinue'
       ]),
-      getUser() {
-        this.$store.commit('getUser')
-      },
+//      getUser() {
+//        this.$store.commit('getUser')
+//      },
 
       showPlayPage(event) {
         event.preventDefault()
@@ -111,7 +111,7 @@
     mounted() {
       var self = this;
       this.$nextTick(function () {
-        self.getUser();
+//        self.getUser();
 
         bus.$on('userShow',(data) => {
           this.userShow = data

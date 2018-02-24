@@ -11,24 +11,24 @@ Vue.use(Vuex);
 
 export default {
   state: {
-    user: {},
+    user: JSON.parse(sessionStorage.getItem("user") || '{}'),
   },
-  mutations: {
+  mutations: {  //处理
     //判断用户是否登陆
-    getUser: function (state) {
-      // var sessionUser = JSON.parse(JSON.parse(sessionStorage.getItem('user')))
-      console.log(JSON.parse(sessionStorage.getItem('user')))
-      var sessionUser = JSON.parse(sessionStorage.getItem('user'))
-      console.log(sessionUser)
-      if (sessionUser) {
-        console.log("1")
-        state.user = sessionUser;
-      } else {
-        console.log("2")
-        state.user = {};
-      }
-      console.log(state.user)
-    },
+    // getUser: function (state) {
+    //   // var sessionUser = JSON.parse(JSON.parse(sessionStorage.getItem('user')))
+    //   console.log(JSON.parse(sessionStorage.getItem('user')))
+    //   var sessionUser = JSON.parse(sessionStorage.getItem('user'))
+    //   console.log(sessionUser)
+    //   if (sessionUser) {
+    //     console.log("存在sessionUser")
+    //     this.user = sessionUser;
+    //   } else {
+    //     console.log("不存在sessionUser")
+    //     this.user = {};
+    //   }
+    //   console.log(this.user)
+    // },
 
     //判断是否登陆
     isLogin: function (state) {
@@ -43,11 +43,16 @@ export default {
     setUserDate(state, userDate) {
       console.log("90909090")
       console.log(userDate)
-      state.user = userDate.userDate
+      state.user = userDate
+      console.log(state.user)
     },
 
 
   },
+//
+// Action 类似于 mutation，不同在于：
+// Action 提交的是 mutation，而不是直接变更状态。
+// Action 可以包含任意异步操作。
   actions: {
     //判断是否登陆
     userState1(content) {
@@ -59,8 +64,13 @@ export default {
       }
     }
   },
+  //有时候我们需要从 store 中的 state 中派生出一些状态，例如对列表进行过滤并计数
   getters: {
-    // const userId = state => state.loginStatus.userId
+    getUser: state => {
+      console.log("78789999")
+      console.log(state)
+      return state.user
+    }
   }
 }
 

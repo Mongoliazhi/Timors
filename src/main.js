@@ -10,11 +10,12 @@ import VueSocketio from 'vue-socket.io'; //socket
 import App from './App'
 import router from './router'
 import store from './vuex/index'
+import * as  _public from './config/public'
 
 Vue.config.productionTip = false
 
 Vue.use(VueResource)
-Vue.use(VueSocketio, 'http://localhost:3000');
+Vue.use(VueSocketio, _public.getHttp);
 
 /* eslint-disable no-new */
 new Vue({

@@ -78,7 +78,7 @@
     },
     methods: {
       setLicolor(a){
-        console.log(a)
+
         var li = document.querySelectorAll(".footer_ul li");
         li.forEach(function (ali, index) {
           li[index].setAttribute("class", "");
@@ -122,8 +122,8 @@
           this.playPageShow = data
         })
 
-        console.log("您当前的路由")
-        console.log(this.$route.name)
+//        console.log("您当前的路由")
+//        console.log(this.$route.name)
         switch (this.$route.name) {
           case 'Main':
             self.setLicolor(0)

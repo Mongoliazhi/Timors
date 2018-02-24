@@ -17,7 +17,12 @@
         <div class="index_son" >
           <!--@click="userLogin"-->
           <div class="index_conImg" @click="userLogin">
-            <img :src="userDate.user_headImg" alt="">
+            <template v-if="getUser.user_headImg">
+              <img :src="getUser.user_headImg" alt="">
+            </template>
+            <template v-else>
+              <img :src="user_headImg" alt="">
+            </template>
           </div>
           <p class="index_conP">
             <em><span>Timor</span>狮</em>
@@ -82,7 +87,6 @@
     </div>
 
     <div class="mui-content">
-
       <div id="Gallery" class="mui-slider">
         <div class="mui-slider-group">
           <div class="mui-slider-item">
@@ -194,23 +198,28 @@
     data() {
       return {
         goodsList: [],
+        user_headImg: Mock.Random.image('500x500', '#8B87C1', '#ffffff', 'T'),
       }
     },
     computed: {
       ...mapState({
         userDate: state => state.User.user
       }),
+      //mapGetters 辅助函数仅仅是将 store 中的 getter 映射到局部计算属性：
+      ...mapGetters([
+        'getUser'
+      ])
     },
     components: {
       'v-footer': footer
     },
-    create:function(){
-      this.userDate.user_headImg = Mock.Random.image('500x500', '#8B87C1', '#ffffff', 'T');
+    create:{
+//      this.userDate.user_headImg = Mock.Random.image('500x500', '#8B87C1', '#ffffff', 'T');
     },
     methods: {
 
-      menu: function () {
-        var height = 100
+      menu() {
+        var height = $(".index_header").height();
         this.scroll = $(window).scrollTop();
         if (this.scroll >= height) {
           $(".index_header").css("position", "fixed")
@@ -233,10 +242,13 @@
           $(".index_con").css("padding", "0.2rem 0.5rem")
         }
       },
+      addEventListener: function () {
+        window.addEventListener('scroll', this.menu);
+      },
       ...mapMutations([
         'isLogin',
       ]),
-      userLogin: function () {
+      userLogin() {
         this.$router.push({path: '/login'})
       },
       //首页获取商品列表
@@ -269,30 +281,31 @@
           })
         })
       },
-      userDate: function (val) {
-        console.log(val)
-        if (val.user_name) {
-          console.log("用户已登录")
-        } else {
-          console.log("用户未登录")
-          this.userDate.user_headImg = Mock.Random.image('500x500', '#8B87C1', '#ffffff', 'T');
-        }
-      }
+//      userDate: function (val) {
+//        console.log(val)
+//        if (val.user_name) {
+//          console.log("用户已登录")
+//        } else {
+//          console.log("用户未登录")
+//          this.userDate.user_headImg = Mock.Random.image('500x500', '#8B87C1', '#ffffff', 'T');
+//        }
+//      }
     },
     mounted() {
       var self = this;
       this.$nextTick(function () {
 //          监听滚动
-//        self.userDate.user_headImg = Mock.Random.image('500x500', '#8B87C1', '#ffffff', '200*200');
-        window.addEventListener('scroll', self.menu);
-        self.mainGetgoodslist();
+        console.log(JSON.parse(sessionStorage.getItem("user") || '{}'))
+        console.log("1-1-1-1-1")
+        console.log(this.userDate)
+        console.log(this.getUser)
 
+        self.addEventListener(); //滚动监听
+        self.mainGetgoodslist(); //获取商品列表
 //      切换导航栏背景颜色
         setInterval(function () {
           $(".index_son_bg").css("background-color", Mock.mock('@color'))
         }, 3000)
-
-        console.log(Mock.Random.image('200x200', '#DE5246', '#FFF', 'Not'))
 
         mui.init({
           swipeBack: false //启用右滑关闭功能
