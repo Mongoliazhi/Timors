@@ -188,6 +188,9 @@
   }
 
   .rank-item .rank-media {
+    display: -webkit-box;
+    display: -webkit-flex;;
+    display: flex;
     -webkit-box-flex: 1;
     -webkit-flex: 1;
     flex: 1.2;
@@ -210,6 +213,9 @@
   }
 
   .rank-item .rank-info {
+    display: -webkit-box;
+    display: -webkit-flex;;
+    display: flex;
     -webkit-box-flex: 1;
     -webkit-flex: 1;
     flex: 3;

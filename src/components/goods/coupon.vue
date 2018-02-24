@@ -105,31 +105,43 @@ export default {
 </script>
 
 <style scoped>
-  .couponS { margin-top: 4rem;width: 100%; padding: 0 1rem;}
+  body{ font-size: 14px;}
+  .couponF { width: 100%; line-height: 1.4rem; }
+  .couponF .couponF_head { margin-top: 2rem; text-align: center; }
+  .couponF .couponF_head img { width: 8rem; }
+  .couponF .couponF_head p { margin-top: 1rem; color: #1E463C; font-size: 1.3rem; font-weight: bold; }
+  .couponF .couponF_cont { margin-top: 4rem; margin-bottom: 5rem; }
+  .couponF .couponF_cont .black { font-size: 1.2rem; font-weight: bold; }
+  .couponF .couponF_cont .green { color: #1E463C; font-size: 1.2rem; font-weight: bold; }
+  .couponF .couponF_cont .yellow { color: #968264; font-size: 1.2rem; font-weight: bold; }
+
+  .couponS { width: 100%; margin-top: 4rem; padding: 0 0.5rem;}
   .couponS .couponS_head { width: 100%; padding: 0 1rem; margin-top: 1rem; overflow: auto; }
-  .couponS .couponS_head .couponS_head_div { float: left; width: 33.33%; text-align: center; font-size: 1.4rem; font-weight: bold; color: #1E463D; }
+  .couponS .couponS_head .couponS_head_div { float: left; width: 33.33%; text-align: center; font-size: 1.3rem; font-weight: bold; color: #1E463D; }
   .couponS .couponS_head .couponS_head_div span { display: inline-block; width: 76%; padding: 0.3rem 0; }
   .couponS .couponS_head .couponS_head_div .act { border-bottom: 2px solid #1E463D; }
   .couponS .couponListAll { width: 100%; overflow: hidden; }
   .couponS .couponListAll .couponList { position: relative; width: 100%; border-radius: 5px; z-index: 10; margin: 1rem 0; background-size: 100px 50px; }
   .couponS .couponListAll .couponList .couponList_head { width: 100%; overflow: auto; }
-  .couponS .couponListAll .couponList .couponList_head .div_1 { width: 35%; height: 8.5rem; float: left; padding: 0.5rem 1rem; }
-  .couponS .couponListAll .couponList .couponList_head .div_1 p em { font-size: 5rem; font-weight: bold; }
-  .couponS .couponListAll .couponList .couponList_head .div_2 { width: 65%; height: 8.5rem; float: left; padding: 0.5rem 1rem; }
-  .couponS .couponListAll .couponList .couponList_head .div_2 p { font-size: 1.5rem; font-weight: bold; margin: 2rem 0 1.8rem 0; }
-  .couponS .couponListAll .couponList .couponList_head .div_2 .times { width: 100%; overflow: auto; }
+  .couponS .couponListAll .couponList .couponList_head .div_1 { width: 40%; height: 7.5rem; float: left; padding: 0rem 0.5rem; text-align: center; }
+  .couponS .couponListAll .couponList .couponList_head .div_1 p { font-size: 2rem; height: 5rem; line-height: 5rem; }
+  .couponS .couponListAll .couponList .couponList_head .div_1 p em { font-size: 3rem; font-weight: bold; }
+  .couponS .couponListAll .couponList .couponList_head .div_1 span { display: inline-block; line-height: 1.6rem; }
+  .couponS .couponListAll .couponList .couponList_head .div_2 { width: 60%; height: 7.5rem; float: left; padding: 0rem 0.5rem; }
+  .couponS .couponListAll .couponList .couponList_head .div_2 p { font-size: 1.1rem; font-weight: bold; height: 5rem; line-height: 5rem; }
+  .couponS .couponListAll .couponList .couponList_head .div_2 .times { line-height: 1.6rem; width: 100%; overflow: auto; }
   .couponS .couponListAll .couponList .couponList_head .div_2 .times i { float: left; }
-  .couponS .couponListAll .couponList .couponList_foot { padding: 0.8rem; overflow: auto; }
-  .couponS .couponListAll .couponList .couponList_foot span { float: left; font-weight: bold; }
-  .couponS .couponListAll .couponList .couponList_foot button { float: right; border-radius: 5px; background-color: transparent; }
+  .couponS .couponListAll .couponList .couponList_foot { padding: 0.5rem 1rem; overflow: auto; line-height: 2rem; }
+  .couponS .couponListAll .couponList .couponList_foot span { font-size: 1rem;float: left; font-weight: bold; }
+  .couponS .couponListAll .couponList .couponList_foot button { font-size: 0.4rem; float: right; border-radius: 5px; background-color: transparent; }
   .couponS .couponListAll .divLeft { position: absolute; width: 1.4rem; height: 1.4rem; left: -1rem; top: 7.8rem; border-radius: 50%; z-index: 100; background-color: #EEEEEE; }
   .couponS .couponListAll .divRight { position: absolute; width: 1.4rem; height: 1.4rem; right: -1rem; top: 7.8rem; border-radius: 50%; z-index: 100; background-color: #EEEEEE; }
-  .couponS .couponListAll .red { color: #9B0000; }
+  .couponS .couponListAll .red { color: #C30D23; }
   .couponS .couponListAll .black { color: #000; }
-  .couponS .couponListAll .redSc { color: red; }
-  .couponS .couponListAll .redBc { border: 1px solid red; }
-  .couponS .couponListAll .redBbc { border-bottom: 1px dashed red; }
-  .couponS .couponListAll .redBrc { border-right: 1px dashed red; }
+  .couponS .couponListAll .redSc { color: #C30D23; }
+  .couponS .couponListAll .redBc { border: 1px solid #C30D23; }
+  .couponS .couponListAll .redBbc { border-bottom: 1px dashed #E9536B; }
+  .couponS .couponListAll .redBrc { border-right: 1px dashed #E9536B; }
   .couponS .couponListAll .redImg { background-image: url("https://static.hzking.cn/assets/images/couponRed.png"); background-color: #FEF6F4; }
   .couponS .couponListAll .graySc { color: #999; }
   .couponS .couponListAll .grayBc { border: 1px solid #999; }

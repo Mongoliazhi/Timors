@@ -122,8 +122,8 @@
           this.playPageShow = data
         })
 
-//        console.log("您当前的路由")
-//        console.log(this.$route.name)
+        alert("您当前的路由"+this.$route.name)
+
         switch (this.$route.name) {
           case 'Main':
             self.setLicolor(0)

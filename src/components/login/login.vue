@@ -321,7 +321,7 @@
   .div_gorund1 {
     width: 100%;
     text-align: center;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
   }
 
   .div_gorund1 .login_img {

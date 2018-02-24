@@ -1,14 +1,15 @@
 <template>
   <div class="my">
-    <header class="mui-bar mui-bar-nav">
-      <h1 class="mui-title">个人中心</h1>
-      <a class="mui-icon mui-icon-left-nav mui-pull-left"></a>
-    </header>
+    <!--<header class="mui-bar mui-bar-nav">-->
+      <!--<h1 class="mui-title">个人中心</h1>-->
+      <!--<a class="mui-icon mui-icon-left-nav mui-pull-left"></a>-->
+    <!--</header>-->
+    <v-nav :nav-name="'个人中心'" :nav-num="0"></v-nav>
 
     <div class="personal-center">
 
       <div class="personal-header">
-
+        <div class="personal-headerBg"></div>
         <div class="personal-message">
           <!--头像ID-->
 
@@ -54,7 +55,7 @@
           <div>
             <a>
               <svg class="icon" aria-hidden="true">
-                <use xlink:href="#icon-spring"></use>
+                <use xlink:href="#icon-knot"></use>
               </svg>
               待付款
               <b>4</b>
@@ -63,7 +64,7 @@
           <div>
             <a>
               <svg class="icon" aria-hidden="true">
-                <use xlink:href="#icon-spring"></use>
+                <use xlink:href="#icon-festival"></use>
               </svg>
               待付款
               <b>4</b>
@@ -163,6 +164,8 @@
   import * as _fetch from '../config/fetch'
 
   import footer from './footer/footer.vue'
+
+  import nav from './header/nav.vue'
   import {mapState, mapGetters, mapActions} from 'vuex'
 
   export default {
@@ -178,7 +181,9 @@
       })
     },
     components: {
-      'v-footer': footer
+      'v-footer': footer,
+      'v-nav': nav
+
     },
     methods: {
       address() {
@@ -211,11 +216,22 @@
   }
 
   .personal-center .personal-header {
+    position: relative;
     font-size: 1.2rem;
     text-align: center;
-    background-color: #8B87C1;
+    /*background-color: #8B87C1;*/
     color: #ECEFEE;
-    padding: 0 1rem;
+    padding: 0rem 1rem;
+    z-index: 10;
+  }
+  .personal-center .personal-header .personal-headerBg{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0%;
+    top: 0%;
+    background-image: url("/static/img/women.ef4f306.jpeg");
+    opacity: 0.3;
   }
 
   .personal-center .personal-header .person-tit {
@@ -226,6 +242,7 @@
 
   .personal-center .personal-header .personal-message {
     position: relative;
+    z-index: 100;
   }
 
   .personal-center .personal-header .personal-message .stroge-info {
@@ -252,7 +269,7 @@
     width: 2px;
     height: 3rem;
     background-color: #fff;
-    margin-top: 2.1rem;
+    margin-top: 2rem;
   }
 
   .personal-center .personal-header .personal-message .stroge-info .info-txt {
