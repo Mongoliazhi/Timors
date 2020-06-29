@@ -21,4 +21,4 @@ npm install
 npm start
 
 
-(如果需要数据库资料请联系本人： 微信号：mongoliazhi)
+
